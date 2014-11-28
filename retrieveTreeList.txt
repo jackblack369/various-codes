@@ -1,0 +1,19 @@
+	/**
+	 * @param $parent is the parent of the children we want to see 
+	 * @param $level is increased when we go deeper into the tree,  
+	 * used to display a nice indented tree  
+	 */ 
+	public function retrieveTree($folderId,$parent, $level) 
+	{ 
+		$result = $this->getElements($folderId, $parent);
+	    // display each child  
+	    $tree = "<ul>";
+	    foreach ($result as $k => $row) { 
+	        // indent and display the title of this child  
+	        $tree .= "<li>level: ".$level." ordinal : ".$row['ordinal']."projectelementid =".$row['projectelementid']."</li>";  
+	        // call this function again to display this child's children  
+	        $tree .= $this->retrieveTree($folderId,$row['projectelementid'], $level+1);  
+	    } 
+	    $tree .= "</ul>";
+	    return $tree;
+	}

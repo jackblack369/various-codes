@@ -1,0 +1,169 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <!-- This page is copyright Elated Communications Ltd. (www.elated.com) -->
+
+    <title>JavaScript tabs example</title>
+
+    <style type="text/css">
+
+	ul#tabs { list-style-type: none; height: 60px;margin-bottom: 20px;}
+	ul#tabs li { display: inline; }
+	ul#tabs li a:active { 
+		background: url("/images/pictos/pin-icon-blue-hover.png") 50px 20px no-repeat;
+		border: none;
+		width: 256px;
+		background-color: #ffffff;
+		font-size: 14px;
+		text-decoration: none;
+		font-weight: bold;
+		color: #000;
+	}
+	ul#tabs li a { border-right: none;
+		background: url("/images/pictos/list-icon-blue.png") 95px 20px no-repeat;
+		border-left: 1px solid #EBEBEB;
+		border-bottom: 1px solid #EBEBEB;
+		padding-left: 127px;
+		padding-top: 25px;
+		width: 199px;
+		background-color: #f5f5f5;
+		text-decoration: none;
+		font-size: 14px;
+	}
+	
+	#carto_tabs {
+		height: 60px;
+		margin-bottom: 20px;
+	}
+
+	div.tabContent.hide { display: none; }
+	
+	#carto_poi {
+		width: 620px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+    
+    #carto_infos_quartiers{
+		
+	}
+
+    
+    
+    #carto {
+		margin-right: auto;
+		margin-left: auto;
+		width:660px;
+		margin-top: 20px;
+		border-bottom: 1px solid #cccccc;
+		background-color: #fff;
+		font-size: 12px;
+		font-weight: bold;
+	}  
+    </style>
+
+    <script type="text/javascript">
+    //<![CDATA[
+
+    var tabLinks = new Array();
+    var contentDivs = new Array();
+
+    function init() {
+
+      // Grab the tab links and content divs from the page
+      var tabListItems = document.getElementById('tabs').childNodes;
+      for ( var i = 0; i < tabListItems.length; i++ ) {
+        if ( tabListItems[i].nodeName == "LI" ) {
+          var tabLink = getFirstChildWithTagName( tabListItems[i], 'A' );
+          var id = getHash( tabLink.getAttribute('href') );
+          tabLinks[id] = tabLink;
+          contentDivs[id] = document.getElementById( id );
+        }
+      }
+
+      // Assign onclick events to the tab links, and
+      // highlight the first tab
+      var i = 0;
+
+      for ( var id in tabLinks ) {
+        tabLinks[id].onclick = showTab;
+        tabLinks[id].onfocus = function() { this.blur() };
+        if ( i == 0 ) tabLinks[id].className = 'selected';
+        i++;
+      }
+
+      // Hide all content divs except the first
+      var i = 0;
+
+      for ( var id in contentDivs ) {
+        if ( i != 0 ) contentDivs[id].className = 'tabContent hide';
+        i++;
+      }
+    }
+
+    function showTab() {
+      var selectedId = getHash( this.getAttribute('href') );
+
+      // Highlight the selected tab, and dim all others.
+      // Also show the selected content div, and hide all others.
+      for ( var id in contentDivs ) {
+        if ( id == selectedId ) {
+          tabLinks[id].className = 'selected';
+          contentDivs[id].className = 'tabContent';
+        } else {
+          tabLinks[id].className = '';
+          contentDivs[id].className = 'tabContent hide';
+        }
+      }
+
+      // Stop the browser following the link
+      return false;
+    }
+
+    function getFirstChildWithTagName( element, tagName ) {
+      for ( var i = 0; i < element.childNodes.length; i++ ) {
+        if ( element.childNodes[i].nodeName == tagName ) return element.childNodes[i];
+      }
+    }
+
+    function getHash( url ) {
+      var hashPos = url.lastIndexOf ( '#' );
+      return url.substring( hashPos + 1 );
+    }
+
+    //]]>
+    </script>
+  </head>
+  <body onload="init()">
+
+	<div id ="carto">
+		<div id="carto_tabs">
+			<ul id="tabs">
+			  <li><a href="#poi">Points d'intérêts autour</a></li>
+			  <li><a href="#carto_infos_quartiers">Infos Locales</a></li>
+			</ul>
+		</div>
+		<div id="carto_poi">
+			<div class="tabContent" id="poi">
+			  <div>
+				<iframe scrolling="no" frameborder="0" framespacing="0" marginheight="0" marginwidth="0" target="_blank" src="http://www.dev.logic-immo.com/gmap_poi.php?site=fr&amp;univers=2&amp;lang=fr&amp;referer=licom&amp;page=detail.php&amp;name=&amp;address=PARIS+20E&amp;lzip=75020&amp;tel=&amp;town=&amp;disid1=389&amp;disid2=0&amp;disid3=0" height="630" width="620"></iframe>
+			  </div>
+			</div>
+
+			<div class="tabContent" id="carto_infos_quartiers"">
+			  <div>
+				<iframe frameborder="0" framespacing="0" marginheight="0" marginwidth="0" scrolling="no" target="_blank" src="http://www.dev.logic-immo.com/infos_geo.php?site=fr&amp;univers=2&amp;lang=fr&amp;referer=licom&amp;page=detail.php&amp;name=&amp;address=PARIS+20E&amp;lzip=75020&amp;tel=&amp;town=PARIS+20E&amp;disid1=389&amp;disid2=0&amp;disid3=0" height="1335" width="650"></iframe>
+			  </div>
+			</div>
+
+		</div>
+	</div>
+
+
+    <p><a href="/articles/javascript-tabs/">Return to the JavaScript Tabs article</a></p>
+
+  </body>
+</html>
+

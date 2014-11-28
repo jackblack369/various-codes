@@ -1,0 +1,13 @@
+<div id="fb-root"></div>
+<div class="fb-like" data-send="true" data-width="450" data-show-faces="true"></div>
+<div id="twit-button"><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal">Tweet</a>
+</div>
+
+
+
+<ul class="twitFace">
+<li class="twitFace"><div class="fb-like" data-send="false" data-show-faces="false" data-width="75">&nbsp;</div></li>
+<li class="twitFace"><div id="twit-button"><a class="twitter-share-button" data-count="horizontal" href="https://twitter.com/share">Tweet</a></div></li>
+</ul>
+
+</br>&nbsp;</br>&nbsp;</br>&nbsp;
