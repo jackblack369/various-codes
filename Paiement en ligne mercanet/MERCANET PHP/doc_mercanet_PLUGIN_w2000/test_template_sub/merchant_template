@@ -1,0 +1,9 @@
+<body bgcolor="0070CC" text="FFFFFF">
+<table width="100%">
+<tr><td><img align=left src=merchant.gif></td>
+<td><center><br><br><font color=000000 size=5> MY SHOP</font></center></td>
+<td><img align=right src=merchant.gif></td>
+</table>
+<br>
+<!-- THE SIPS DATA WILL BE DISPLAYED HERE -->
+[SIPS]

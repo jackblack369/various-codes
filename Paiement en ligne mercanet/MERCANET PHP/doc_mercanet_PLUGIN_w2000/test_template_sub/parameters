@@ -1,0 +1,75 @@
+###############################################################################
+#
+#	Fichier des parametres de la personnalisation du serveur d'abonnement
+#
+#	personnalization parameters file of the subscription server
+#
+###############################################################################
+
+#Langue du template (fr=français, en=anglais) :
+#
+#Template language (fr=french, en=english):
+LANGUAGE!fr!
+
+#Option mot de passe activée ou non :
+#
+#Password option activated or not:
+PASSWORD!no!
+
+#Nom de l'image du bouton de validation :
+#
+#Image name of the submit button:
+SUBMIT_LOGO!!
+
+#Nom de l'image du bouton de retour à la boutique :
+#
+#Image name of the return to the shop button:
+NORMAL_RETURN_LOGO!!
+
+#Nom de l'image du bouton d'annulation :
+#
+#Image name of the cancel button:
+SUB_CANCEL_LOGO!!
+
+#Informations Complementaires sur la page d'acceptation d'une inscription :
+#
+#Complementary informations on the accepted page of a recording:
+RECEIPT_COMPLEMENT!!
+
+#Informations sur l'abonné :
+#
+#Subscriber informations:
+SUB_CIVIL_STATUS!#O!
+SUB_ADDRESS1!#O!
+SUB_ADDRESS2!#O!
+SUB_CITY!#O!
+SUB_COUNTRY!#O!
+SUB_EMAIL!#O!
+SUB_FIRSTNAME!#O!
+SUB_LASTNAME!#O!
+SUB_TELEPHONE!#O!
+SUB_ZIPCODE!#O!
+
+#Information sur l'abonnement :
+#
+#Subscription informations:
+SUB_DESCRIPTION!!
+SUB_TYPE!0!
+
+#Option d'affichage :
+#
+#Display option:
+
+#NO_COPYRIGHT
+
+#NO_SUB_DATA
+
+#NO_PAY_MSG
+
+#NO_SEC_MSG
+
+#NO_SSL_SYMBOLS
+
+#NO_ACCEPT_MSG
+
+#NO_VALID_MSG

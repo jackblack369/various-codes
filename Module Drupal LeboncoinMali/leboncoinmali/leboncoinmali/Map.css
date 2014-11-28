@@ -1,0 +1,158 @@
+/*---------- Body ----------*/
+body {
+	/*background-color:#FFFFEB;*/
+}
+
+a {
+	
+	font-weight:bold;
+	font-style:normal;
+	
+	text-decoration:none;
+	outline:0;
+}
+
+a:hover {
+	text-decoration:underline;
+}
+
+/*-------- Separateur affichage principal et en-tete -------- */
+.SeparatorText {
+	color:#f60;
+	font-weight:800;
+	float:right;
+}
+
+/*-------- Affichage principal --------*/
+#Page { 
+	width:735px;
+	float:left;
+}
+
+.page_align {
+	height:auto;
+	min-height:100%;
+	position:relative;
+	text-align:center;
+}
+
+.page_width {
+	padding:0 5px;
+}
+
+.page_width {
+	margin:auto;
+	position:relative;
+	text-align:left;
+	width:735px;
+}
+
+#Page_sky {
+	width:970px;
+}
+
+td,tr,table {
+	font-size:12px;
+	padding:0;margin:0;
+}
+
+#TableContentTop {
+	width:100%;
+	padding-bottom:3px;
+}
+
+#TableContentTop td {
+	vertical-align:top;
+}
+
+#TableContentTop .Logo {
+	margin-top:12px;
+}
+
+#TableContentTop .Text {
+	font-size:12px;
+	padding-top:10px;
+	text-align:right;
+	line-height:120%
+}
+
+#TableContentBottom {
+	margin-top:0;
+	width:100%;
+	padding:0em;
+}
+
+#TableContentBottom td {
+	vertical-align:top;
+}
+
+#TableContentBottom .MapContainer {
+	margin-bottom:10px;
+}
+
+
+#TableContentBottom .CountyList {
+	text-align:right;
+	width:236px;
+	font-size:14px;
+	line-height:126%;
+}
+
+#TableContentBottom .Deposer {
+	position:absolute;
+	margin-left:-8px;
+	z-index:5;
+}
+	
+#Deposer_annonce {
+	
+}
+
+/*---------- Map ----------*/
+.MapContainer {
+    background-image: url("images/CarteMali.png");
+    background-repeat: no-repeat;
+     /*border-color: #040202;
+    border-style:  solid;*/
+    height: 480px;
+    width: 640px;
+}
+
+.Map{
+    background-image: url("images/none.gif");
+    /*border-color: #040202;
+    border-style:  solid;*/
+    height: 480px;
+    width: 640px;
+}
+
+.Image_Transparent_Map{
+    position: relative;
+    height: 480px;
+    width: 640px;
+}
+
+/*-------- Pied de page --------*/
+#Footer {
+	padding:10px 0;
+	color:#666;
+	text-align:center;
+	font-size:10px;
+}
+
+#Footer a {
+	font-weight:normal;
+}
+
+#Footer .Link {
+	margin-right:6px;
+}
+
+#Footer .border {
+	border-width:1px 0;
+	border-color:#808080;
+	border-style:solid;
+	margin:6px 0;
+	padding:6px 0;
+}
+
