@@ -1,0 +1,65 @@
+#if(!$line.get("presence_produit_ean"))
+#if($line.get(5))
+#set($c = $!line.get(5).toLowerCase())
+#end
+#if($tr.extract($c,"activit[ée]?.*manuel"))Activites Artistiques
+#elseif($tr.extract($c,"literatur|littérair|litteratur"))Litterature Francaise
+#elseif($tr.extract($c,"critiqu.[ ]+lit"))Litterature Francaise
+#elseif($tr.extract($c,"éveil"))Activites D'Eveil Jeunesse
+#elseif($tr.extract($c,"prot.est|catholic|ind|religi|christ|islam|juif|judai|coran|bible|torah"))Religion
+#elseif($tr.extract($c,"cuisine|gastro"))Arts De La Table
+#elseif($tr.extract($c,"philo|p.ns.|.sprit"))Philosophie
+#elseif($tr.extract($c,"spectac|cinema|beaux-ar|art|peintu|sculpt|musiq|music"))Arts Et Spectacles
+#elseif($tr.extract($c,"bd"))Bandes Dessinees
+#elseif($tr.extract($c,"emploi"))Carrieres Et Emplois
+#elseif($tr.extract($c,"comptab|finan"))Comptabilite Finance
+#elseif($tr.extract($c,"dictionnaire|encyclopéd"))Dictionnaire De Langue Francaise
+#elseif($tr.extract($c,"docu.*jeune") || $tr.extract($c,"éveil"))Documentaire Jeunesse
+#elseif($tr.extract($c,"droit|loi|justi"))Droit
+#elseif($tr.extract($c,"economi"))Economie
+#elseif($tr.extract($c,"universit"))Enseignement Universitaire
+#elseif($tr.extract($c,"entrepri"))Entreprise
+#elseif($tr.extract($c,"esoter|occult|paranorm|magi|mage"))Esoterisme
+#elseif($tr.extract($c,"faun|animau|animal|zoo"))Faune
+#elseif($tr.extract($c,"g.ograph"))Geographie
+#elseif($tr.extract($c,"14-18|18|19|histo|XVIII|XIX||XI|XV|XX"))Histoire
+
+#elseif($tr.extract($c,"USA|URSS|ASIE|Grande-Bretagne|JAPON|EMIRAT|ETAT UNIS"))Histoire
+
+
+#elseif($tr.extract($c,"humo"))Humour
+#elseif($tr.extract($c,"formatiq|formatic"))Informatiques Livres
+#elseif($tr.extract($c,"jeu$|jeux|jeu ") && !$tr.extract($c,"sport"))Jeux
+#elseif($tr.extract($c,"lingui"))Lettres Et Linguistique
+#elseif($tr.extract($c,"litt.*angl|litt.*alle|litt.*esp|litt.*etran"))Litterature Etrangere
+#elseif($tr.extract($c,"poch|aventur|roman"))Litterature Format Poche
+#elseif($tr.extract($c,"litt.*jeune|jeune"))Litterature Jeunesse
+#elseif($tr.extract($c,"loisir|hobby|divertiss|distracti|passe-temp"))Loisirs
+#elseif($tr.extract($c,"colleg"))Manuels College
+#elseif($tr.extract($c,"manuel.*techn"))Manuels Enseignement Technique
+#elseif($tr.extract($c,"lyce|second"))Manuels Lycee D'Enseignement General
+#elseif($tr.extract($c,"scola|prima|matern|enfantin"))Manuels Maternelles Et Primaires
+#elseif($tr.extract($c,"medec|medic"))Medecine
+#elseif($tr.extract($c,"natur|flor|fleur|arbr"))Nature
+#elseif($tr.extract($c,"paramed"))Paramedical
+#elseif($tr.extract($c,"para.*mater|aid.*mater"))Parascolaire Maternelle
+#elseif($tr.extract($c,"para.*prim|aid.*prim"))Parascolaire Primaire
+#elseif($tr.extract($c,"para.*second|aid.*second"))Parascolaire Secondaire
+#elseif($tr.extract($c,"para.*techn|aid.*techn"))Parascolaire Technique
+#elseif($tr.extract($c,"pedagog"))Pedagogie
+#elseif($tr.extract($c,"poch.*univers"))Poche Universitaire
+#elseif($tr.extract($c,"poesie|theatr|piece-"))Poesie Theatre
+#elseif($tr.extract($c,"polic|polar"))Policier
+#elseif($tr.extract($c,"psycho|psycha"))Psychologie Et Psychanalyse
+#elseif($tr.extract($c,"sante"))Sante
+#elseif($tr.extract($c,"sf|es-fiction|ce-fiction"))Science Fiction
+#elseif($tr.extract($c,"astronom|astrolo|biolo|geolo|science"))Sciences Appliquees
+#elseif($tr.extract($c,"politiq|politic"))Sciences Politiques
+#elseif($tr.extract($c,"socio"))Sociologie
+#elseif($tr.extract($c,"sport|cycli|foot|bask|tenni|alpinis"))Sports
+#elseif($tr.extract($c,"comment|critiq"))Textes Et Commentaires
+#elseif($tr.extract($c,"tourism|guide|voyag"))Tourisme
+#elseif($tr.extract($c,"gu.rr.e.|[a-z]+r.epubliqu.|r.evolution|[^ ].mpir.[^]+$","true"))Histoire
+
+#end
+#end

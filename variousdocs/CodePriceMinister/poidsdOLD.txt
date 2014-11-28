@@ -1,0 +1,45 @@
+#if($line.get(3))
+
+	#if($tr.extract($line.get(3),"[0-9]+.ml"))
+	#set($poids = $tr.extract($line.get(3),"[0-9]+.ml"))
+	$poids
+	#end
+	
+	#if($tr.extract($line.get(3),"[0-9]+.cl"))
+	#set($poids = $tr.extract($line.get(3),"[0-9]+.cl"))
+	$poids
+	#end
+	
+	#if($tr.extract($line.get(3),"[0-9]+.dl"))
+	#set($poids = $tr.extract($line.get(3),"[0-9]+.dl"))
+	$poids
+	#end
+	
+	#if($tr.extract($line.get(3),"[0-9]+.l|[0-9]+.L"))
+	#set($poids = $tr.extract($line.get(3),"[0-9]+.l"))
+	$poids
+	#end
+	
+	#if($tr.extract($line.get(3),"[0-9]+.g"))
+	#set($poids = $tr.extract($line.get(3),"[0-9]+.g"))
+	$poids
+	#end
+	
+	#if($tr.extract($line.get(3),"[0-9]+.cg"))
+	#set($poids = $tr.extract($line.get(3),"[0-9]+.cg"))
+	$poids
+	#end
+	
+	#if($tr.extract($line.get(3),"[0-9]+.dg"))
+	#set($poids = $tr.extract($line.get(3),"[0-9]+.dg"))
+	$poids
+	#end
+	
+	#if($tr.extract($line.get(3),"[0-9]+.kg|[0-9]+.Kg"))
+	#set($poids = $tr.extract($line.get(3),"[0-9]+.kg"))
+	$poids
+	#end
+	
+	
+	
+#end

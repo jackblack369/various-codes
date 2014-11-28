@@ -1,0 +1,33 @@
+<Partner name='sarbec2010' id='22313437' home='sarbec2010'>
+<Comment>
+CEG 22/12/2010 =>IMP7282
+
+flux.lengow.com/marketplace/priceminister-cosmetique/6848/txt/
+</Comment>
+
+<Directory path='download'>
+        <Action type='Download'>
+        <Files>txt</Files>
+        <Source>/marketplace/priceminister-cosmetique/6848/txt/</Source>
+        <Destination>download</Destination>
+        <Periodicity>15 12 * * *</Periodicity>
+        <Host protocol='http'>flux.lengow.com</Host>
+        </Action>
+        <Action type='Move'>
+        <Files>txt</Files>
+        <Destination>/data/chrootapache/home/fr/sarbec2010/download/sarbec2010_priceminister.txt</Destination>
+        </Action>
+
+        <Action type='Move2' scp='1' id='10692948'>
+        <Files>sarbec2010_priceminister.txt</Files>
+        <Destination>/data/priceminister/upload/fr/stock/advert_import</Destination>
+        </Action>
+
+        <Action type='Move'>
+        <Files>*.html</Files>
+        <Destination>/data/chrootapache/home/fr/sarbec2010/download/trash</Destination>
+        </Action>
+
+</Directory>
+
+</Partner>
