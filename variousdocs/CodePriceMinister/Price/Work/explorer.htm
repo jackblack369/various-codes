@@ -1,0 +1,2335 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<title>Explorateur de cartes bancaires</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta name="Description" content="L'actu sur le scandale des cartes a puces.">
+<meta name="Keywords" content="SERGE HUMPICH, serge humpich, Serge Humpich, CARTE BLEUE, PUCE, ELECTRONIQUE">
+<meta name="Author" content="Laurent Pelé webmaster@parodie.com">
+<link rel="stylesheet" href="explorer_fichiers/parodie.css" type="text/css">
+</head><body>
+<font size="-1"><a href="http://www.parodie.com/monetique/" target="_top">Retour page d'accueil site sur les failles des cartes bancaires</a></font>
+<h1>EXPLOREZ VOTRE CARTE BANCAIRE A PUCE : PAS BESOIN DU CODE SECRET A 4
+ CHIFFRES, LES BANQUES N'ONT JAMAIS EXPLOITE LES DISPOSITIFS DE SECURITE
+ DE LA PUCE</h1>
+
+<a name="plan">
+</a><h3><a name="plan">Plan</a></h3>
+
+<a href="#resume">Résumé</a><br>
+<a href="#conclusion">Conclusion</a><br>
+<a href="#doc">Matériel et documents utilisés pour l'expérience</a><br>
+<a href="#matos_necessaire">Matériel nécessaire pour l'expérience</a><br>
+<a href="#perimee">Exploration sur une carte bancaire à puce périmée</a><br>
+<a href="#new">Exploration sur une carte bancaire à puce émise depuis novembre 1999</a><br>
+<a href="#euro">Exploration sur une carte en "euro"</a><br>
+<a href="#bloquee">Exploration sur une carte bloquée</a><br>
+<a href="#deroulement_paiement">Déroulement paiement par carte</a><br>
+<a href="#droit">A t'on le droit d'explorer sa carte ?</a><br>
+<a href="#liens">Liens</a><br>
+
+<a name="resume">
+</a><h3><a name="resume">Résumé</a></h3>
+<a name="resume">L'objectif de ce document est d'explorer une carte bancaire à puce.
+<br>
+Cela n'a rien de très compliqué et est abordable pour un budget de 400 
+francs environ (il faut disposer au minimum d'une carte bancaire à puce 
+et d'un lecteur de carte à puce).
+<br>
+Cela peut être fait par quiconque un peu curieux arrivant à se 
+débrouiller tout seul en informatique (ne comptez pas sur nous pour vous
+ assister).
+<br>
+Ce n'est pas très long non plus (cette page est longue car toutes les étapes sont détaillées).
+<br>
+Cette page n'a pas pour objectif, et ne sert pas pour fabriquer des </a><a href="http://parodie.com/monetique/hacking.htm">"Yescard"</a>, ce thème n'est pas abordé 
+mais seulement l'observation objective d'une carte bancaire à des fins d'information, d'éducation :
+en effet, il s'agit principalement de démystifier la puce sur la carte bancaire, 
+ce n'est pas parce qu'il y a une puce que c'est forcément sûr.
+<br>
+ mais aussi d'interfaçage 
+[lecture de l'historique des transaction, vérification de carte, 
+ultérieurement mise au point d'une solution logicielle de paiement par 
+carte (pas besoin de se conformer à la procédure d'agrément pour 
+accepter les cartes bancaires car cette <a href="http://parodie.com/monetique/juridique.htm#certification_06032000">procédure de certification est illégale</a>)].
+<br>
+Cependant, la simple observation de la carte bancaire permet de réduire à néant certains mythes bien tenaces 
+répétés par des institutionnels doués pour la manipulation.
+<br>
+Notamment :<br>
+<strong>1. Le code secret à 4 chiffres ne sert pas pour 
+l'authentification, il ne sert que pour insérer une transaction dans 
+l'historique des transactions (ce qui est quasiment inutile)</strong>
+<br>
+<strong>2. Les cartes émises depuis novembre 1999 comportent 2 valeurs d'authentification : l'une de 320 bits créée à l'aide de la 
+<a href="http://parodie.com/monetique/brevedemomath_04032000.htm">clé cassée révélée sur Internet le 04/03/2000</a>, l'autre de 768 bits</strong>
+<br>
+<strong>3. Comme toutes les données servant à l'authentification sont situées dans des zones publiques accessibles sans le code, 
+TOUTES les cartes bancaires à puce (même celles émises depuis novembre 1999) 
+peuvent être recopiées à l'insu du porteur et retranscrites sur un émulateur dit "Yescard"</strong>
+<br>
+
+Ces 3 points constituent bien entendu des fautes lourdes de conception de la part des banques. Elles
+sont d'autant moins excusable que ces failles subsistent depuis 1983 et
+que les banques étaient prévenues depuis au moins <a href="http://parodie.com/monetique/faute.htm">1988</a> de leur existence, problème jamais corrigés depuis.
+<br>
+A cela s'ajoute un 4ème bug secondaire mais impardonable quand même car il génère déjà des litiges 
+(des victimes se font débiter une somme en <a href="http://parodie.com/monetique/vulneuro.htm">euro</a> alors qu'elles 
+croyaient effectuer une transaction en franc) :
+<br>
+4. L'historique des transactions ne contient que la date de la 
+transaction donnée par le terminal de paiement et le montant mais il 
+n'est pas indiqué si le montant est exprimé en franc ou en euro, 
+cet historique est donc inutilisable (les retraits d'argent ne sont pas 
+non plus indiqués dans l'historique, seuls les paiements avec un 
+terminal de paiement chez un commerçant acceptant la puce sont 
+indiqués).
+<p>
+<a name="conclusion">
+Conclusion : 
+<br>
+<strong>les banques n'ont exploité aucunes des sécurités de la puce : 
+<br>
+Le code aurait dû servir à restreindre l'accès des secrets (la valeur 
+d'authentification et l'identifiant composé du numéro de carte bancaire)
+ 
+aux seuls titulaires du code secret, 
+mais ces secrets sont accessibles sans le code !
+<br>
+La puce peut faire des calculs cryptographiques complexes permettant de prouver qu'elle détient un secret sans le révéler, 
+ce qui permet d'éviter les attaques par clonage de carte ou le rejeu. 
+Cette possibilité de la puce n'a pas non plus été utilisée dans les cartes bancaires.
+
+</strong>
+
+</a><a name="doc">
+</a></p><h3><a name="doc">MATERIELS ET DOCUMENTS UTILISES POUR L'EXPERIENCE : </a></h3>
+<a name="doc">Pour les observations sur la carte bancaire, l'auteur de cette page a rassemblé les matériels suivants :
+<br>
+</a><center>
+<a name="doc"><img src="explorer_fichiers/matos_expe_700_2.jpg">
+<br>
+(note : le matériel </a><a href="#matos_necessaire">réellement nécessaire</a> est réduit)
+</center>
+<p>
+Le matériel utilisé pour l'expérience comprend donc 
+<br>
+
+<a name="retournement_perimee">
+  </a><table border="1" cellpadding="0" cellspacing="0" width="100%">
+  <tbody><tr>
+    <td align="left" width="30%">
+1. <a href="http://www.basiccard.com/" target="_top">Kit BasicCard</a>
+</td>
+    <td>
+Ce kit permet de programmer facilement des cartes à puce par exemple 
+pour des projets d'identification, contrôle d'accès, porte-monnaie 
+électronique,
+conservation de codes secrets...
+<br>
+Son prix assez bas (650 francs), la facilité d'utilisation et la diversité des applications possibles le rend très attractifs.
+<br>
+Les possibilités de programmation de ce kit n'ont pas été utilisées dans l'expérience décrite sur cette page : 
+seul le lecteur cybermouse compris dans le kit a été utilisé
+<br>
+Ce kit ne permet de programmer que des cartes asynchrones en mode T=1 (pour info, la carte bancaire est en mode T=0)
+<br>
+Les cartes fournies supportent les algorithmes DES, triple DES, IDEA, courbes elliptiques, SHA-1 mais pas RSA 
+(est annoncé pour mai 2001 des cartes programmables en T=0 ou T=1 supportant l'algorithme RSA).
+
+</td></tr>
+
+  <tr>
+    <td align="left" width="30%">
+2. <a href="http://www.counterpane.com/" target="_top">Applied Cryptography</a>
+</td>
+    <td>
+Livre sur les techniques de cryptographie, permet de comprendre l'algorithme RSA, mais il existe des livres plus simples.
+<br>
+Pour la carte bancaire, il n'y a pas besoin de ce gros livre puisque 
+l'algorithme d'authentification est décrit dans cet article de <a href="http://parodie.com/monetique/LCguillou_AnnTelecom_No43_1988.jpg" target="_top">1988</a> 
+publié par <a href="http://parodie.com/monetique/whoswho.htm#LC_Guillou">Louis Claude Guillou</a> et <a href="http://parodie.com/monetique/whoswho.htm#quisquater">Professeur Jean-Jacques Quisquater</a> et Marc Davio (Philips)
+dans le numéro 43 des annales des télécommunications.
+
+</td></tr>
+
+  <tr>
+    <td align="left" width="30%">
+3. <a href="http://www.xiring.com/" target="_top">Lecteur XiPuce de Xiring</a>
+</td>
+    <td>
+Ce lecteur de carte à puce de poche permet de lire le solde d'une 
+télécarte, les informations d'une carte vitale ou l'historique d'une 
+carte bancaire à puce.
+<br>
+Il sert ici pour vérifier et comparer les inscriptions dans l'historique
+ des transactions entre ce qui est lu sur la puce à l'aide du lecteur 
+Cybermouse.
+<br>
+Accessoirement, il peut servir pour entrer un code bon après des 
+manipulations hasardeuses 
+(au bout de 3 code faux consécutifs, la carte est bloquée, si vous avez 
+fait une fausse manipulation avec le lecteur cybermouse 
+et craignez d'avoir présenté un code faux, 
+vous pouvez rentrer la carte bancaire dans le lecteur XiPuce et entrer 
+le bon code puis continuer vos expériences sans risquer de bloquer la 
+carte.
+
+</td></tr>
+
+  <tr>
+    <td align="left" width="30%">
+4. Livre PC et Cartes à Puce
+</td>
+    <td>
+Ce livre écrit en 1995 par <a href="http://parodie.com/monetique/whoswho.htm#gueulle">Patrick Gueulle</a>
+ aux éditions Dunod, collection ETSF décrit les cartes à puce, comment 
+faire un lecteur de carte, comment émuler une carte à puce... 
+Pratiquement la moitié du livre est consacrée à la découverte de la 
+carte bancaire. 
+Une disquette avec des programmes d'exploration de la carte bancaire et 
+de consultation de l'historique des transactions est fourni. 
+Ces programmes sont un peu obsolètes (écrits en GWBasic)
+mais les sources sont utiles.
+<br>
+Cette page a été principalement conçue à partir des informations glanées dans ce livre.
+<br>
+Il est intéressant de posséder ce livre pour aller plus loin dans l'exploration de la carte bancaire sinon se référer 
+aux <a href="#doc_gueulle">indications contenues dans cette page</a>.
+<br>
+Notes : ce livre est réputé épuisé mais semble actuellement dispo (avec une autre couverture) sur amazon.fr.
+<br>
+Cette page n'a été conçue par Patrick Gueulle mais par Laurent PELE
+</td></tr>
+
+
+  <tr>
+    <td align="left" width="30%">
+5. <a href="http://www.maplesoft.com/" target="_top">Maple V édition Etudiant</a>
+</td>
+    <td>
+Ce logiciel de calcul mathématique grand public est disponible au prix de 500 francs environ à la Fnac.
+<br>
+Il permet de faire des calculs sur les grands nombres comme fait pour la vérification de carte bancaire 
+(la carte bancaire ne fait pas de calcul RSA mais les terminaux de paiements en font).
+<br>
+Voir la <a href="http://parodie.com/monetique/brevedemomath_04032000.htm">"petite feuille Maple"</a> démontrant la révélation du secret de la carte bancaire
+
+</td></tr>
+
+<tr>
+    <td align="left" width="30%">
+6. Carte bancaire expirée
+</td>
+    <td>
+Pour commencer l'exploration d'une carte bancaire à puce, une carte bancaire expirée a été utilisée, ce qui permet de prendre 
+moins de risque de griller une carte bancaire récente.
+<br>
+Ici une carte expirée en septembre 1998 a été utilisée.
+Seul problème : à cette époque, les puces n'étaient pas placées au même endroit : elles étaient plus situées sur le côté 
+(la norme a évolué depuis).
+<br>
+Comme le lecteur Cybermouse ne lit pas les puces situées à cet endroit, 
+il a fallu découper la carte avec des ciseaux autour de la puce (cela 
+détruit la piste magnétique située derrière),
+la RETOURNER (le côté de la puce qui était près du bord devient près du 
+centre), puis l'insérer dans un support au bon emplacement.
+<br>
+Le support utilisé ici est un carte plastique SIM ISO (de téléphone GSM) qui contenait une puce au format mini SIM.
+<br>
+Pour fixer la puce au support, du ruban adhésif ("scotch") a été mis au dos de la carte.
+<br>
+Ensuite il suffit d'insérer la carte dans le lecteur XiPuce pour voir si
+ on arrive à la lire et si la puce a été mise à la bonne position.
+<br>
+Cette manipulation n'est heureusement pas à faire avec les cartes bancaires actuelles.
+<br>
+<a href="#droit">Note : vous ne devez utiliser que des cartes dont vous êtes le légitime porteur.</a>
+</td></tr>
+
+
+  <tr>
+    <td align="left" width="30%">
+7. Carte bancaire actuelle
+</td>
+    <td>
+Prenez votre carte bancaire actuelle pour vérifier la persistance des failles de sécurité 
+<br>
+Ici nous avons utilisé des cartes émises à partir de novembre 1999
+<br>
+<a href="#droit">Note : vous ne devez utiliser que des cartes dont vous êtes le légitime porteur.</a>
+
+</td></tr>
+
+</tbody></table>
+
+
+<a name="matos_necessaire">
+</a></p><h3><a name="matos_necessaire">MATERIELS ET DOCUMENTS NECESSAIRES : </a></h3>
+<a name="matos_necessaire">Il n'y a besoin que du lecteur de carte à 
+puce, un logiciel de lecture de puce et une carte bancaire à puce non 
+grillée pour réaliser l'expérience.
+<br>
+L'expérience a été faite ici à l'aide d'un lecteur Cybermouse ACR 20S 
+sur port série présent dans le kit de véveloppement pour carte à puce </a><a href="http://www.basiccard.de/">Basiccard</a>, 
+le lecteur est disponible séparément sur site <a href="http://www.cybermouse.de/">Cybermouse</a> (prix de 30$ + port)
+ mais d'autres lecteurs de carte à puce peuvent convenir
+car il existe des normes ISO 7816 de dialogue avec les cartes à puce.
+<br>
+L'expérience a été faite avec le logiciel CardEasy version 2.3 qui peut se télécharger <a href="http://parodie.com/monetique/cardeasy.zip">ici</a> (avec DLL pour lecteur Cybermouse ACR20S sur port série, il a été testé sous Win98 et Win2000)
+<br>
+[il existe aussi le programme ACS20ev.zip sous DOS pour envoyer des commandes ISO à la carte sur cette <a href="http://www.iccard.com.cn/scad/download_e.htm" target="_top">page</a> du constructeur, 
+<br>
+note 1 : le logiciel CardEasy.zip de la page du constructeur est 
+incomplet, il faut aussi les utiliser DLL correspondant au lecteur dans 
+le fichier SDK <a href="http://www.iccard.com.cn/scad/download_e.htm" target="_top">ACSR20.zip</a> 
+<br>
+note 2 : si votre navigateur vous demande si vous voulez installer les caractères chinois, vous pouvez lui répondre NON].
+<br>
+L'expérience peut donc être faite pour un coût très modique : 30 $ plus frais de port
+mais vous pouvez également bricoler un lecteur de carte à puce si vous bidouillez en électronique.
+
+<center>
+<img src="explorer_fichiers/lecteur_cybermouse.jpg"><br>
+<font size="5">Un lecteur de carte à puce (prix 350 F) est le seul matériel nécessaire pour l'expérience (avec une carte bancaire).</font>
+</center>
+
+<a name="doc_gueulle">
+</a><h3><a name="doc_gueulle">JEU DE COMMANDE ET MAPPING CARTE BANCAIRE : </a></h3>
+<h5><a name="doc_gueulle">JEU D'INSTRUCTIONS : </a></h5>
+<a name="doc_gueulle">La classe ISO de la puce Bull CP8 (ce masque 
+équipe les cartes bancaires et les cartes France Télécom anciennement 
+Pastel, la carte FT utilise 
+le même système d'authentification que la carte bancaire avec des clés 
+de 320 bits, par contre la clé publique RSA diffère sûrement de celle de
+ la carte bancaire qui a été </a><a href="http://parodie.com/monetique/brevedemomath_04032000.htm">cassée</a>) est BC en hexadécimal. 
+<br>
+Les cartes EMV auront normalement une classe ISO 80 en hexa.
+<br>
+D'après le livre "PC et Cartes à Puce" de <a href="http://parodie.com/monetique/whoswho.htm#gueulle">Patrick Gueulle</a> (édité en 1995), 
+le type de la carte bancaire est 3F E5, stocké en 09E0, 
+la carte bancaire admet le jeu d'instruction suivant :
+<table border="1">
+<tbody><tr>
+<td>
+<b>Instruction (Hexa)</b>
+</td>
+<td>
+<b>Description ordre</b>
+</td>
+</tr>
+
+<tr>
+<td>
+0E
+</td>
+<td>
+Effacement
+</td>
+</tr>
+
+<tr>
+<td>
+10
+</td>
+<td>
+Présentation de la clé banque (dite "CB") (en clair)
+</td>
+</tr>
+
+<tr>
+<td>
+20
+</td>
+<td>
+Présentation du code confidentiel (dit "CC") ou du code de déblocage de la carte (en clair)
+</td>
+</tr>
+
+<tr>
+<td>
+30
+</td>
+<td>
+Présentation de la clé d'ouverture (CO)  (en clair)
+</td>
+</tr>
+
+<tr>
+<td>
+40
+</td>
+<td>
+Validation de lecture 
+</td>
+</tr>
+
+<tr>
+<td>
+50
+</td>
+<td>
+Ecriture de verrou
+</td>
+</tr>
+
+<tr>
+<td>
+70
+</td>
+<td>
+Validation d'écriture
+</td>
+</tr>
+
+<tr>
+<td>
+80
+</td>
+<td>
+Certification avec 1er jeu secret
+</td>
+</tr>
+
+<tr>
+<td>
+82
+</td>
+<td>
+Certification avec 2ème jeu secret
+</td>
+</tr>
+
+<tr>
+<td>
+84
+</td>
+<td>
+Certification avec 3ème jeu secret
+</td>
+</tr>
+
+<tr>
+<td>
+86
+</td>
+<td>
+Certification avec 4ème jeu secret
+</td>
+</tr>
+
+<tr>
+<td>
+88
+</td>
+<td>
+Certification avec 5ème jeu secret
+</td>
+</tr>
+
+<tr>
+<td>
+A0
+</td>
+<td>
+Recherche du premier mot vierge ou sur argument
+</td>
+</tr>
+
+<tr>
+<td>
+A8
+</td>
+<td>
+Recherche du premier mot non vierge
+</td>
+</tr>
+
+<tr>
+<td>
+B0
+</td>
+<td>
+Lecture d'octets
+</td>
+</tr>
+
+<tr>
+<td>
+C0
+</td>
+<td>
+Lecture de résultat
+</td>
+</tr>
+
+<tr>
+<td>
+D0
+</td>
+<td>
+Ecriture d'un mot
+</td>
+</tr>
+
+<tr>
+<td>
+D2
+</td>
+<td>
+Changement code porteur
+</td>
+</tr>
+
+</tbody></table>
+
+Bien entendu, ces instructions sont à utiliser avec précaution (surtout celle d'effacement) 
+<br>
+on peut noter également que les instructions du masque B0' 18h , 28h et 
+38h permettant de présenter des clés sous forme chiffrée n'est pas 
+utilisée non plus : 
+les codes à 4 chiffres sont échangés en clair entre la carte et le 
+lecteur.
+
+<h5>MAPPING DE LA CARTE BANCAIRE : </h5>
+Les cartes Bull CP8 ont des zones mémoires avec la structure suivante :
+<table border="1">
+<tbody><tr>
+<td>
+0200h
+</td>
+<td>
+Zone secrète (effacement intedit, lecture interdite, écriture interdite)
+</td>
+</tr>
+
+<tr>
+<td>
+ADM
+</td>
+<td>
+Zone d'accès (effacement intedit, lecture protégée, écriture interdite)
+</td>
+</tr>
+
+<tr>
+<td>
+ADC
+</td>
+<td>
+Zone confidentielle (effacement intedit, lecture protégée, écriture 
+interdite) ou zone de travail n°2 (l'application définit les droits 
+d'accès à cette zone)
+</td>
+</tr>
+
+<tr>
+<td>
+ADT
+</td>
+<td>
+Zone de travail n°1 (l'application définit les droits d'accès à cette zone)
+</td>
+</tr>
+
+<tr>
+<td>
+ADL
+</td>
+<td>
+Zone de lecture (effacement intedit, lecture libre, écriture interdite)
+</td>
+</tr>
+
+<tr>
+<td>
+ADMAX-8h
+</td>
+<td>
+Zone de fabrication (effacement intedit, lecture libre, écriture interdite sauf verrou)
+</td>
+</tr>
+
+</tbody></table>
+
+<br>
+La description des zones mémoires correspond à celle d'une carte bancaire émise avant novembre 1999.
+<br>
+
+A titre indicatif, le livre de Patick Gueulle donnait la cartographie suivante (pour une vieille puce bancaire) :
+<br>
+
+ADL en  08E0h (zone de lecture libre à partir de cette adresse, il faut 
+le code confidentiel pour lire dans la zone située avant).
+<br>
+ADM en 0290h
+<br>
+ADC et ADT en 02B0h
+<br>
+AD2 en 0278h
+<br>
+AD1 en 0210h
+<br>
+ADS en 0230h
+
+<br>
+<b>Prestataire 03</b> :<br>
+à l'adresse ADL (08E0), se trouve le "prestataire 03" correspondant à la valeur d'authentification codée sur 320 bits 
+avec l'entête suivant :
+<br>
+08E0 : 2E 03 30 33 
+<br>
+Le 3ème octet 30h représente la taille en octets : le prestataire 03 a donc une taille 48 octets (30h= 48 en décimal). 
+Cela correspond à 320 bits car il y a des quartets avec des "3" de redondance tous les 4 octets.
+<br>
+La clé de la valeur d'authentification est codée à partir de 08F0
+<br>
+<b>Prestataire 02</b> :<br>
+à l'adresse 0948, se trouve le "prestataire 02" correspondant à 
+l'identifiant de la carte, elle contient le numéro de la carte, les 
+dates de validité, 
+le nom du porteur, la devise.
+
+ce sont des données a valeur d'authentification codée sur 320 bits 
+avec l'entête suivant :
+<br>
+0948 : 2E 02 38 F1 
+<br>
+Le 3ème octet (38h) indique que cette zone a une taile de 56 octets.
+<br>
+Ensuite on a un 3 , un code enregistrement 00 le numéro de carte sur 19 
+caractères BCD, le code usage  (7FF), 
+le code service (101), la date de début de validité sur 4 caractères 
+BCD, la langue (250 pour le français), la fin de validité sur 
+4 caractères BCD, la devise (franc : 250), l'exposant 
+
+
+<a name="perimee">
+</a><h3><a name="perimee">EXPLORATION SUR UNE VIEILLE CARTE EXPIREE : </a></h3>
+<h5><a name="perimee">Intérêt : </a></h5>
+<a name="perimee">Faire une expérimentation sur une carte périmée permet de s'initier sans trop de risque à la découverte de la puce
+de la carte bancaire sans prendre le risque de griller sa carte actuelle.
+<br>
+Si vous préférez vous pouvez cependant faire directement l'expérience sur une carte bancaire à puce </a><a href="#new">récente</a>.
+<br>
+En effet, la puce des cartes bancaires périmées restent lisibles et on peut lire l'historique des transactions, 
+même si on ne peut pas théoriquement faire de paiement dans les terminaux de paiements avec 
+(cela reste cependant facilement possible <a href="http://parodie.com/monetique/brevecarteperimee_05062000.htm">en rusant</a>, voir aussi <a href="http://parodie.com/monetique/breveavcb_07062000.htm">ici</a>).
+<br>
+Pour faire cette manipulation, l'auteur a utilisé une vieille carte arrivée à expiration en septembre 1998.
+<br>
+Il s'agit surtout de vérifier que les indications fournies dans le livre "PC et Cartes à Puce" 
+de <a href="http://parodie.com/monetique/whoswho.htm">Patrick Gueulle</a> sont exactes et de s'initier 
+à la manipulation des cartes à puce sans prendre trop de risque puisque la carte est expirée.
+<br>
+
+<h5>Préparation : </h5>
+On allume l'ordinateur (cela a été testé sous Windows 98 et Windows 2000)
+<br>
+On branche le lecteur cybermouse sur le port série de l'ordinateur (ou USB)
+<br>
+(sur les vieux PC équipés de souris avec de grosses prises, dans ce cas 
+là, 
+il faudra trouver quand même une petite prise souris PS2 pour alimenter 
+le lecteur Cybermouse ACRR20S brancher sur le port série (vous pouvez 
+utilisez celle d'un autre ordinateur allumé)).
+<br>
+On prépare une carte bancaire expirée, éventuellement après avoir déplacé et retourné la puce comme expliqué <a href="#retournement_perimee">précédemment</a> s'il s'agit 
+d'une très vieille carte avec une puce située au dessus de la piste magnétique (et non en position dite "centrée").
+<br>
+On installe le logiciel CardEasy et on le lance, il détecte automatiquement le port (COM1 ou COM2 généralement) où est installé
+le lecteur de carte à puce.
+<br>
+<center>
+<img src="explorer_fichiers/prepa_carte_expiree_700.jpg">
+<br>
+La puce de la carte bancaire expirée découpée prête à être insérée dans le lecteur de carte
+</center>
+<p>
+Note : il n'y a pas besoin d'installer le kit BasicCard pour faire la manipulation décrite dans cette page.
+<br>
+On introduit la puce de la carte bancaire dans le lecteur.
+<br>
+Dans le logiciel CardEasy, on choisit l'onglet "Commands", il n'y a pas 
+besoin de changer le type de carte (le laisser à 0 -Auto Detect).
+<br>
+Maintenant on va pouvoir commencer à lire la puce.
+</p><h5>Réponse au reset de la puce : </h5>
+Pour initialiser la puce on lance la commande Reset sur le logiciel CardEasy.
+<br>
+Cela correspond au bouton "Start Session" dans l'onglet "Commands"
+<br>
+Le résultat suivant s'affiche :
+<br>
+<center><img src="explorer_fichiers/LP_Reset_0998.jpg">
+<br>
+CardEasy affiche après une réponse au reset  "Card reset OK, ATR= 3F 65 25 08 33 04 6C 90 00 "
+</center>
+<br>
+ATR : est le résultat de la réponse au Reset.
+<p>
+</p><center><img src="explorer_fichiers/carte_expiree_insere_600.jpg">
+<br>
+De son côté les 2 voyants vert et rouge du lecteur Cybermouse se sont allumés
+</center>
+<p>
+Cela semble assez encourageant, cela marche, on arrive à envoyer des 
+commandes à la carte et elle répond (fenêtre du bas de CardEasy), 
+et il faut moins de 5 minutes pour installer le lecteur de carte et le 
+logiciel CardEasy, les 2 derniers octets sont 90 00, ce qui signifie que
+ la commande ISO 
+s'est déroulée correctement.
+<br>
+</p><h5>Première lecture zone libre de la puce : </h5>
+Maintenant on va lire une zone libre de la carte bancaire expirée, on lit par exemple 32 octets à partir de l'adresse 09 E0.
+Cela correspond aux valeurs suivantes à saisir dans la fenêtre de commande ISO envoyée à la carte (voir image suivante) : <br>
+Classe (CLA) :  BC<br>
+Instruction (INS) : B0<br>
+Paramètre P1 : 09<br>
+Paramètre P2 : E0<br>
+Nombre d'octets lus (Le) : 20 (20h en hexadécimal est égal à 32 en décimal).
+<p>
+On appuie sur le bouton "Exchange ADPU" pour envoyer la commande à la 
+carte et on obtient le résultat suivant dans la fenêtre du bas.
+</p><center>
+<img src="explorer_fichiers/lecture_LP_09E0.jpg">
+<br>
+Lecture de la carte à 09E0 : la carte répond "3F E5 20 02 08 4D 00 94 15 0D 86 A4 D1 01 9F FF"
+</center>
+<p>
+La fenêtre du bas affiche <br>
+&lt; BC B0 09 E0 00 20 ce qui correspond à la commande envoyée à la carte (selon la convention de CardEasy)
+<br>
+puis<br>
+&gt; 9000 (SW1,SW2) c'est le statut de la réponse de la carte, 90 00 signifie qu'il n'y a pas d'erreur.<br>
+Enfin<br>
+&gt; 3F E5 20 02 08 4D 00 94 15 0D 86 A4 D1 01 9F FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+<br>
+3F E5 correspond bien au type de la carte bancaire stocké en 09 E0 d'après le livre de Patrick Gueulle.
+<br>
+On a ainsi réussi à lire une partie de la carte (ici une partie de la zone de lecture et de la zone de fabrication)
+<br>
+Vous noterez que le 16 derniers octets renvoyés sont nuls, c'est parce 
+que l'adresse 09 E0 est une adresse exprimée en quartets et 
+la dernière adresse lisible est 09FF, on ne peut pas lire après car il 
+n'y a rien.
+<br>
+Il n'y a donc que 16 octets entre les adresses 09 E0 et 09 FF, or nous avons demandé à lire 32 octets
+<br>
+Comme la zone d'adresse de la carte bancaire commence en 0200, 
+il n'y a donc qu'un kilo-octets de stockage sur cette carte.
+<br>
+Les autres octets après 3F E5 (aux adresses à partir de 09 E4) sont expliqués dans le livre de Patrick Gueulle.
+<br>
+
+
+<a name="adressage_expiree">
+</a></p><h5><a name="adressage_expiree">Lecture zone d'adressage en 09 C0 : </a></h5>
+<a name="adressage_expiree">Sur les cartes Bull CP8, se trouve à partir 
+de l'adresse 09 C0 le début de la zone d'adressage donnant les adresses 
+de début de chacunes des zones de la carte, à savoir ADL, ADS, ADT, AD1,
+ AD2, ADM.
+<br>
+Pour lire ces adresses, il faut répéter des manipulations au niveau des bits, 
+si cela vous gonfle, 
+passez au </a><a href="#id_expiree">paragraphe suivant</a> en vous contentant des résultats des recherches (cette étape n'est pas essentielle).
+
+<h6>Lecture ADL, début zone lecture : </h6>
+
+ADL (adresse de début de la zone de lecture libre) est défini en 09C8 et se retrouve de la façon suivante :
+<br>
+Cela correspond aux valeurs suivantes à saisir dans la fenêtre de commande ISO envoyée à la carte (voir image suivante) : <br>
+Classe (CLA) :  BC<br>
+Instruction (INS) : B0<br>
+Paramètre P1 : 09<br>
+Paramètre P2 : C8<br>
+Nombre d'octets lus (Le) : 08 
+<p>
+On appuie sur le bouton "Exchange ADPU" pour envoyer la commande à la 
+carte et on obtient le résultat suivant dans la fenêtre du bas.
+</p><center>
+<img src="explorer_fichiers/Lecture_09C8_LP_expiree_0998.jpg">
+<br>
+Lecture 8 octets en 09C8
+</center>
+<p>
+<br>
+on lit ainsi sur cette carte en 09C8 : 23 9F 0A C3 0A C3 0A 57 
+
+11 premiers bits en 09C8 :<br>
+00100011100<br>
+on multiplie par 8 (soit ajout de 3 bits à 0) :<br>
+00100011100000<br>
+soit<br>
+00 1000 1110 0000<br>
+soit 0 8 E 0 en hexadécimal<br>
+on a donc ADL =08E0<br>
+C'est la même valeur que donne le livre de Patrick Gueulle.
+
+</p><h6>Lecture ADT, début zone travail : </h6>
+ADT est défini en 09CC : <br>
+on lit sur la carte en 09CC : 0A C3<br>
+0000 1010 1100 0011<br>
+11 premiers bits :<br>
+00001010110<br>
+on multiplie par 8 :<br>
+00001010110000<br>
+soit<br>
+00 0010 1011 0000<br>
+0 2 B 0 ADT ok<br>
+On a ADT = 02 B0
+
+<h6>Lecture ADC, début zone confidentielle : </h6>
+ADC est défini en 09D0 :<br>
+
+&lt; BC B0 09 D0 00 20<br>
+&gt; 9000 (SW1,SW2)<br>
+&gt; 0A C3 0A 57 09 F1 08 D9 3F E5 20 02 08 4D 00 94 15 0D 86 A4 D1 01 9F FF 00 00 00 00 00 00 00 00 <br>
+soit en binaire :<br>
+0000 1010 1100 0011<br>
+11 premiers bits :<br>
+0000 1010 110<br>
+ajout 3 bits  à 0:<br>
+00001010110000<br>
+soit<br>
+00 0010 1011 0000<br>
+0 2 B 0 ADC OK<br>
+On a ADC = 02 B0 (égal à ADT, en fait c'est une zone de travail à cette adresse, elle contient l'historique des transactions)
+
+
+<h6>Lecture ADM, début zone d'accès : </h6>
+ADM est défini en 09D4 :<br>
+on lit sur la carte en 09D4 : 0A 57<br>
+soit en binaire :<br>
+0000 1010 0101 0777<br>
+11 premiers bits :<br>
+0000 1010 010<br>
+ajout 3 bits  à 0:<br>
+00001010010000<br>
+soit<br>
+00 0010 1001 0000<br>
+soit<br>
+0 2 9 0<br>
+d'où ADM = 0290 
+
+<h6>Lecture AD2, début zone de travail 2 : </h6>
+AD2 est défini en 09D8 :<br>
+
+on lit sur la carte en 09D8 : 09 F1<br>
+soit en binaire :<br>
+0000 1001 1111 0001<br>
+11 premiers bits :<br>
+0000 1001 111<br>
+ajout 3 bits  à 0:<br>
+00001001111000<br>
+soit<br>
+00 0010 0111 1000<br>
+soit<br>
+0 2 7 8<br>
+d'où AD2 = 0278 
+
+
+<h6>Lecture ADS, début zone secrète : </h6>
+ADS est défini en 09DC :<br>
+
+on lit sur la carte en 09DC : 08 D9
+<br>
+soit en binaire :<br>
+0000 1000 1101 1001<br>
+11 premiers bits :<br>
+0000 1000 110<br>
+ajout 3 bits  à 0:<br>
+00001000110000<br>
+soit<br>
+00 0010 0011 0000<br>
+soit<br>
+0 2 3 0<br>
+d'où ADS = 0230 
+
+<h6>Lecture AD1, début zone de travail 1 : </h6>
+AD1 est défini en 09E8 :<br>
+
+on lit sur la carte en 09E : 08 4D
+<br>
+soit en binaire :<br>
+0000 1000 0100 1101<br>
+11 premiers bits :<br>
+0000 1000 010<br>
+ajout 3 bits  à 0:<br>
+00001000010000<br>
+soit<br>
+00 0010 0001 0000<br>
+soit<br>
+0 2 1 0<br>
+d'où AD1 = 0210 
+
+<h6>Conclusion lecture zone d'adressage : </h6>
+On trouve pour cette carte ayant une date d'expiration 09/98 les mêmes valeurs que dans le livre de Patrick Gueulle :
+<br>
+<table border="1">
+<tbody><tr>
+<td>
+ADL
+</td>
+<td>
+08E0
+</td>
+</tr>
+
+<tr>
+<td>
+ADT
+</td>
+<td>
+02B0
+</td>
+</tr>
+
+<tr>
+<td>
+ADC
+</td>
+<td>
+02B0
+</td>
+</tr>
+
+<tr>
+<td>
+ADM
+</td>
+<td>
+0290
+</td>
+</tr>
+
+<tr>
+<td>
+AD2
+</td>
+<td>
+0278
+</td>
+</tr>
+
+<tr>
+<td>
+ADS
+</td>
+<td>
+0230
+</td>
+</tr>
+
+<tr>
+<td>
+AD1
+</td>
+<td>
+0210
+</td>
+</tr>
+
+</tbody></table>
+
+<a name="id_expiree">
+</a><h5><a name="id_expiree">Lecture zone identifiant de la puce : </a></h5>
+<a name="id_expiree">Fort de cette expérience réussie, nous allons 
+continuer l'exploration de la carte en regardant la zone identifiant du 
+prestataire 02
+supposée stockée à partir de 09 48 sur notre carte expirée et commençant
+ par l'entête 2E 02
+<br>
+Cela correspond aux valeurs suivantes à saisir dans la fenêtre de commande ISO envoyée à la carte (voir image suivante) : <br>
+Classe (CLA) :  BC<br>
+Instruction (INS) : B0<br>
+Paramètre P1 : 09<br>
+Paramètre P2 : 48<br>
+Nombre d'octets lus (Le) : 40 (40h en hexadécimal est égal à 64 en décimal).
+<br>
+On appuie sur le bouton "Exchange APDU" et on obtient par exemple le résultat suivant :
+<br>
+</a><center>
+<a name="id_expiree"><img src="explorer_fichiers/Dump_0948_LP_expiree_0998_masquee.jpg">
+<br>
+Lecture de la zone identifiant (le numéro de carte bancaire a été masqué par des "X", le nom du porteur a été masqué par un "Y")
+</a></center>
+<p>
+<a name="id_expiree">La fenêtre du bas affiche donc les résultats suivants :<br>
+&lt; BC B0 09 48 00 40<br>
+&gt; 9000 (SW1,SW2)<br>
+&gt; 2E 02 38 F1 30 04 97 XX 3X XX XX XX 3X XX XF FF 31 01 96 07 32 50 
+98 09 32 50 54 97 34 D5 22 0Y 3Y YY YY YY 3Y YY YY Y2 30 YY YY YY 3Y Y2 
+02 02 30 20 20 20 32 02 02 02 30 20 F0 20 1D 9F F5 16 <br>
+On voit donc bien l'entête 2E 02 pour le prestataire 02  puis suit la 
+taille du prestataire : 38h soit 56 octets.
+ensuite suit F1 puis un quartet avec un "3" de redondance. il y a en 
+fait des quartets de "3" de tels 3 de redondance tous les 8 quartets, 
+c'est à dire tous les 4 octets, 
+il convient d'ignorer ces quartets avec des "3" pour analyser la chaine 
+convenablement.
+<br>
+La chaine initiale
+30 04 97 XX 3X XX XX XX 3X XX XF FF 31 01 96 07 32 50 98 09 32 50 54 97 
+34 D5 22 0Y 3Y YY YY YY 3Y YY YY Y2 30 YY YY YY 3Y Y2 02 02 30 20 20 20 
+32 02 02 02 30 20 F0 20 1D 9F F5 16 <br>
+devient donc, après suppression des 3 de redondance tous les 4 octets :
+<br>
+0 04 97 XX X XX XX XX X XX XF FF 1 01 96 07 2 50 98 09 2 50 54 97 4 D5 
+22 0Y Y YY YY YY Y YY YY Y2 0 YY YY YY Y Y2 02 02 0 20 20 20 2 02 02 02 0
+ 20 F0 20 1D 9F F5 16 <br>
+Maintenant en groupant par octets :
+<br>
+00 49 7X XX XX XX XX XX XX FF F1 01 96 07 25 09 80 92 50 54 97 4D 52 20 
+YY YY YY YY YY YY YY 20 YY YY YY YY 20 20 20 20 20 20 20 20 20 20 20 F0 
+20 1D 9F F5 16 
+<br>
+On reconnait, au début après l'octet 00, le numéro à 16 chiffres 497X 
+XXXX XXXX XXXX gravé sur la carte bancaire, il est tout simplement codé 
+sur la puce en BCD (Binaire codé décimal)
+<br>
+Ensuite suivent 3 "F", car le numéro de carte pourrait passer sur 19 caractères.
+<br>
+Puis il y a 3 quartets codés en BCD avec 101 correspondant au code usage (aussi appelé code service), 
+<br>
+Suit ensuite la date de début de validité sur 2 octets codés en BCD : 96
+ 07 soit juillet 1996, c'est la date d'émission de la carte
+<br>
+Suit ensuite 3 quartets codés en BCD 250 qui représente le code langue (250 = français)
+<br>
+Suit ensuite 2 octets codés en BCD correspondant à la date de fin de 
+validité de la carte : 98 09, la date d'expiration indiquée sur la carte
+ 
+est bien septembre 1998.
+<br>
+Suit ensuite 3 quartets codés en décimal codés binaire avec le code 
+devise ici 250, cela correspond au code numérique ISO du franc français.
+<br>
+</a><a name="exposant">
+Suit ensuite 1 quartet 5 qui correspond à l'exposant. 5 signifie unité, 3
+ signifie centième. Cela indique comment sont stockés les montants dans 
+l'historique des transactions.
+<br>
+Comme sur cette carte il y a un 5, les décimales ne sont pas stockées dans l'historique des transactions : 
+<br>
+si un paiement de 133.33 francs est effectué, seul 133 apparaîtra dans l'historique des transactions.
+<br>
+Ensuite suit 3 quartets 497 
+<br>
+Ensuite suit une longue chaine de 26 caractères ASCII stockée à partir 
+de l'adresse 0980 qui vaut comme vu plus haut (après suppression des "3"
+ de redondance tous les 8 quartets) :
+<br>
+4D 52 20 YY YY YY YY YY YY YY YY YY YY YY YY 20 20 20 20 20 20 20 20 20 20 20 
+<br>
+C'est l'identité du porteur stockée en ASCII 
+<br>
+ainsi 
+le code hexa 4D correspond à 77 en décimal et au code ascii de "M" 
+[vous pouvez le voir avec l'utilitaire Charmap.exe de Windows ou en ouvrant un éditeur de texte (tel que le Bloc Note), 
+vous appuyez sur la touche ALT de votre clavier
+et sans la relâcher, vous tapez sur les chiffres 0 puis 6 puis 9 puis relâchez la touche ALT, un M devrait apparaître )
+<br>
+52h correspond à la lettre "R" et le code 20h à l'espace
+<br>
+On arrive ainsi à lire le nom du porteur : "MR " suivi du prénom du porteur, d'un espace et du nom du porteur de la carte.
+<br>
+On a donc réussi à lire avec succès toute la zone identifiant de la 
+carte bancaire à puce expirée et comprendre la signification des données
+ qui y sont stockées.
+
+
+</a><a name="va_expiree">
+</a></p><h5><a name="va_expiree">Lecture zone Valeur d'authentification de la puce : </a></h5>
+<a name="va_expiree">Maintenant on va lire la valeur d'authentification de la puce (prestataire 03) de la carte bancaire expirée 
+qui commence selon le livre de Patrick Gueulle en 08E0 (égale aussi à l'adresse ADL) et commence par l'entête 2E 03
+<br>
+Une lecture avec CardEasy de 16 octets en 08 E0 nous donne :<br>
+&lt; BC B0 08 E0 00 10<br>
+&gt; 9000 (SW1,SW2)<br>
+&gt; 2E 03 30 33 30 00 03 90 37 83 46 D4 3A CC B5 E6  <br>
+
+On trouve bien l'entête 2E 03 avec une taille de 30h soit 48 octets.
+<br>
+Pour avoir la valeur d'authentification en entier, il suffit donc de lire 48 octets à partir de l'adresse 08 E8:<br>
+
+La fenêtre du bas de CardEasy affiche :<br>
+
+&lt; BC B0 08 E8 00 30<br>
+&gt; 9000 (SW1,SW2)<br>
+&gt; 30 00 03 90 37 83 46 D4 3A CC B5 E6 3X XX XX XX 3X XX XX XX 3X XX 
+XX XX 3X XX XX XX 3X XX XX XX 3X XX XX XX 3X XX XX XX 3X XX XX XX 3X XX 
+XX XX <br>
+(des nombres ont été remplacés par des X pour masquer la valeur d'authentification)<br>
+
+</a><a name="verif_va_expiree">
+</a><h5><a name="verif_va_expiree">Vérification Valeur d'authentification de la puce : </a></h5>
+<a name="verif_va_expiree">On va maintenant vérifier l'authenticité de 
+la carte bancaire expirée en faisant des calculs cryptographiques, par 
+exemple à l'aide du logiciel 
+de calcul Maple.
+<br>
+En supprimant les quartets de "3" tous les 4 octets de la valeur d'authentificaiton obtenue précédemment, on a :<br>
+0 00 03 90 7 83 46 D4 A CC B5 E6 X XX XX XX X XX XX XX X XX XX XX X XX 
+XX XX X XX XX XX X XX XX XX X XX XX XX X XX XX XX X XX XX XX 
+<br>
+sans les espaces :<br>
+000039078346D4ACCB5E6XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+<br>
+On remarque que cette valeur d'authentification fait bien 320 bits codée en hexadécimal.
+<br>
+Dans Maple, on ouvre une nouvelle feuille.
+<br>
+on rentre dans Maple :
+<br>
+&gt; produit := 2135987035920910082395022704999628797051095341826417406442524165008583957746445088405009430865999;<br>
+(ce produit de 321 bits (aussi appelé clé publique) provient notamment du </a><a href="http://parodie.com/monetique/brevedemomath_04032000.htm">Message de "mail" du 04/03/2000</a>)
+<br>
+Ensuite on rentre dans Maple la valeur d'authentification 
+&gt; VA_LP0998:=convert(`000039078346D4ACCB5E6XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX`, decimal,  hex);
+<br>
+Maple affiche l'équivalent en décimal de la Valeur d'authentification.
+<br>
+Ensuite on demande à Maple d'élever cette valeur d'authentification au cube modulo le produit de la clé publique RSA :
+<br>
+&gt;exp_3_VA_LP0998:=VA_LP0998 &amp;^ 3 mod produit;<br>
+<br>
+Maintenant on convertit en hexa dans Maple :
+<br>
+&gt; hex_exp3_VA_LP0998:=convert(exp_3_VA_LP0998, hex, decimal);
+<br>
+On voit s'afficher dans Maple comme résultat :<br>
+
+hex_exp3_VA_Laposte0998 := 10A00000497XXXXXXXXXXXXXFFF109607980900010A00000497XXXXXXXXXXXXXFFF1096079809
+<br>
+(Note : le numéro de carte bancaire a été masqué).
+<br>
+On peut voir l'identifiant du prestataire 02 "497XXXXXXXXXXXXXFFF1096079809" qui est dupliqué 2 fois.
+Cet identifiant contient bien le numéro de carte bancaire 497XXXXXXXXXXXXX.
+<br>
+
+En effet, comme expliqué dans ce document de <a href="http://parodie.com/monetique/LCguillou_AnnTelecom_No43_1988.jpg" target="_top">1988</a> 
+(publié par <a href="http://parodie.com/monetique/whoswho.htm#LC_Guillou">Louis Claude Guillou</a>
+ dans le numéro 43 des annales des télécommunications)
+, en élevant au cube la valeur d'authentification, on peut voir une 
+redondance d'un motif de 160 bits composé de l'identifiant (numéro de 
+carte, date de début de validité et date d'expiration). 
+<br>
+Nous avons donc vérifié que cette carte bancaire est réputée émaner de l'autorité bancaire.
+
+Celui qui a créé cette carte est supposé connaître la clé secrète associée à la clé publique.
+<br>
+Cependant cette clé n'est plus du tout secrète puisqu'elle a été révélée
+ le 04/03/2000 et il est maintenant possible d'inverser ce calcul et de 
+voir apparaître que 
+le dit Louis Claude Guillou dans cet article de <a href="http://parodie.com/monetique/LCguillou_AnnTelecom_No43_1988.jpg" target="_top">1988</a>,
+ 
+des "simulacres de carte bancaires" créés par des fraudeurs mais 
+reconnus par les terminaux de paiement comme émanant de l'autorité 
+bancaire.
+<br>
+A noter que, outre l'identifiant du prestataire 02, on peut voir 3 
+quartets "10A" dans la valeur hex_exp3_VA_Laposte0998, ces 3 quartets 
+dépendent de la carte, ces 3 quartets ne sont pas très importants,
+ils permettent de faire en sorte que la Valeur d'authentification ait 
+320 bits et non 321 bits (taille du produit).
+<br>
+Ces informations identifiant (prestataire 02) et valeur 
+d'authentification (prestataire 03) en lecture libre suffisent pour 
+authentifier la carte bancaire. 
+Pourquoi sont elles en lecture libre alors qu'elles permmettent à 
+n'importe qui de faire des émulations de carte bancaire ?
+<br>
+<b>En conclusion de cette section, nous avons vérifié l'authenticité de 
+la carte bancaire, vérifié la signification de cette valeur 
+d'authentification stockée dans le prestataire 03.
+et vous noterez que nous n'avons toujours pas rentré le code secret !</b>
+<p>
+De plus, <a href="http://parodie.com/monetique/vulnsubstitution_puce.htm">En
+ substituant la puce par une autre puce dont on connait le code secret 
+au cours de l'authentification par un terminal de paiement, il est 
+possible de débiter une carte dont on ignore le code</a>
+
+<a name="protegee_expiree">
+</a></p><h5><a name="protegee_expiree">Lecture zone accessible avec code confidentiel de la puce : </a></h5>
+<h6><a name="protegee_expiree">Préparation lecture zone protégée de la puce</a></h6>
+
+<a name="protegee_expiree">Maintenant nous allons lire la zone de la mémoire de la puce de la carte bancaire protégée par un code secret.
+<br>
+Ces informations "ultra-confidentielles" (puisque protégées par un code secret à 4 chiffres) 
+sont tout simplement l'historique des transactions de paiement effectuées avec la puce chez un commerçant.
+<br>
+Non ne cherchez pas, il n'y a rien d'autre d'intéressant dans cette zone.
+<br>
+On va quand même lire la zone, elle commence à l'adresse ADT (02B0) et va jusqu'à 08DF (ADL-1).
+<br>
+Mais pour lire cette zone, il faut d'abord présenter le code secret.
+<br>
+Pour cela il faut présenter de façon spéciale le code secret :
+<br>
+Supposons que le code secret soit 1515 (ce qui n'est pas le cas sur les cartes testées)
+il faut envoyer la séquence de 4 octets 05 45 7F FF à la carte.
+<br>
+Pour obtenir cette séquence de 4 octets, est fourni dans cette page un logiciel de codage/décodage. 
+<br>
+On rentre 1515 dans le champ "Code secret à 4 chiffres" et on appuie sur
+ le champ "Codage --&gt;", la séquence en héxadécimal à présenter à la 
+puce (05 45 7F FF pour 1515 comme code PIN) 
+apparait alors dans le champ suivant.
+
+</a><h6><a name="protegee_expiree">Logiciel de codage/décodage code secret envoyé à la puce : </a></h6>
+<a name="protegee_expiree">Pour convertir un code secret en séquence 
+hexadécimal, il suffit de renter le code secret à 4 chiffres dans le 1er
+ champ suivant et d'appuyer sur le bouton "Codage --&gt;"
+<br>
+
+Ce logiciel est assez simple, il est a été conçu à partir des 
+explications du livre de Patrick Gueulle (qui fourni un autre logiciel 
+avec des fonctions analogues), 
+ceux qui veulent comprendre comment il fonctionne n'ont qu'à examiner le
+ source de la page.
+
+</a><form method="POST">
+<script language="JavaScript">
+
+// Author : Laurent PELE (laurent@pele.org , http://www.pele.org) 
+// Copyright 2001 Laurent PELE
+// It is not allowed for anybody to modify this source code or remove author name or copyright statement. 
+// You can only reproduce it on your local hard drive, this software can not be published on network
+// Voir aussi programmes Pin2CB.bas et CB2Pin.bas livre de Patrick Gueulle (livre PC et Cartes à puces)
+
+
+function litnombre(aChaineNombre)
+{
+	// retire les espaces les points et autres caractères différents des nombres
+	var li=0;
+	var lChaine=""+aChaineNombre;
+
+	while (li<eval(lChaine.length))
+	{
+		if (lChaine.charCodeAt(li)<48 || lChaine.charCodeAt(li)>57)
+		{
+			lChaine=lChaine.substring(0,li)+lChaine.substring(li+1,lChaine.length);
+			li--;
+		}
+
+		li++;
+	}
+	return lChaine;
+}
+
+function Pin2Hexa(aPin)
+{
+	// on vire les espaces et . dans le texte
+	var lNbSaisi=litnombre(aPin);
+	var li=0;
+	var lj=0;
+	var lHex=0;
+	var lChaineHexaGen="";
+
+	document.forms[0].NbBits=2;
+
+	for (li=0; li<18; li++)
+	{
+		document.forms[0]["Bits_"+li]=0;
+	}
+
+	for (li=18; li<32; li++)
+	{
+		document.forms[0]["Bits_"+li]=1;
+	}
+
+
+	if (lNbSaisi.length!=4)
+	{
+		alert("Ce numéro ne comporte pas 4 chiffres");
+		return "";
+	}
+
+
+	li=0;
+	while (li<eval(lNbSaisi.length))
+	{
+		document.forms[0]["src"+li]=lNbSaisi.charCodeAt(li)-48;
+
+		if (document.forms[0]["src"+li]>7)
+		{
+			document.forms[0]["src"+li]=document.forms[0]["src"+li]-8;
+			document.forms[0]["Bits_"+document.forms[0].NbBits]=1;
+		}
+//		alert(document.forms[0]["Bits_"+document.forms[0].NbBits]);
+		document.forms[0].NbBits=document.forms[0].NbBits+1;
+
+		if (document.forms[0]["src"+li]>3)
+		{
+			document.forms[0]["src"+li]=document.forms[0]["src"+li]-4;
+			document.forms[0]["Bits_"+document.forms[0].NbBits]=1;
+		}
+//		alert(document.forms[0]["Bits_"+document.forms[0].NbBits]);
+		document.forms[0].NbBits=document.forms[0].NbBits+1;
+
+		if (document.forms[0]["src"+li]>1)
+		{
+			document.forms[0]["src"+li]=document.forms[0]["src"+li]-2;
+			document.forms[0]["Bits_"+document.forms[0].NbBits]=1;
+		}
+//		alert(document.forms[0]["Bits_"+document.forms[0].NbBits]);
+		document.forms[0].NbBits=document.forms[0].NbBits+1;
+
+		document.forms[0]["Bits_"+document.forms[0].NbBits]=document.forms[0]["src"+li];
+
+//		alert(document.forms[0]["Bits_"+document.forms[0].NbBits]);
+		document.forms[0].NbBits=document.forms[0].NbBits+1;
+
+		li++;
+	}
+
+	li=0;
+	
+	while (li<32)
+	{
+		lHex=0;
+		for (lj=li+3;lj>=li; lj--)
+		{
+//			alert("lj= "+lj);
+//			alert("lj= "+lj);
+			if (document.forms[0]["Bits_"+lj])
+			{
+//				alert("lj-li= "+(lj-li));
+				lHex=lHex+Math.pow(2, 3-(lj-li));
+//				alert("lHex= "+lHex);
+			}
+		}
+//		alert(lHex);
+
+		if (lHex<10)
+		{
+			lChaineHexaGen=lChaineHexaGen+String.fromCharCode(48+lHex);
+		}
+		else
+		{
+			// à partir de 10, code ascii de A et suivant soit 65
+			lChaineHexaGen=lChaineHexaGen+String.fromCharCode(55+lHex);
+		}
+
+
+		li=li+4;
+
+		if (li % 8 ==0)
+		{
+			lChaineHexaGen=lChaineHexaGen+" ";
+		}
+	}
+
+	return lChaineHexaGen;
+
+}
+
+
+function lithexa(aChaineNombre)
+{
+	// retire les espaces les points et autres caractères différents des nombres
+	var li=0;
+	var lChaine=""+aChaineNombre;
+
+	while (li<eval(lChaine.length))
+	{
+		if (lChaine.charCodeAt(li)<48 || (lChaine.charCodeAt(li)>57  && lChaine.charCodeAt(li)<65) || lChaine.charCodeAt(li)>70)
+		{
+			lChaine=lChaine.substring(0,li)+lChaine.substring(li+1,lChaine.length);
+			li--;
+		}
+
+		li++;
+	}
+	return lChaine;
+}
+
+
+function Hexa2Pin(aCodeHexa)
+{
+	// on vire les espaces et . dans le texte
+	var lNbSaisi=lithexa(aCodeHexa);
+	var li=0;
+	var lj=0;
+	var lHex=0;
+	var lCodeGen="";
+	var lNbBits=0;
+
+
+	for (li=0; li<32; li++)
+	{
+		document.forms[0]["Bits_"+li]=0;
+	}
+
+
+	if (lNbSaisi.length!=8)
+	{
+		alert("Cette séquence ne comporte pas 8 chiffres Hexa");
+		return 0;
+	}
+
+	li=0;
+	while (li<eval(lNbSaisi.length))
+	{
+		document.forms[0]["src"+li]=lNbSaisi.charCodeAt(li)-48;
+		if (document.forms[0]["src"+li]>=10)
+		{
+			// code de A à F
+			document.forms[0]["src"+li]=document.forms[0]["src"+li]-7;
+		}
+
+		if (document.forms[0]["src"+li]>7)
+		{
+			document.forms[0]["src"+li]=document.forms[0]["src"+li]-8;
+			document.forms[0]["Bits_"+lNbBits]=1;
+		}
+//		alert(document.forms[0]["Bits_"+lNbBits]);
+		lNbBits++;
+
+		if (document.forms[0]["src"+li]>3)
+		{
+			document.forms[0]["src"+li]=document.forms[0]["src"+li]-4;
+			document.forms[0]["Bits_"+lNbBits]=1;
+		}
+//		alert(document.forms[0]["Bits_"+lNbBits]);
+		lNbBits++;
+
+		if (document.forms[0]["src"+li]>1)
+		{
+			document.forms[0]["src"+li]=document.forms[0]["src"+li]-2;
+			document.forms[0]["Bits_"+lNbBits]=1;
+		}
+//		alert(document.forms[0]["Bits_"+lNbBits]);
+		lNbBits++;
+
+		document.forms[0]["Bits_"+lNbBits]=document.forms[0]["src"+li];
+
+//		alert(document.forms[0]["Bits_"+lNbBits]);
+		lNbBits++;
+
+		li++;
+	}
+
+	li=2;
+	
+	while (li<18)
+	{
+		lHex=0;
+		for (lj=li+3;lj>=li; lj--)
+		{
+//			alert("lj= "+lj);
+//			alert("lj= "+lj);
+			if (document.forms[0]["Bits_"+lj])
+			{
+//				alert("lj-li= "+(lj-li));
+				lHex=lHex+Math.pow(2, 3-(lj-li));
+//				alert("lHex= "+lHex);
+			}
+		}
+//		alert(lHex);
+
+		if (lHex<10)
+		{
+			lCodeGen=lCodeGen+String.fromCharCode(48+lHex);
+		}
+		else
+		{
+			// à partir de 10, code ascii de A et suivant soit 65
+			lCodeGen=lCodeGen+String.fromCharCode(55+lHex);
+		}
+
+
+		li=li+4;
+	}
+
+	return lCodeGen;
+
+}
+
+
+
+</script>
+
+<p>
+
+<a name="protegee_expiree">Code secret à 4 chiffres : <br>
+<input name="code4" size="10" type="TEXT"><br>
+<input value="Codage --&gt; " onclick="this.form.seqhexa.value=Pin2Hexa(this.form.code4.value)" type="button">
+<input value="Décodage &lt;--  " onclick="this.form.code4.value=Hexa2Pin(this.form.seqhexa.value)" type="button">
+<br>
+Séquence en héxadécimal à présenter à la puce :<br>
+<input name="seqhexa" size="20" type="TEXT">
+
+<br>A utiliser à des fins éducatives exclusivement.
+Bien entendu les codes ne sont pas échangés sur le réseau 
+(attention tout de même aux yeux indiscrets derrière vous).
+
+</a></p><h6><a name="protegee_expiree">Lecture zone historique de la carte bancaire : </a></h6>
+
+<a name="protegee_expiree">Pour lire proprement dit cette zone protégée 
+de la carte bancaire, on envoie d'abord une commande de présentation du 
+code à la carte.
+<br>
+Cela correspond aux valeurs suivantes à saisir dans la fenêtre de commande ISO envoyée à la carte (voir image suivante) : <br>
+Classe (CLA) :  BC<br>
+Instruction (INS) : 20<br>
+Paramètre P1 : 00<br>
+Paramètre P2 : 00<br>
+Nombre d'octets envoyés (Lc) : 04 <br>
+Nombre d'octets lus (Le) : 00 <br>
+Data in : 05 45 7F FF (cela correspond au code secret 1515 qui ne correspond à aucune carte testée)<br>
+On appuie sur le bouton Exchange ADPU et on obtient le résultat suivant :<br>
+</a><center>
+<a name="protegee_expiree"><img src="explorer_fichiers/envoi_code_1515_carte_LP0998.jpg">
+<br>
+Exemple de commande d'envoi de code secret 1515 à une carte
+</a></center>
+
+<p>
+<a name="protegee_expiree">Maintenant il faut "ratifier" le code secret envoyé précédemment à l'aide d'une commande BC 40 et appuyer sur Exchange ADPU :
+<br>
+</a></p><center>
+<a name="protegee_expiree"><img src="explorer_fichiers/ratification_code_1515_carte_exipree_0998.jpg">
+<br>
+Exemple de commande de ratification de coe secret
+</a></center>
+<p>
+<a name="protegee_expiree">Maintenant on peut enfin lire sur la carte à l'adresse 02B0 à l'aide d'une commande BC B0 :
+<br>
+</a></p><center>
+<a name="protegee_expiree"><img src="explorer_fichiers/dump_02B0_Carte_LP_exp0998.jpg">
+<br>
+Exemple de lecture de l'historique des transactions à partir de l'adresse 02B0
+</a></center>
+<p>
+<a name="protegee_expiree">On obtient comme résultat :<br>
+&lt; BC B0 02 B0 00 40<br>
+&gt; 9000 (SW1,SW2)<br>
+&gt; 30 00 96 07 30 00 96 10 33 40 00 78 33 40 00 78 33 60 01 03 33 A8 
+00 C5 30 00 96 11 33 08 01 07 33 38 01 7B 33 40 01 1A 33 B8 01 56 30 00 
+96 12 33 38 01 5D 33 38 01 67 33 58 00 B5 33 A0 00 78 <br>
+
+[Note : si vous n'obtenez rien, vous avez peut être entré un mauvais 
+code secret, il est alors préférable ]
+
+Pour lire tout l'historique
+il est possible d'utiliser le programme DECADT en GWBasic de Patrick 
+Gueulle (pas besoin de lecteur de carte à puce connecté pour exécuter ce
+ programme) en créant un fichier
+adt.hex de la forme (on rajoute B0 au début, on supprime les espaces, on
+ rajoute FFF9000 à la fin):<br>
+B0300096073000961033400078334000783360010333A800C530009611330801073338017B3340011A33B80156300096123338015D33380167335800B533A00078FFFFFFFFFFFFFFFFFFFF9000
+<br>
+on lance le programme DECADT.EXE (existe avec sources en GWBASIC) fourni avec le livre de Patrick Gueulle 
+<br>
+On dit que l'exposant est de 5 (unité) (voir </a><a href="#exposant">exploration zone identifiant</a>) pour cette carte.
+On observe le résultat de l'historique suivant :
+<br>
+
+</p><center>
+<img src="explorer_fichiers/debut_histo_LP_exp0998.jpg">
+<br>
+Exemple de lecture de l'historique des transactions à partir de l'adresse 02B0
+</center>
+
+<br>
+Si on compare avec ce qu'affiche le lecteur XiPuces pour cette période 
+allant d'octobre 1996 à décembre 1996, on a bien les mêmes transactions 
+(notamment la transaction en double de 120 francs le 08/10/1996).
+<br>
+Si on compare maintenant avec les relevés de carte bancaire du porteur 
+de cette carte, 
+on constate une transaction de 120 francs le 8 octobre 1996 chez un 
+coiffeur
+(et non 2, c'était sûrement parce que le code secret a été rentré une 
+première fois mais la facturette 
+ne s'est pas imprimée alors un autre essai a été effectué, parfois les 
+gens sont débités en double dans ce genre de cas), 
+une transaction de 259.02 francs le 12/10/1996, un paiement de 197.65 
+francs le 21/10/1996 . Comme on peut le voir, les centimes ne sont pas 
+stockés.
+<br>
+Sans rentrer dans le détail de cet historique, il contient d'abord le 
+mois de la transaction sur 4 quartets en BCD (9610 pour le mois 
+d'octobre 1996) pui s la liste des transactions du mois
+(8 quartets par transaction, le premier quartet étant un "3").
+Voir le source du programme DECADT.bas fourni avec le livre de Patrick 
+Gueulle 
+pour voir le mode de stockage de l'historique.
+
+<h5>Fin exploration carte expirée : </h5>
+Maintenant que l'on a tout vu sur la carte bancaire à puce expirée, 
+il est préférable d'appuyer sur le bouton "End Session" de CardEasy et de retirer la carte du lecteur.
+
+<h5>Conclusion lecture carte expirée : </h5>
+Maintenant que nous avons vu à quoi correspondait toutes les données d'une carte bancaire émise avant novembre 1999, 
+que le code secret ne protège que l'historique des transactions et pas la valeur d'authentification
+et n'empêche pas les clônages de la puce, 
+nous allons voir si les cartes bancaires émises depuis sont aussi sûres qu'on le prétend 
+et notamment si elles comportent toujours une Valeur d'Authentification calculée avec une clé cassée 
+et si le code secret sert à quelque chose.
+
+<a name="new">
+</a><h3><a name="new">EXPLORATION SUR UNE CARTE EMISE DEPUIS NOVEMBRE 1999 : </a></h3>
+<a name="new">Pour l'expérience, a été utilisée une carte bancaire émise en novembre 1999.
+<br>
+Cependant, les résultats trouvés coincident exactement avec une 
+expérience faite sur 2 autres cartes, l'une émise en janvier 2000 et 
+l'autre
+émise en avril 2001 (les 2 cartes correspondant à un compte bancaire en 
+euro mais la carte était en franc aussi) 
+<br>
+Si vous faites l'expérience sur votre propre carte bancaire émise depuis
+ novembre 1999, vous pourrez donc reproduire l'expérience.
+<br>
+Dans ce paragraphe, on suppose que vous êtes familier avec l'exploration d'une carte bancaire 
+car vous avez essayé le paragraphe précédent.
+
+</a><h5><a name="new">LECTURE NOUVELLE CARTE en 09 E0 : </a></h5>
+
+<a name="new">Après une réponse au reset, on lit avec CardEasy 32 octets en 09E0, cela donne le résultat suivant.
+<br>
+</a><center>
+<a name="new"><img src="explorer_fichiers/LP112001_dump_09E0.jpg">
+<br>
+Exemple de lecture à partir de l'adresse en 09E0 sur une carte émise en novembre 1999
+</a></center>
+<p>
+<a name="new">On peut constater apparemment qu'il n'y a pas beaucoup de nouveautés, le type de carte reste 3F E5,
+ce qui correspond à une carte bancaire franco française.
+Il n'y a rien non plus après l'adresse 09 FF, la carte a toujours 1 kilo octet de mémoire, ce qui est obsolète actuellement.
+
+<br>
+Résultats affichés dans la fenêtre du bas de CardEasy :<br>
+Card reset OK, ATR= 3F 65 25 08 36 04 6C 90 00 <br>
+&lt; BC B0 09 E0 00 20<br>
+&gt; 9000 (SW1,SW2)<br>
+&gt; 3F E5 20 02 08 4D 00 4A 1F 00 C7 2C ED 19 9F 55 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 <br>
+
+
+</a></p><h5><a name="new">ZONES D'ADRESSES DE LA NOUVELLE CARTE : </a></h5>
+
+<a name="new">Selon la </a><a href="#adressage_expiree">méthodologie vue pour une carte expirée</a>, on décode les données lues sur une carte émise en novembre 1999 à partir des adresses 09C0 :
+<br>
+<center>
+<img src="explorer_fichiers/LP112001_dump_09C0.jpg">
+<br>
+Exemple de lecture à partir de l'adresse en 09C0 sur une carte émise en novembre 1999
+</center>
+<p>
+Résultats lecture en 09 C0 :<br>
+&lt; BC B0 09 C0 00 20<br>
+&gt; 9000 (SW1,SW2)<br>
+&gt; 1C 5F F4 1F 1F F4 0A C3 0A C3 0A 57 09 F1 08 D9 3F E5 20 02 08 4D 00 4A 1F 00 C7 2C ED 19 9F 55 <br>
+
+<table border="1">
+<tbody><tr>
+
+<td>
+<b>Nom zone</b>
+</td>
+
+<td>
+<b>Adresse définition</b>
+</td>
+
+<td>
+<b>Octets à l'adresse définition</b>
+</td>
+
+<td>
+<b>Traduction en binaire des données à l'adresse définition</b>
+</td>
+
+
+<td>
+<b>11 premiers bits et ajout 3 bits à 0 (*8)</b>
+</td>
+
+<td>
+<b>Résultat zone d'adresse</b>
+</td>
+
+
+</tr>
+
+<tr>
+<td>
+ADL
+</td>
+
+<td>
+09C8
+</td>
+
+<td>
+<!-- Octets à l'adresse définition -->
+1F F4
+</td>
+
+<td>
+<!-- Traduction en binaire des données à l'adresse définition-->
+0001 1111 1111 1000
+</td>
+
+<td>
+<!-- Ajout 3 bits à 0 (*8) -->
+00 0111 1111 1000
+</td>
+
+<td>
+<!--  Résultat zone d'adresse -->
+<b>07 F8</b>
+</td>
+
+</tr>
+
+<tr>
+<td>
+ADT
+</td>
+<td>
+09CC
+</td>
+
+<td>
+<!-- Octets à l'adresse définition -->
+0A C3
+</td>
+
+<td>
+<!-- Traduction en binaire des données à l'adresse définition-->
+0000 1010 1100 0011
+</td>
+
+<td>
+<!-- Ajout 3 bits à 0 (*8) -->
+00 0010 1011 0000
+</td>
+
+<td>
+<!--  Résultat zone d'adresse -->
+<b>
+02 B0
+</b>
+</td>
+
+
+</tr>
+
+<tr>
+<td>
+ADC
+</td>
+<td>
+09D0
+</td>
+
+<td>
+<!-- Octets à l'adresse définition -->
+0A C3
+</td>
+
+<td>
+<!-- Traduction en binaire des données à l'adresse définition-->
+0000 1010 1100 0011
+</td>
+
+<td>
+<!-- Ajout 3 bits à 0 (*8) -->
+00 0010 1011 0000
+</td>
+
+<td>
+<!--  Résultat zone d'adresse -->
+<b>
+02 B0
+</b>
+</td>
+
+
+</tr>
+
+<tr>
+<td>
+ADM
+</td>
+<td>
+09D4
+</td>
+
+<td>
+<!-- Octets à l'adresse définition -->
+0A 57
+</td>
+
+<td>
+<!-- Traduction en binaire des données à l'adresse définition-->
+0000 1010 0101 0111
+</td>
+
+<td>
+<!-- Ajout 3 bits à 0 (*8) -->
+00 0010 1001 0000
+</td>
+
+<td>
+<!--  Résultat zone d'adresse -->
+<b>
+02 90
+
+</b>
+</td>
+
+
+</tr>
+
+<tr>
+
+<td>
+AD2
+</td>
+
+<td>
+09D8
+</td>
+
+<td>
+<!-- Octets à l'adresse définition -->
+09 F1
+</td>
+
+<td>
+<!-- Traduction en binaire des données à l'adresse définition-->
+0000 1001 1111 0001
+</td>
+
+<td>
+<!-- Ajout 3 bits à 0 (*8) -->
+00 0010 0111 1000
+</td>
+
+<td>
+<!--  Résultat zone d'adresse -->
+<b>
+02 78
+</b>
+</td>
+
+
+</tr>
+
+<tr>
+<td>
+ADS
+</td>
+<td>
+09DC
+</td>
+
+<td>
+<!-- Octets à l'adresse définition -->
+08 D9
+</td>
+
+<td>
+<!-- Traduction en binaire des données à l'adresse définition-->
+0000 1000 1101 1001
+</td>
+
+<td>
+<!-- Ajout 3 bits à 0 (*8) -->
+00 0010 0011 0000
+</td>
+
+<td>
+<!--  Résultat zone d'adresse -->
+<b>
+02 30
+</b>
+</td>
+
+
+</tr>
+
+<tr>
+<td>
+AD1
+</td>
+<td>
+09E8
+</td>
+
+<td>
+<!-- Octets à l'adresse définition -->
+08 4D
+</td>
+
+<td>
+<!-- Traduction en binaire des données à l'adresse définition-->
+0000 1000 0100 1101
+</td>
+
+<td>
+<!-- Ajout 3 bits à 0 (*8) -->
+00 0010 0001 0000
+</td>
+
+<td>
+<!--  Résultat zone d'adresse -->
+<b>
+02 10 
+</b>
+</td>
+
+
+</tr>
+
+</tbody></table>
+
+Comme on peut le voir, ADL est maintenant à 07 F8, la zone de lecture libre s'est donc agrandie, 
+on va lire à cette adresse maintenant :
+
+<a name="va_new">
+</a></p><h5><a name="va_new">Lecture zone Valeur d'authentification de la puce carte émise en novembre 1999 : </a></h5>
+
+<a name="va_new">On lit 52 octets (34h en hexa) à partir de l'adresse 07F8 sur la carte émise en novembre 1999 :
+on trouve cela :
+<br>
+
+</a><center>
+<a name="va_new"><img src="explorer_fichiers/VA_new_LP112001_07F8_34_masquee.jpg">
+<br>
+Exemple de lecture à partir de l'adresse en 09C0 sur une carte émise en novembre 1999
+</a></center>
+<p>
+<a name="va_new">&lt; BC B0 07 F8 00 34<br>
+&gt; 9000 (SW1,SW2)<br>
+&gt; 2E 03 30 33 30 00 09 29 36 01 58 98 32 DA 4A 66 3A BE D3 72 3A FF 
+59 AC 37 C3 7C 09 3A DC C2 D3 30 F5 61 9E 3E D5 75 38 3A E6 B6 FC 39 XX 
+XX XX XX XX XX XX <br>
+
+
+<font size="5">Mais comme c'est étrange ! On trouve un prestataire 03 
+et une Valeur d'authentification de 320 bits à l'adresse ADL ! 
+On croyait que les cartes émises depuis novembre 1999 avait une valeur d'authentification allongée ???
+<br>
+On nous aurait menti ?
+</font>
+<br>
+
+On verra par la suite que cette Valeur d'authentification (VA) à 320 
+bits a bien été calculée à l'aide de la clé cassée mais qu'il y a une 
+autre valeur d'authentification, de 768 bits cette fois ci.
+
+</a></p><h5><a name="va_new">Lecture zone identifiant de la puce carte émise en novembre 1999 : </a></h5>
+<a name="va_new">Juste après le prestataire 03 se trouve la zone identifiant du prestataire 02 à l'adresse 0860 :
+<br>
+On lit 64 octets (40h en hexa) à partir de l'adresse 0860 sur la carte émise en novembre 1999 :
+on trouve cela :
+<br>
+
+</a><center>
+<a name="va_new"><img src="explorer_fichiers/VA_new_LP112001_0860_40_masquee.jpg">
+<br>
+Lecture de la zone identifiant sur une carte émise en novembre 1999 
+(le numéro de carte bancaire a été masqué par des X et le nom du porteur a été masqué par des Y)
+</a></center>
+<p>
+<a name="va_new">Résultat de la lecture de 64 octets en 0860 :<br>
+&lt; BC B0 08 60 00 40<br>
+&gt; 9000 (SW1,SW2)<br>
+&gt; 2E 02 38 F1 30 04 97 XX 3X XX XX XX XX XX XF FF 31 01 99 11 32 50 
+01 11 32 50 54 97 34 D5 22 0Y 3Y YY YY YY 3Y YY YY Y2 30 YY YY YY 3Y Y2 
+02 02 30 20 20 20 32 02 02 02 30 20 F0 20 2E 16 70 3A <br>
+
+</a></p><h5><a name="va_new">Vérification de la Valeur d'authentification</a></h5>
+<a href="#verif_va_expiree">Voir les calculs faits pour une carte expirée pour les détails</a>
+<br>
+En élevant au cube les 48 octets de la valeur d'authentification stockée
+ à partir de l'adresse 08 00 (en supprimant les quartets de "3" de 
+redondance tous les 4 octets)
+modulo la clé publique cassée, on retrouve :<br>
+
+8E00000497XXXXXXXXXXXXXFFF109911011100008E00000497XXXXXXXXXXXXXFFF1099110111
+<br>
+(les X représentent le numéro masqué)
+
+<br>
+soit la redondance du motif de l'identifiant (stockée à partir des adresses 0868) 
+de la date d'expiration et de la date de début de validité de la carte.
+
+<h5>Lecture Valeur d'authentification "allongée" de la puce carte émise en novembre 1999 : </h5>
+Juste après le prestataire 02 se trouve la zone VA allongée correpsondant au prestataire 16 à partir de l'adresse 08D8 :
+<br>
+On lit 78h octets (120 octets en décimal) à partir de l'adresse 08D8 sur la carte émise en novembre 1999 :
+on trouve cela :
+<br>
+
+<center>
+<img src="explorer_fichiers/VA_allongee_LP112001_08D8_78_masquee.jpg">
+<br>
+Lecture de la valeur d'authentification allongée sur une carte émise en novembre 1999 
+(elle est  masquée partiellement par des X)
+</center>
+<p>
+Compte tenu de la taille de 120 octets de cette zone, elle correspond à 
+une clé de 768 bits (en supprimant les quartets "3" de redondance)
+<br>
+Il y a donc bien une valeur d'authentification allongée <strong>mais pourquoi la clé cassée subsiste t'elle ?</strong>
+<br>
+<strong>(Parce que seuls les terminaux de paiement en version 5.2 lisent cette clé allongée qu'il est 
+prévu de lire la clé cassée jusqu'en 2004) !</strong>
+<br>
+Surtout <strong>pourquoi peut on toujours lire cette Valeur d'authentification sans avoir besoin du code secret ?</strong>
+Elle est en effet située dans une zone publique en lecture, c'était tout de même possible de la stocker ailleurs.
+
+<br>
+On croit rêver, pas besoin du code secret à 4 chiffres pour cloner une carte allongée, et cela jusqu'à quand ? 2020 ?
+
+</p><h5>Lecture de l'historique des transactions</h5>
+
+L'historique des transactions n'a guère changé, sauf que sa taille est 
+plus réduite du fait de l'apparition de la Valeur d'authentification 
+allongée, voir le <a href="#protegee_expiree">paragraphe correspondant</a>.
+
+
+<a name="euro">
+</a><h3><a name="euro">EXPLORATION SUR UNE CARTE EN "EURO" : </a></h3>
+<a name="euro">C'est une blague, il n'y a pas de carte bancaire en euro !
+<br>
+Nous avons fait la même expérience sur une carte associée à un compte 
+bancaire en euro de l'auteur émise en janvier 2000, ainsi qu'une autre 
+en avril 2001
+il n'y a pas de différence, la carte bancaire a "franc" (code 250) comme
+ code devise et "français" (code 250) comme langue
+L'historique des transactions n'indique 
+pas la devise de la transaction, par exemple, pour une opération d'achat
+ de 82 francs de tickets à la SNCF (correspondant à 12.50 EURO), 
+l'historique indiquera 12 si le porteur choisit de faire une transaction
+ en euro et 82 s'il choisit de passer la transaction en franc 
+(en plus les centimes ne sont jamais stockées dans l'historique des 
+transactions de la puce).
+
+<br>
+cet historique est donc inutilisable (les retraits d'argent ne sont pas 
+non plus indiqués dans l'historique, seuls les paiements avec un 
+terminal de paiement chez un commerçant acceptant la puce sont 
+indiqués).
+
+<br>
+Ce bug est impardonable car il génère déjà des litiges 
+(des victimes se font débiter une somme en </a><a href="http://parodie.com/monetique/vulneuro.htm">euro</a> alors qu'elles 
+croyaient effectuer une transaction en franc)
+<br>
+Note : le code du franc est 250, celui de l'euro est 978 mais il n'y a pas actuellement de carte bancaire en euro.
+
+<a name="bloquee">
+</a><h3><a name="bloquee">EXPLORATION SUR UNE CARTE BLOQUEE : </a></h3>
+<a name="bloquee">Une carte à puce bloquée est une carte à puce dont 3 codes à 4 chiffres faux ont été présentés consécutivement.
+Ces cartes peuvent être réactivées en présence du titulaire légitime chez certaines banques.
+<br>
+L'expérience a pas été tentée sur une carte bloquée de l'auteur avec pour date d'expiration 05/1995 
+(bloquée sur un distributeur de billets de train la SNCF qui n'attendent pas 3 essais infructueux pour bloquer la carte).
+<br>
+Là aussi la zone de lecture avec la valeur d'authentification 320 bits, 
+la zone identification du porteur entre 08E0 et 09FF ont pu être lue 
+sans présenter le code secret.
+<br>
+Les cartes à puce bloquées peuvent donc toujours être clonées sans connaître le code secret !
+<br>
+Par contre il n'est pas possible de consulter l'historique des transactions car cela requiert le code secret 
+et la présentation du code ne fonctionne pas si la carte est bloquée.
+
+</a><a name="deroulement_paiement">
+</a><h3><a name="deroulement_paiement">DEROULEMENT PAIEMENT PAR CARTE BANCAIRE : </a></h3>
+<a name="deroulement_paiement">Schématiquement les opérations suivantes 
+sont faites lors d'un paiement par carte bancaire à puce sur un terminal
+ de paiement électronique
+ (cela dépend des versions du terminal de paiement) :
+<br>
+1. Le consommateur choisit un bien ou un service et souhaite présente sa carte bancaire à puce pour le réglement
+<br>
+2. Le porteur de carte introduit sa carte dans le lecteur
+<br>
+3. Le commerçant tape le montant de la transaction sur le terminal de paiement en choisissant la devise (Francs ou euro)
+et appuie sur le bouton pour déclencher la transaction
+<br>
+4. Le terminal de paiement lit la zone libre de la carte bancaire
+<br>
+5. Le terminal de paiement authentifie la carte bancaire (le mot "Authentification" apparait souvent sur le lecteur)
+<br>
+Pour cela le terminal de paiement élève le prestataire 03 (Valeur d'authentifcation à 320 bits) à la puissance 3 modulo 
+la clé publique et vérifie que le résultat obtenu correspond bien à une redondance de l'identifiant du prestataire 02.
+<br>
+ou si le terminal de paiement est en version 5.2 et que la carte a été émise depuis novembre 1999, l'authentification 
+est faite à partir du prestataire 16 (Valeur d'authentification allongée).
+<br>
+L'authentification de la carte est finie à ce moment là.
+<br>
+6. Le terminal vérifie que le numéro de la carte ne figure pas dans sa 
+liste noire (stocke quelque milliers de numéros en opposition)
+<br>
+7. Le terminal demande  au porteur de rentrer le code PIN secret à 4 chiffres
+<br>
+8. Le porteur rentre le code PIN secret à 4 chiffres
+<br>
+9. La transaction est inscrite dans la liste des transactions
+<br>
+10. La carte fait un calcul cryptographique DES à partir d'un jeu secret de la carte
+(le résultat ne sert que pour l'impression du certificat de paiement qui sera imprimé sur la facturette)
+<br>
+11. Le terminal de paiement fait un autre calcul cryptographique DES à 
+partir du résultat de la carte 
+et imprime le résultat de ce calcul sur 2 facturettes ainsi que les 
+informations sur la transactions (montant transaction, date, nom 
+commerçant, 
+numéro de carte complet ou masqué, 
+<br>
+12. Selon certaines circonstances (carte à appel systématique ou transaction supérieure à 600 francs ou autre), 
+le terminal de paiement fait un appel téléphonique au central pour avoir une demande d'autorisation.
+Ce central indique si le numéro est en opposition ou pas et si le numéro est attaché à un compte valide ou non. 
+<br>
+13. Si toutes les étapes ont été franchies avec succès, la transaction est validée, 
+<br>
+14.la transaction est réputée 
+irrépudiable en vertu de l'</a><a href="http://parodie.com/monetique/juridique.htm#repudiation">article L132-2 du code monétaire et financier</a> (sauf cas de perte ou de vol).
+<br>
+15.le commerçant livre le bien ou fournitle service.
+<br>
+16. En fin de journée, la liste des transactions avec les numéros de carte sont transmises 
+par la ligne téléphonique au central de la banque. La liste des numéros en opposition est également mise à jour.
+<br>
+17. En cas de contestation sur un paiement par un porteur, la banque du 
+porteur transmet la contestation 
+à la banque du commerçant, la banque du commerçant demande au commerçant
+ de fournir la facturette et le descritif du produit ou service 
+fourni en contrepartie du paiement, 
+le commerçant fourni le justificatif avant l'ultimatum fixé, sinon il 
+n'est pas payé,
+la banque du commerçant transmet la facturette à la banque du porteur de
+ carte,
+la banque du porteur de carte vérifie le calcul du certificat de 
+paiement sur la facturette.
+<br>
+Cependant, le calcul du certificat de paiement est bien souvent 
+systématiquement faux car il est très difficile à calculer 
+et les concepteurs de systèmes de paiement n'ont pas de moyen de 
+vérifier le calcul : seule la banque émettrice de la carte peut le faire
+ !
+<br>
+Ce certificat de paiement ne peut servir de preuve car les banques ne 
+peuvent être juges et parties, seules elles peuvent le vérifier
+et elles mentent systématiquement.
+<p>
+<a href="http://parodie.com/monetique/vulnsubstitution_puce.htm">En 
+substituant la puce par une autre puce dont on connait le code secret 
+entre les étapes 7 et 8, il est possible de débiter une carte dont on 
+ignore le code</a>
+
+<a name="droit">
+</a></p><h3><a name="droit">A t'on le droit d'explorer et d'observer sa carte ?</a></h3>
+<a name="droit">Désolé pour ce paragraphe triste voire inutile, 
+il est nécessaire à cause des apprentis juristes des banques qui ne connaissent pas le droit 
+et inventent des nouvelles règles de droit. 
+Au moins, cela économisera des honoraires inutiles aux banques !
+<br>
+C'est clair, si les cartes bancaires présentent des failles, les banques n'ont à s'en prendre 
+qu'à elles mêmes et retirer au plus vite toutes les cartes en circulation 
+au lieu de continuer à fourguer de telles passoires.
+<br>
+Les banques s'effarouchent de tout, elles font n'importe quoi, commettent pleins d'erreurs, 
+n'assument pas leurs responsabilités : au lieu de rembourser intégralement les victimes 
+et payer le renouvellement du parc de cartes et de terminaux, elles s'enrichissent grâce à la fraude 
+(augmentation des commissions, pas de garantie des paiements à distance, perception de frais d'opposition, d'assurance, 
+de renouvellement de carte, d'enquêtes inutiles) 
+mais elles n'aiment pas que l'on parle de la fraude car le chiffre d'affaire baisse et la 
+confiance du porteur de carte et des commerçants s'effrite (ce qui est bien normal).
+<br>
+Du coup, les banques, au lieu de corriger les failles, ont pris pour bouc émissaire la presse.
+<br>
+Les banques aiment encore moins les détails techniques car cela permet aux victimes de mettre en évidence la faute des banques
+et donc d'engager leur responsabilité.
+<br>
+Cependant, la constitution est ainsi faite et garantie le droit à la 
+liberté d'expression, ne peut être interdit que ce qui est illégal 
+et prévu par la loi. La constitution prévoit aussi que la loi ne peut 
+interdire que les actions nuisibles à la société. 
+Une loi devrait donc interdire les cartels nuisibles à la société.
+<br>
+Même si une loi scélérate interdisait, par extraordinaire, de parler des cartes bancaires 
+(ce qui n'est pas le cas, la France n'est pas encore le régime des talibans), 
+la convention européenne des droits de l'homme prévoit que la liberté d'expression ne peut être restreinte 
+que dans les cas nécessaires dans une société démocratique. 
+Or il n'est nullement nécessaire de faire perdurer le mythe de l'inviolabilité des cartes bancaires à puce.
+<br>
+Pour savoir s'il est légal d'observer et d'explorer sa carte bancaire à puce, il suffit de lire son contrat carte bancaire.
+Ce contrat, intitulé "conditions générales d'utilisation de la carte de paiement" 
+qui dit que la carte est rigoureusement personnelle. ce qui est bien, l'auteur de cette page a fait les observations 
+sur les cartes qui lui ont été remises par sa banque et portant son nom. 
+Vous êtes également invité à ne faire ces opérations que sur votre propre carte.
+<br>
+Il n'est pas indiqué dans le contrat qu'il est interdit d'observer la carte, il n'est pas non plus interdit 
+de s'en servir pour dégivrer les vitres de sa voiture.
+<br>
+Si l'on considère que la carte de paiement comporte un logiciel installé
+ sur le microprocesseur qui répond aux ordres que l'on envoie, 
+il faut donc aussi voir les dispositions du code de la propriété 
+intellectuelle relatives aux logiciels :
+
+<br>
+</a><a href="http://www.celog.fr/cpi/lv1_tt2.htm#122-6" target="_top">Article L 122-6</a>
+<br>
+   Sous réserve des dispositions de l'article L. 122-6-1, le droit 
+d'exploitation appartenant à l'auteur d'un logiciel comprend le droit 
+d'effectuer et d'autoriser :
+<br>
+   1° La reproduction permanente ou provisoire d'un logiciel en tout ou 
+partie par tout moyen et sous toute forme. Dans la mesure où le 
+chargement, l'affichage, l'exécution, la transmission ou le stockage de 
+ce logiciel nécessitent une reproduction, ces actes ne sont possibles 
+qu'avec l'autorisation de l'auteur ;
+<br>
+   2° La traduction, l'adaptation, l'arrangement ou toute autre 
+modification d'un logiciel et la reproduction du logiciel en résultant ;
+<br>
+   3° La mise sur le marché à titre onéreux ou gratuit, y compris la 
+location, du ou des exemplaires d'un logiciel par tout procédé. 
+Toutefois, la première vente d'un exemplaire d'un logiciel dans le 
+territoire d'un Etat membre de la Communauté européenne ou d'un Etat 
+partie à l'accord sur l'Espace économique européen par l'auteur ou avec 
+son consentement épuise le droit de mise sur le marché de cet exemplaire
+ dans tous les Etats membres à l'exception du droit d'autoriser la 
+location ultérieure d'un exemplaire.
+<br>
+
+
+<a href="http://www.celog.fr/cpi/lv1_tt2.htm#122-6-1" target="_top">Article L 122-6-1</a>
+<br>
+I. Les actes prévus aux 1° et 2° de l'article L. 122-6 ne sont pas 
+soumis à l'autorisation de l'auteur lorsqu'ils sont nécessaires pour 
+permettre l'utilisation du logiciel, conformément à sa destination, par 
+la personne ayant le droit de l'utiliser, y compris <strong>pour corriger des erreurs</strong>.
+<br>
+   Toutefois, l'auteur est habilité à se réserver par contrat le droit 
+de corriger les erreurs et de déterminer les modalités particulières 
+auxquelles seront soumis les actes prévus aux 1° et 2° de l'article L. 
+122-6, nécessaires pour permettre l'utilisation du logiciel, 
+conformément à sa destination, par la personne ayant le droit de 
+l'utiliser.
+<br>
+
+   II. La personne ayant le droit d'utiliser le logiciel peut faire une <strong>copie de sauvegarde</strong> lorsque celle-ci est nécessaire pour préserver l'utilisation du logiciel.
+<br>
+   III. La personne ayant le droit d'utiliser le logiciel <strong>peut 
+sans l'autorisation de l'auteur observer, étudier ou tester le 
+fonctionnement de ce logiciel afin de déterminer les idées et principes 
+qui sont à la base de n'importe quel élément du logiciel lorsqu'elle 
+effectue toute opération de chargement, d'affichage, d'exécution, de 
+transmission ou de stockage du logiciel qu'elle est en droit d'effectuer</strong>.
+<br>
+   IV. La <strong>reproduction du code du logiciel</strong> ou la 
+traduction de la forme de ce code n'est pas soumise à l'autorisation de 
+l'auteur lorsque la reproduction ou la traduction au sens du 1° ou du 2°
+ de l'article L. 122-6 est indispensable pour obtenir les informations 
+nécessaires à l'interopérabilité d'un logiciel créé de façon 
+indépendante avec d'autres logiciels, sous réserve que soient réunies 
+les conditions suivantes :
+<br>
+   1° Ces actes sont accomplis par la personne ayant le droit d'utiliser
+ un exemplaire du logiciel ou pour son compte par une personne habilitée
+ à cette fin ;
+<br>
+   2° Les informations nécessaires à l'interopérabilité n'ont pas déjà 
+été rendues facilement et rapidement accessibles aux personnes 
+mentionnées au 1° ci-dessus ;
+<br>
+   3° Et ces actes sont limités aux parties du logiciel d'origine nécessaires à cette interopérabilité.
+<br>
+   Les informations ainsi obtenues ne peuvent être :
+<br>
+   1° Ni utilisées à des fins autres que la réalisation de l'interopérabilité du logiciel créé de façon indépendante ;
+<br>
+   2° Ni communiquées à des tiers sauf si cela est nécessaire à l'interopérabilité du logiciel créé de façon indépendante ;
+<br>
+   3° Ni utilisées pour la mise au point, la production ou la 
+commercialisation d'un logiciel dont l'expression est substantiellement 
+similaire ou pour tout autre acte portant atteinte au droit d'auteur.
+<br>
+   V. Le présent article ne saurait être interprété comme permettant de 
+porter atteinte à l'exploitation normale du logiciel ou de causer un 
+préjudice injustifié aux intérêts légitimes de l'auteur.
+<br>
+   Toute stipulation contraire aux dispositions prévues aux <strong>II, III et IV du présent article est nulle et non avenue</strong>.
+
+
+<br>
+<a href="http://www.celog.fr/cpi/lv1_tt2.htm#122-6-2" target="_top">Article L 122-6-2</a>
+<br>
+   Toute publicité ou notice d'utilisation relative aux moyens 
+permettant la suppression ou la neutralisation de tout dispositif 
+technique protégeant un logiciel doit mentionner que l'utilisation 
+illicite de ces moyens est passible des sanctions prévues en cas de 
+contrefaçon.
+<br>
+   Un décret en Conseil d'Etat fixera les conditions d'application du présent article.
+
+
+<p>
+Donc en vertu de l'article L 122-6-1 III on est libre d'observer, 
+étudier et tester le fonctionnement du logiciel pour en tirer les 
+principes de fonctionnement. 
+On ne va pas donc pas se gêner.
+</p><p>
+Les données inscrites dans la carte reproduites par la suite, ne sont pas du "code" source ou exécutable du logiciel 
+mais juste des données inscrites sur la carte et ne sont pas des oeuvres de l'esprit, 
+j'ai donc le droit de les reproduire librement 
+</p><p>
+En vertu de l'article R335-2 du Code de la propriété intellectuelle, 
+<strong>L'UTILISATION DE MOYEN DE SUPPRESSION OU DE NEUTRALISATION DE TOUT DISPOSITIF TECHNIQUE PROTEGEANT UN LOGICIEL, 
+EST PASSIBLE DES SANCTIONS PREVUES EN CAS DE CONTREFACON</strong>.
+</p><p>
+Cependant, cette page ne s'intéresse pas à la contrefaçon de la puce et encore moins à la désactivation des protections 
+de la puce puisqu'il n'y a pas de protection sur la puce des cartes bancaires !
+</p><p>
+<strong>Vous êtes surtout averti qu'une mauvaise manipulation peut détruire ou bloquer la puce, vous faire perdre des données 
+et que vous faites ces expériences à vos risques et périls 
+et nous ne donnons ni garantie ni assistance sur le résultat de vos expériences, nous ne faisons aucune assistance sur ce projet</strong>
+
+
+
+<a name="liens">
+</a></p><h3><a name="liens">Liens</a></h3>
+
+
+<table border="1" cellpadding="0" cellspacing="0" width="100%">
+
+  <tbody><tr>
+    <td align="left" width="30%">
+<a href="http://parodie.com/monetique/brevedemomath_04032000.htm">04/03/2000 Secret carte bancaire</a>
+    </td>
+    <td>
+La formule secrète des cartes bancaires révélées sur Internet
+</td></tr>
+
+  <tr>
+    <td align="left" width="30%">
+<a href="http://www.parodie.com/monetique/" target="_top">Parodie.com</a>
+    </td>
+    <td>
+Page d'accueil site sur les failles des cartes bancaires
+</td></tr>
+
+</tbody></table>
+
+
+<p>
+<a name="liens">Copyright 2000-2001 Laurent PELE
+<br>
+Utilisation à des fins éducatives exclusivement. Tout usage détourné 
+donnera lieu à des poursuites pour délit de contrefaçon de logiciel en 
+vertu de l'article L 335-3 alinéa 2 du code de la propriété 
+intellectuelle. 
+
+
+</a></p></form></body></html>

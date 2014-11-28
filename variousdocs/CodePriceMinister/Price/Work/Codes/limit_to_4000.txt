@@ -1,0 +1,4 @@
+#if($!line.get(4))
+    #set($annonce = $!line.get(4).replaceAll("</?[^>]*>",""))
+    #trunc($annonce 490 '...')
+#end

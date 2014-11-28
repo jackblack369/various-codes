@@ -1,0 +1,4 @@
+#if ($line.get(12))
+#set($productId = $!id.searchEan($!line.get(12)))
+$!productId
+#end
