@@ -1,0 +1,8 @@
+Options +FollowSymlinks
+RewriteEngine on
+
+RewriteRule ^details-([0-9]+)-([0-9]+)-([0-9]+)-([0-9]+)\.html$ /details.php?id=$1&code=$2&ligne=$3&valide=$4 [L]
+
+RewriteRule ^exemple\.html$ /rewriting/exemple.php [L]
+
+

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<carnet_adresse>
+<personne>
+		<nom>VILLENEUVE</nom>
+		<prenom>Christophe</prenom>
+		<adresse1>route de Paris</adresse1>
+		<adresse2></adresse2>
+		<codepostal>75000</codepostal>
+		<ville>Paris</ville>
+</personne>
+<personne>
+		<nom>FDQS</nom>
+		<prenom>Om</prenom>
+		<adresse1>op^pol^po</adresse1>
+		<adresse2>op</adresse2>
+		<codepostal>0</codepostal>
+		<ville></ville>
+</personne>
+<personne>
+		<nom>TOTO</nom>
+		<prenom>Toto</prenom>
+		<adresse1>gsd</adresse1>
+		<adresse2>M</adresse2>
+		<codepostal>91000</codepostal>
+		<ville>pairs</ville>
+</personne>
+<personne>
+		<nom></nom>
+		<prenom>Lkmlskl</prenom>
+		<adresse1></adresse1>
+		<adresse2></adresse2>
+		<codepostal>0</codepostal>
+		<ville></ville>
+</personne>
+</carnet_adresse>

@@ -1,0 +1,1297 @@
+O:9:"MagpieRSS":21:{s:6:"parser";i:0;s:12:"current_item";a:0:{}s:5:"items";a:20:{i:0;a:7:{s:5:"title";s:33:"Gartner rédige un rapport sur PHP";s:4:"link";s:68:"http://feedproxy.google.com/~r/industrialisation-php/~3/yTvmjAqitAE/";s:11:"description";s:412:"La célèbre société de recherche et de conseil Gartner a consacré début décembre un rapport à PHP, son passé, son présent et son avenir.
+Ce rapport estime que :
+
+Le nombre de développeurs PHP dans le monde va passer de 4 millions cette année à 5 millions à l'horizon 2013 ;
+A court terme, PHP va rester une [...]<img src="http://feeds.feedburner.com/~r/industrialisation-php/~4/yTvmjAqitAE" height="1" width="1"/>";s:7:"pubdate";s:31:"Sat, 02 Jan 2010 18:45:46 +0100";s:4:"guid";s:68:"http://feedproxy.google.com/~r/industrialisation-php/~3/yTvmjAqitAE/";s:7:"summary";s:412:"La célèbre société de recherche et de conseil Gartner a consacré début décembre un rapport à PHP, son passé, son présent et son avenir.
+Ce rapport estime que :
+
+Le nombre de développeurs PHP dans le monde va passer de 4 millions cette année à 5 millions à l'horizon 2013 ;
+A court terme, PHP va rester une [...]<img src="http://feeds.feedburner.com/~r/industrialisation-php/~4/yTvmjAqitAE" height="1" width="1"/>";s:14:"date_timestamp";i:1262454346;}i:1;a:7:{s:5:"title";s:34:"Saviez vous qu'il y a un 0 janvier";s:4:"link";s:93:"http://moosh.et.son.brol.be/blog/index.php/2009/12/31/1016-saviez-vous-qu-il-y-a-un-0-janvier";s:11:"description";s:2261:" <p><a href="http://fr.wikipedia.org/wiki/0_janvier">0 janvier</a></p>
+
+
+<p>Alleï. Bonne année !!</p>
+
+
+<p>Non non je ne vais pas m'en arrêter à ca.</p>
+
+
+<p>Voici d'autres petites  astuces ou choses à savoir...</p>
+
+
+
+<p>1 jour =  24 heures x 60 minutes x 60 secondes ...soit 86400 secondes..</p>
+
+
+<p>toujours&nbsp;?</p>
+
+
+<p>non&nbsp;: occasionnellement en juin et/ou en décembre on ajoute une <a href="http://fr.wikipedia.org/wiki/Seconde_additionnelle" hreflang="fr">seconde additionnelle</a> et on a 86401 secondes donc  l'heure 23:59:60 existe ces 2 jours là. C'est comme pour le 29 février tous les 4 ans. C'est pour corriger un décalage.</p>
+
+
+<p>A propos de ces <a href="http://fr.wikipedia.org/wiki/Ann%C3%A9e_bissextile" hreflang="fr">29 Février</a>. C'est vraiment tous les 4 ans&nbsp;?  enfin presque</p>
+
+
+<p>Il n'y a pas de 29 février les années divisible par 100 qui ne sont pas divisible par 400.</p>
+
+
+<p>Notez que ce n'est pas encore parfait car cela engendre encore une erreur de 3 jours tous les 10 000 ans.</p>
+
+
+<p>Nos amis Suédois et russes ont même eut des <a href="http://fr.wikipedia.org/wiki/Ann%C3%A9e_bissextile#30_f.C3.A9vrier" hreflang="fr">30 Février</a>. Mais ca n'a pas eu beaucoup de succès (et en plus ce n'était pas en même temps).</p>
+
+
+<p><em>Ce post m'a été inspiré par l'article&nbsp;: <a href="http://derickrethans.nl/unix-epoch-and-phps-calendar-system.html" hreflang="en">Unix Epoch and PHP's calendar system</a> de Derick et du livre sur les Dates dans PHP (par Derick Rethans) que j'ai gagné au phpBelgium Meeting de Gent.</em></p>
+
+
+
+<p>En php on utilise <a href="http://fr.wikipedia.org/wiki/ISO_8601" hreflang="fr">ISO 8601</a>, <a href="http://moosh.et.son.brol.be/blog/index.php/2009/10/21/1024-les-codes-ne-sont-pas-des-nombres" hreflang="fr">toujours intéressant à lire</a>.</p>
+
+
+<p>On y trouve un entre autre un lien vers l'explication des <a href="http://fr.wikipedia.org/wiki/Num%C3%A9rotation_ISO_des_semaines#Relation_avec_le_calendrier_gr.C3.A9gorien" hreflang="fr">numérotation de semaines</a> qui est à l'origine de problèmes encontrés avec <a href="" hreflang="fr">php</a> ou  <a href="http://moosh.et.son.brol.be/blog/index.php/2008/01/24/520-select-week-1er-janvier" hreflang="fr">mysql</a></p>";s:7:"pubdate";s:31:"Thu, 31 Dec 2009 23:57:42 +0100";s:4:"guid";s:93:"http://moosh.et.son.brol.be/blog/index.php/2009/12/31/1016-saviez-vous-qu-il-y-a-un-0-janvier";s:7:"summary";s:2261:" <p><a href="http://fr.wikipedia.org/wiki/0_janvier">0 janvier</a></p>
+
+
+<p>Alleï. Bonne année !!</p>
+
+
+<p>Non non je ne vais pas m'en arrêter à ca.</p>
+
+
+<p>Voici d'autres petites  astuces ou choses à savoir...</p>
+
+
+
+<p>1 jour =  24 heures x 60 minutes x 60 secondes ...soit 86400 secondes..</p>
+
+
+<p>toujours&nbsp;?</p>
+
+
+<p>non&nbsp;: occasionnellement en juin et/ou en décembre on ajoute une <a href="http://fr.wikipedia.org/wiki/Seconde_additionnelle" hreflang="fr">seconde additionnelle</a> et on a 86401 secondes donc  l'heure 23:59:60 existe ces 2 jours là. C'est comme pour le 29 février tous les 4 ans. C'est pour corriger un décalage.</p>
+
+
+<p>A propos de ces <a href="http://fr.wikipedia.org/wiki/Ann%C3%A9e_bissextile" hreflang="fr">29 Février</a>. C'est vraiment tous les 4 ans&nbsp;?  enfin presque</p>
+
+
+<p>Il n'y a pas de 29 février les années divisible par 100 qui ne sont pas divisible par 400.</p>
+
+
+<p>Notez que ce n'est pas encore parfait car cela engendre encore une erreur de 3 jours tous les 10 000 ans.</p>
+
+
+<p>Nos amis Suédois et russes ont même eut des <a href="http://fr.wikipedia.org/wiki/Ann%C3%A9e_bissextile#30_f.C3.A9vrier" hreflang="fr">30 Février</a>. Mais ca n'a pas eu beaucoup de succès (et en plus ce n'était pas en même temps).</p>
+
+
+<p><em>Ce post m'a été inspiré par l'article&nbsp;: <a href="http://derickrethans.nl/unix-epoch-and-phps-calendar-system.html" hreflang="en">Unix Epoch and PHP's calendar system</a> de Derick et du livre sur les Dates dans PHP (par Derick Rethans) que j'ai gagné au phpBelgium Meeting de Gent.</em></p>
+
+
+
+<p>En php on utilise <a href="http://fr.wikipedia.org/wiki/ISO_8601" hreflang="fr">ISO 8601</a>, <a href="http://moosh.et.son.brol.be/blog/index.php/2009/10/21/1024-les-codes-ne-sont-pas-des-nombres" hreflang="fr">toujours intéressant à lire</a>.</p>
+
+
+<p>On y trouve un entre autre un lien vers l'explication des <a href="http://fr.wikipedia.org/wiki/Num%C3%A9rotation_ISO_des_semaines#Relation_avec_le_calendrier_gr.C3.A9gorien" hreflang="fr">numérotation de semaines</a> qui est à l'origine de problèmes encontrés avec <a href="" hreflang="fr">php</a> ou  <a href="http://moosh.et.son.brol.be/blog/index.php/2008/01/24/520-select-week-1er-janvier" hreflang="fr">mysql</a></p>";s:14:"date_timestamp";i:1262300262;}i:2;a:7:{s:5:"title";s:18:"Compilation de PHP";s:4:"link";s:64:"http://www.nexen.net/actualites/php/19420-compilation_de_php.php";s:11:"description";s:1363:"<div class="content_header_img">
+					<img alt="Image pour le titre du contenu" src="http://www.nexen.net/images/stories/biseau/conversions.png">
+				    </div><div class="blogcontent">
+Les expressions r&eacute;guli&egrave;res sont tr&egrave;s utilis&eacute;es en PHP. Elles peuvent vous permettre d'effectuer par exemple la recherche de caract&egrave;res alpha-num&eacute;rique.<br />
+Cependant lors de l'installation et la compilation de PHP sur votre serveur avec une version de PCRE personnalis&eacute;, vous pouvez rencontrer des probl&egrave;mes avec les expressions r&eacute;guli&egrave;res si vous d&eacute;sirez utiliser les caract&egrave;res accentu&eacute;s (caract&egrave;res fran&ccedil;ais).<br />
+Padraic Brady propose &agrave; travers son blog une solution qui pourra vous aider<ul><li><img src= "http://www.nexen.net/nx_media/images/drapeaux/en.png" alt="en" witdth="18" height="12" />&nbsp;<a href="http://blog.astrumfutura.com/archives/430-PCRE-Regex-Word-Matching-w-vs-a-zA-Z0-9_.html" title="http://blog.astrumfutura.com/archives/430-PCRE-Regex-Word-Matching-w-vs-a-zA-Z0-9_.html"  onclick="window.location.href='http://www.nexen.net/index.php?option=com_nx_weblink&amp;weblink=PCRE+Regex+Word+Matching%3A+vs+azAZ09_&amp;content_id=0'; return false;"  class="weblink_img">PCRE Regex Word Matching: vs a-zA-Z0-9_</a> (0 visite)</li></ul></div>";s:7:"pubdate";s:31:"Thu, 31 Dec 2009 05:09:34 +0100";s:4:"guid";s:64:"http://www.nexen.net/actualites/php/19420-compilation_de_php.php";s:7:"summary";s:1363:"<div class="content_header_img">
+					<img alt="Image pour le titre du contenu" src="http://www.nexen.net/images/stories/biseau/conversions.png">
+				    </div><div class="blogcontent">
+Les expressions r&eacute;guli&egrave;res sont tr&egrave;s utilis&eacute;es en PHP. Elles peuvent vous permettre d'effectuer par exemple la recherche de caract&egrave;res alpha-num&eacute;rique.<br />
+Cependant lors de l'installation et la compilation de PHP sur votre serveur avec une version de PCRE personnalis&eacute;, vous pouvez rencontrer des probl&egrave;mes avec les expressions r&eacute;guli&egrave;res si vous d&eacute;sirez utiliser les caract&egrave;res accentu&eacute;s (caract&egrave;res fran&ccedil;ais).<br />
+Padraic Brady propose &agrave; travers son blog une solution qui pourra vous aider<ul><li><img src= "http://www.nexen.net/nx_media/images/drapeaux/en.png" alt="en" witdth="18" height="12" />&nbsp;<a href="http://blog.astrumfutura.com/archives/430-PCRE-Regex-Word-Matching-w-vs-a-zA-Z0-9_.html" title="http://blog.astrumfutura.com/archives/430-PCRE-Regex-Word-Matching-w-vs-a-zA-Z0-9_.html"  onclick="window.location.href='http://www.nexen.net/index.php?option=com_nx_weblink&amp;weblink=PCRE+Regex+Word+Matching%3A+vs+azAZ09_&amp;content_id=0'; return false;"  class="weblink_img">PCRE Regex Word Matching: vs a-zA-Z0-9_</a> (0 visite)</li></ul></div>";s:14:"date_timestamp";i:1262232574;}i:3;a:7:{s:5:"title";s:44:"Actualité de développement PECL, edition 261";s:4:"link";s:91:"http://www.nexen.net/actualites/pecl/19417-actualite_de_developpement_pecl,_edition_261.php";s:11:"description";s:1317:"<div class="content_header_img">
+					<img alt="Image pour le titre du contenu" src="http://www.nexen.net/images/stories/biseau/pecl.png">
+				    </div><div class="blogcontent"> 4 paquets ont &eacute;t&eacute; mis &agrave; jour cette semaine :<br />
+<ul><li><a href="http://pecl.php.net/package/ares/download/0.7.0/">ares 0.7.0</a>
+</li><li><a href="http://pecl.php.net/package/ibm_db2/download/1.8.3/">ibm_db2 1.8.3</a>
+</li><li><a href="http://pecl.php.net/package/PDO_IBM/download/1.3.1/">PDO_IBM 1.3.1</a>
+</li><li><a href="http://pecl.php.net/package/timezonedb/download/2009.21/">timezonedb 2009.21</a></li></ul><br />
+PECL est la biblioth&egrave;que d'extensions C de PHP.<br />
+<ul><br />
+<li><img height="12" border="0" alt="en" src="http://www.nexen.net../nx_media/images/drapeaux/en.png" />&nbsp;<a title="http://pecl.php.net" href="http://pecl.php.net/" onclick="window.location.href='http://www.nexen.net/index.php?option=com_nx_weblink&weblink=PECL&content_id=19375'; return false;">PECL</a><br />
+</li><br />
+<li><a title="http://pecl.php.net/packages.php" href="http://pecl.php.net/packages.php" onclick="window.location.href='http://www.nexen.net/index.php?option=com_nx_weblink&weblink=Tous+les+paquets+PECL&content_id=19375'; return false;">Tous les paquets PECL</a> <br />
+</li></ul><br />
+</div>";s:7:"pubdate";s:31:"Wed, 30 Dec 2009 10:10:57 +0100";s:4:"guid";s:91:"http://www.nexen.net/actualites/pecl/19417-actualite_de_developpement_pecl,_edition_261.php";s:7:"summary";s:1317:"<div class="content_header_img">
+					<img alt="Image pour le titre du contenu" src="http://www.nexen.net/images/stories/biseau/pecl.png">
+				    </div><div class="blogcontent"> 4 paquets ont &eacute;t&eacute; mis &agrave; jour cette semaine :<br />
+<ul><li><a href="http://pecl.php.net/package/ares/download/0.7.0/">ares 0.7.0</a>
+</li><li><a href="http://pecl.php.net/package/ibm_db2/download/1.8.3/">ibm_db2 1.8.3</a>
+</li><li><a href="http://pecl.php.net/package/PDO_IBM/download/1.3.1/">PDO_IBM 1.3.1</a>
+</li><li><a href="http://pecl.php.net/package/timezonedb/download/2009.21/">timezonedb 2009.21</a></li></ul><br />
+PECL est la biblioth&egrave;que d'extensions C de PHP.<br />
+<ul><br />
+<li><img height="12" border="0" alt="en" src="http://www.nexen.net../nx_media/images/drapeaux/en.png" />&nbsp;<a title="http://pecl.php.net" href="http://pecl.php.net/" onclick="window.location.href='http://www.nexen.net/index.php?option=com_nx_weblink&weblink=PECL&content_id=19375'; return false;">PECL</a><br />
+</li><br />
+<li><a title="http://pecl.php.net/packages.php" href="http://pecl.php.net/packages.php" onclick="window.location.href='http://www.nexen.net/index.php?option=com_nx_weblink&weblink=Tous+les+paquets+PECL&content_id=19375'; return false;">Tous les paquets PECL</a> <br />
+</li></ul><br />
+</div>";s:14:"date_timestamp";i:1262164257;}i:4;a:7:{s:5:"title";s:13:"Wordpress 2.9";s:4:"link";s:59:"http://www.nexen.net/actualites/php/19419-wordpress_2.9.php";s:11:"description";s:1403:"<div class="content_header_img">
+					<img alt="Image pour le titre du contenu" src="http://www.nexen.net/images/stories/biseau/wordpress.png">
+				    </div><div class="blogcontent">
+La nouvelle version de Wordpress 2.9 vient de sortir apr&egrave;s de nombreuses versions b&eacute;ta.<br />
+Cette nouvelle version est toujours r&eacute;alis&eacute;e en PHP et MySQL 4.1.2 minimum, baptis&eacute;e &ldquo;Carmen&rdquo;, en hommage &agrave; la chanteuse de jazz Carmen McRae. <br />
+Elle apporte :<br />
+<ul><li>Des corrections de bugs</li><li>L'apparition d'une corbeille pour le contenu</li><li>Un mini &eacute;diteur d'image pour r&eacute;aliser des effets en lignes </li><li>Attribution d'une vignette par article.</li></ul>
+<br />
+De nombreuses am&eacute;liorations ont aussi vu le jour comme : <br />
+<ul><li>La gestion des m&eacute;dias</li><li>TinyMCE</li><li>Optimisation des th&egrave;mes par d&eacute;faut </li></ul><br />
+<ul><li><img src= "http://www.nexen.net/nx_media/images/drapeaux/fr.png" alt="fr" witdth="18" height="12" />&nbsp;<a href="http://www.wordpress-fr.net/blog/sortie-de-wordpress-2-9-carmen" title="http://www.wordpress-fr.net/blog/sortie-de-wordpress-2-9-carmen"  onclick="window.location.href='http://www.nexen.net/index.php?option=com_nx_weblink&amp;weblink=wordpress+2.9&amp;content_id=0'; return false;"  class="weblink_img">wordpress 2.9</a> (0 visite)</li></ul></div>";s:7:"pubdate";s:31:"Wed, 30 Dec 2009 09:59:16 +0100";s:4:"guid";s:59:"http://www.nexen.net/actualites/php/19419-wordpress_2.9.php";s:7:"summary";s:1403:"<div class="content_header_img">
+					<img alt="Image pour le titre du contenu" src="http://www.nexen.net/images/stories/biseau/wordpress.png">
+				    </div><div class="blogcontent">
+La nouvelle version de Wordpress 2.9 vient de sortir apr&egrave;s de nombreuses versions b&eacute;ta.<br />
+Cette nouvelle version est toujours r&eacute;alis&eacute;e en PHP et MySQL 4.1.2 minimum, baptis&eacute;e &ldquo;Carmen&rdquo;, en hommage &agrave; la chanteuse de jazz Carmen McRae. <br />
+Elle apporte :<br />
+<ul><li>Des corrections de bugs</li><li>L'apparition d'une corbeille pour le contenu</li><li>Un mini &eacute;diteur d'image pour r&eacute;aliser des effets en lignes </li><li>Attribution d'une vignette par article.</li></ul>
+<br />
+De nombreuses am&eacute;liorations ont aussi vu le jour comme : <br />
+<ul><li>La gestion des m&eacute;dias</li><li>TinyMCE</li><li>Optimisation des th&egrave;mes par d&eacute;faut </li></ul><br />
+<ul><li><img src= "http://www.nexen.net/nx_media/images/drapeaux/fr.png" alt="fr" witdth="18" height="12" />&nbsp;<a href="http://www.wordpress-fr.net/blog/sortie-de-wordpress-2-9-carmen" title="http://www.wordpress-fr.net/blog/sortie-de-wordpress-2-9-carmen"  onclick="window.location.href='http://www.nexen.net/index.php?option=com_nx_weblink&amp;weblink=wordpress+2.9&amp;content_id=0'; return false;"  class="weblink_img">wordpress 2.9</a> (0 visite)</li></ul></div>";s:14:"date_timestamp";i:1262163556;}i:5;a:7:{s:5:"title";s:27:"Rétrospective : Décembre 09";s:4:"link";s:73:"http://www.nexen.net/actualites/php/19418-retrospective_:_decembre_09.php";s:11:"description";s:2084:"<div class="content_header_img">
+					<img alt="Image pour le titre du contenu" src="http://www.nexen.net/images/stories/biseau/nexen.x.png">
+				    </div><div class="blogcontent">
+Les meilleures actualit&eacute;s autour de PHP et MySQL du mois de d&eacute;cembre 2009 ont &eacute;t&eacute; :
+<br />
+<table border="0">
+<tr>
+<td><a href="../../../actualites/php/19378-les__bases_de_zend_framework.php"><img border="0" width="55" height="55" alt="Les  bases de Zend Framework" src="../../../images/stories/biseau/tutoriel.png" /></a></td>
+<td><a href="../../../actualites/php/19378-les__bases_de_zend_framework.php">Les  bases de Zend Framework</a><br />
+</td>
+</tr>
+
+<tr>
+<td><a href="../../../actualites/php/19363-open_web_analytics.php"><img border="0" width="55" height="55" alt="Open Web Analytics" src="../../../images/stories/biseau/openwebanalytics.png" /></a></td>
+<td><a href="../../../actualites/php/19363-open_web_analytics.php">Open Web Analytics</a><br />
+</td>
+</tr>
+
+<tr>
+<td><a href="../../../actualites/php/19379-pourquoi_utiliser_un_bug_tracker_pour_un_usage_personnel.php"><img border="0" width="55" height="55" alt="Pourquoi utiliser un bug tracker pour un usage personnel" src="../../../images/stories/biseau/bug.png" /></a></td>
+<td><a href="../../../actualites/php/19379-pourquoi_utiliser_un_bug_tracker_pour_un_usage_personnel.php">Pourquoi utiliser un bug tracker pour un usage personnel</a><br />
+</td>
+</tr>
+
+<tr>
+<td><a href="../../../actualites/php/19361-php_et_xhprof.php"><img border="0" width="55" height="55" alt="PHP et XHProf" src="../../../images/stories/biseau/xhp.png" /></a></td>
+<td><a href="../../../actualites/php/19361-php_et_xhprof.php">PHP et XHProf</a><br />
+</td>
+</tr>
+
+<tr>
+<td><a href="../../../actualites/php/19381-top_15_des_meilleurs_pratiques.php"><img border="0" width="55" height="55" alt="Top 15 des meilleurs pratiques" src="../../../images/stories/biseau/code.png" /></a></td>
+<td><a href="../../../actualites/php/19381-top_15_des_meilleurs_pratiques.php">Top 15 des meilleurs pratiques</a><br />
+</td>
+</tr>
+
+</table>
+</div>";s:7:"pubdate";s:31:"Wed, 30 Dec 2009 10:55:51 +0100";s:4:"guid";s:73:"http://www.nexen.net/actualites/php/19418-retrospective_:_decembre_09.php";s:7:"summary";s:2084:"<div class="content_header_img">
+					<img alt="Image pour le titre du contenu" src="http://www.nexen.net/images/stories/biseau/nexen.x.png">
+				    </div><div class="blogcontent">
+Les meilleures actualit&eacute;s autour de PHP et MySQL du mois de d&eacute;cembre 2009 ont &eacute;t&eacute; :
+<br />
+<table border="0">
+<tr>
+<td><a href="../../../actualites/php/19378-les__bases_de_zend_framework.php"><img border="0" width="55" height="55" alt="Les  bases de Zend Framework" src="../../../images/stories/biseau/tutoriel.png" /></a></td>
+<td><a href="../../../actualites/php/19378-les__bases_de_zend_framework.php">Les  bases de Zend Framework</a><br />
+</td>
+</tr>
+
+<tr>
+<td><a href="../../../actualites/php/19363-open_web_analytics.php"><img border="0" width="55" height="55" alt="Open Web Analytics" src="../../../images/stories/biseau/openwebanalytics.png" /></a></td>
+<td><a href="../../../actualites/php/19363-open_web_analytics.php">Open Web Analytics</a><br />
+</td>
+</tr>
+
+<tr>
+<td><a href="../../../actualites/php/19379-pourquoi_utiliser_un_bug_tracker_pour_un_usage_personnel.php"><img border="0" width="55" height="55" alt="Pourquoi utiliser un bug tracker pour un usage personnel" src="../../../images/stories/biseau/bug.png" /></a></td>
+<td><a href="../../../actualites/php/19379-pourquoi_utiliser_un_bug_tracker_pour_un_usage_personnel.php">Pourquoi utiliser un bug tracker pour un usage personnel</a><br />
+</td>
+</tr>
+
+<tr>
+<td><a href="../../../actualites/php/19361-php_et_xhprof.php"><img border="0" width="55" height="55" alt="PHP et XHProf" src="../../../images/stories/biseau/xhp.png" /></a></td>
+<td><a href="../../../actualites/php/19361-php_et_xhprof.php">PHP et XHProf</a><br />
+</td>
+</tr>
+
+<tr>
+<td><a href="../../../actualites/php/19381-top_15_des_meilleurs_pratiques.php"><img border="0" width="55" height="55" alt="Top 15 des meilleurs pratiques" src="../../../images/stories/biseau/code.png" /></a></td>
+<td><a href="../../../actualites/php/19381-top_15_des_meilleurs_pratiques.php">Top 15 des meilleurs pratiques</a><br />
+</td>
+</tr>
+
+</table>
+</div>";s:14:"date_timestamp";i:1262166951;}i:6;a:7:{s:5:"title";s:44:"Actualité de développement PECL, edition 261";s:4:"link";s:44:"http://www.nexen.net/content/view/19417/165/";s:11:"description";s:1317:"<div class="content_header_img">
+					<img alt="Image pour le titre du contenu" src="http://www.nexen.net/images/stories/biseau/pecl.png">
+				    </div><div class="blogcontent"> 4 paquets ont &eacute;t&eacute; mis &agrave; jour cette semaine :<br />
+<ul><li><a href="http://pecl.php.net/package/ares/download/0.7.0/">ares 0.7.0</a>
+</li><li><a href="http://pecl.php.net/package/ibm_db2/download/1.8.3/">ibm_db2 1.8.3</a>
+</li><li><a href="http://pecl.php.net/package/PDO_IBM/download/1.3.1/">PDO_IBM 1.3.1</a>
+</li><li><a href="http://pecl.php.net/package/timezonedb/download/2009.21/">timezonedb 2009.21</a></li></ul><br />
+PECL est la biblioth&egrave;que d'extensions C de PHP.<br />
+<ul><br />
+<li><img height="12" border="0" alt="en" src="http://www.nexen.net../nx_media/images/drapeaux/en.png" />&nbsp;<a title="http://pecl.php.net" href="http://pecl.php.net/" onclick="window.location.href='http://www.nexen.net/index.php?option=com_nx_weblink&weblink=PECL&content_id=19375'; return false;">PECL</a><br />
+</li><br />
+<li><a title="http://pecl.php.net/packages.php" href="http://pecl.php.net/packages.php" onclick="window.location.href='http://www.nexen.net/index.php?option=com_nx_weblink&weblink=Tous+les+paquets+PECL&content_id=19375'; return false;">Tous les paquets PECL</a> <br />
+</li></ul><br />
+</div>";s:7:"pubdate";s:31:"Wed, 30 Dec 2009 10:10:57 +0100";s:4:"guid";s:44:"http://www.nexen.net/content/view/19417/165/";s:7:"summary";s:1317:"<div class="content_header_img">
+					<img alt="Image pour le titre du contenu" src="http://www.nexen.net/images/stories/biseau/pecl.png">
+				    </div><div class="blogcontent"> 4 paquets ont &eacute;t&eacute; mis &agrave; jour cette semaine :<br />
+<ul><li><a href="http://pecl.php.net/package/ares/download/0.7.0/">ares 0.7.0</a>
+</li><li><a href="http://pecl.php.net/package/ibm_db2/download/1.8.3/">ibm_db2 1.8.3</a>
+</li><li><a href="http://pecl.php.net/package/PDO_IBM/download/1.3.1/">PDO_IBM 1.3.1</a>
+</li><li><a href="http://pecl.php.net/package/timezonedb/download/2009.21/">timezonedb 2009.21</a></li></ul><br />
+PECL est la biblioth&egrave;que d'extensions C de PHP.<br />
+<ul><br />
+<li><img height="12" border="0" alt="en" src="http://www.nexen.net../nx_media/images/drapeaux/en.png" />&nbsp;<a title="http://pecl.php.net" href="http://pecl.php.net/" onclick="window.location.href='http://www.nexen.net/index.php?option=com_nx_weblink&weblink=PECL&content_id=19375'; return false;">PECL</a><br />
+</li><br />
+<li><a title="http://pecl.php.net/packages.php" href="http://pecl.php.net/packages.php" onclick="window.location.href='http://www.nexen.net/index.php?option=com_nx_weblink&weblink=Tous+les+paquets+PECL&content_id=19375'; return false;">Tous les paquets PECL</a> <br />
+</li></ul><br />
+</div>";s:14:"date_timestamp";i:1262164257;}i:7;a:7:{s:5:"title";s:13:"Wordpress 2.9";s:4:"link";s:44:"http://www.nexen.net/content/view/19419/165/";s:11:"description";s:939:"<div class="content_header_img">
+					<img alt="Image pour le titre du contenu" src="http://www.nexen.net/images/stories/biseau/wordpress.png">
+				    </div><div class="blogcontent">
+La nouvelle version de Wordpress 2.9 vient de sortir apr&egrave;s de nombreuses versions b&eacute;ta.<br />
+Cette nouvelle version est toujours r&eacute;alis&eacute;e en PHP et MySQL 4.1.2 minimum, baptis&eacute;e &ldquo;Carmen&rdquo;, en hommage &agrave; la chanteuse de jazz Carmen McRae. <br />
+Elle apporte :<br />
+<ul><li>Des corrections de bugs</li><li>L'apparition d'une corbeille pour le contenu</li><li>Un mini &eacute;diteur d'image pour r&eacute;aliser des effets en lignes </li><li>Attribution d'une vignette par article.</li></ul>
+<br />
+De nombreuses am&eacute;liorations ont aussi vu le jour comme : <br />
+<ul><li>La gestion des m&eacute;dias</li><li>TinyMCE</li><li>Optimisation des th&egrave;mes par d&eacute;faut </li></ul><br />
+</div>";s:7:"pubdate";s:31:"Wed, 30 Dec 2009 09:59:16 +0100";s:4:"guid";s:44:"http://www.nexen.net/content/view/19419/165/";s:7:"summary";s:939:"<div class="content_header_img">
+					<img alt="Image pour le titre du contenu" src="http://www.nexen.net/images/stories/biseau/wordpress.png">
+				    </div><div class="blogcontent">
+La nouvelle version de Wordpress 2.9 vient de sortir apr&egrave;s de nombreuses versions b&eacute;ta.<br />
+Cette nouvelle version est toujours r&eacute;alis&eacute;e en PHP et MySQL 4.1.2 minimum, baptis&eacute;e &ldquo;Carmen&rdquo;, en hommage &agrave; la chanteuse de jazz Carmen McRae. <br />
+Elle apporte :<br />
+<ul><li>Des corrections de bugs</li><li>L'apparition d'une corbeille pour le contenu</li><li>Un mini &eacute;diteur d'image pour r&eacute;aliser des effets en lignes </li><li>Attribution d'une vignette par article.</li></ul>
+<br />
+De nombreuses am&eacute;liorations ont aussi vu le jour comme : <br />
+<ul><li>La gestion des m&eacute;dias</li><li>TinyMCE</li><li>Optimisation des th&egrave;mes par d&eacute;faut </li></ul><br />
+</div>";s:14:"date_timestamp";i:1262163556;}i:8;a:7:{s:5:"title";s:13:"PHP et Jquery";s:4:"link";s:44:"http://www.nexen.net/content/view/19415/165/";s:11:"description";s:688:"<div class="content_header_img">
+					<img alt="Image pour le titre du contenu" src="http://www.nexen.net/images/stories/biseau/jquery.png">
+				    </div><div class="blogcontent">
+Le site web developpement avait montr&eacute; dans un pr&eacute;c&eacute;dent tutorial, le moyen d'interfac&eacute; entre PHP et l'API Flickr.  <br />
+La d&eacute;monstration &eacute;tait de montrer avec une classe PHP, l'utilisation de recherche de photos pour en obtenir un r&eacute;sultat sous la forme d'un tableau.<br />
+Ce nouveau tutorial, est une suite car il montre une approche pour afficher le r&eacute;sultat sans recharger la page gr&acirc;ce &agrave; l'utilisation de l'Ajax et de Jquery</div>";s:7:"pubdate";s:31:"Tue, 29 Dec 2009 11:54:40 +0100";s:4:"guid";s:44:"http://www.nexen.net/content/view/19415/165/";s:7:"summary";s:688:"<div class="content_header_img">
+					<img alt="Image pour le titre du contenu" src="http://www.nexen.net/images/stories/biseau/jquery.png">
+				    </div><div class="blogcontent">
+Le site web developpement avait montr&eacute; dans un pr&eacute;c&eacute;dent tutorial, le moyen d'interfac&eacute; entre PHP et l'API Flickr.  <br />
+La d&eacute;monstration &eacute;tait de montrer avec une classe PHP, l'utilisation de recherche de photos pour en obtenir un r&eacute;sultat sous la forme d'un tableau.<br />
+Ce nouveau tutorial, est une suite car il montre une approche pour afficher le r&eacute;sultat sans recharger la page gr&acirc;ce &agrave; l'utilisation de l'Ajax et de Jquery</div>";s:14:"date_timestamp";i:1262084080;}i:9;a:7:{s:5:"title";s:27:"Rétrospective : Novembre 09";s:4:"link";s:44:"http://www.nexen.net/content/view/19414/165/";s:11:"description";s:1930:"<div class="content_header_img">
+					<img alt="Image pour le titre du contenu" src="http://www.nexen.net/images/stories/biseau/nexen.x.png">
+				    </div><div class="blogcontent">
+Les meilleures actualit&eacute;s autour de PHP et MySQL du mois de novembre 2009 ont &eacute;t&eacute; :<br />
+<table border="0">
+<tr>
+<td><a href="../../../actualites/php/19330-uwamp.php"><img height="55" border="0" width="55" src="../../../images/stories/biseau/uwamp.png" alt="Uwamp" /></a></td>
+<td><a href="../../../actualites/php/19330-uwamp.php">Uwamp</a><br />
+</td>
+</tr>
+
+<tr>
+<td><a href="../../../actualites/php/19327-recherche_en_fulltext_avec_xapian.php"><img height="55" border="0" width="55" src="../../../images/stories/biseau/xapian.png" alt="Recherche en Fulltext avec Xapian" /></a></td>
+<td><a href="../../../actualites/php/19327-recherche_en_fulltext_avec_xapian.php">Recherche en Fulltext avec Xapian</a><br />
+</td>
+</tr>
+
+<tr>
+<td><a href="../../../actualites/php/19328-methode_shell_en_php.php"><img height="55" border="0" width="55" src="../../../images/stories/biseau/lignedecommande.png" alt="Méthode SHELL en PHP" /></a></td>
+<td><a href="../../../actualites/php/19328-methode_shell_en_php.php">M&eacute;thode SHELL en PHP</a><br />
+</td>
+</tr>
+
+<tr>
+<td><a href="../../../actualites/php/19318-symfony_2.0_utilisera_php_5.3.php"><img height="55" border="0" width="55" src="../../../images/stories/biseau/symfony.png" alt="Symfony 2.0 utilisera PHP 5.3" /></a></td>
+<td><a href="../../../actualites/php/19318-symfony_2.0_utilisera_php_5.3.php">Symfony 2.0 utilisera PHP 5.3</a><br />
+</td>
+</tr>
+
+<tr>
+<td><a href="../../../actualites/php/19355-framework_php_2010.php"><img height="55" border="0" width="55" src="../../../images/stories/biseau/framework.png" alt="Framework PHP 2010" /></a></td>
+<td><a href="../../../actualites/php/19355-framework_php_2010.php">Framework PHP 2010</a><br />
+</td>
+</tr>
+</table>
+</div>";s:7:"pubdate";s:31:"Tue, 29 Dec 2009 08:31:52 +0100";s:4:"guid";s:44:"http://www.nexen.net/content/view/19414/165/";s:7:"summary";s:1930:"<div class="content_header_img">
+					<img alt="Image pour le titre du contenu" src="http://www.nexen.net/images/stories/biseau/nexen.x.png">
+				    </div><div class="blogcontent">
+Les meilleures actualit&eacute;s autour de PHP et MySQL du mois de novembre 2009 ont &eacute;t&eacute; :<br />
+<table border="0">
+<tr>
+<td><a href="../../../actualites/php/19330-uwamp.php"><img height="55" border="0" width="55" src="../../../images/stories/biseau/uwamp.png" alt="Uwamp" /></a></td>
+<td><a href="../../../actualites/php/19330-uwamp.php">Uwamp</a><br />
+</td>
+</tr>
+
+<tr>
+<td><a href="../../../actualites/php/19327-recherche_en_fulltext_avec_xapian.php"><img height="55" border="0" width="55" src="../../../images/stories/biseau/xapian.png" alt="Recherche en Fulltext avec Xapian" /></a></td>
+<td><a href="../../../actualites/php/19327-recherche_en_fulltext_avec_xapian.php">Recherche en Fulltext avec Xapian</a><br />
+</td>
+</tr>
+
+<tr>
+<td><a href="../../../actualites/php/19328-methode_shell_en_php.php"><img height="55" border="0" width="55" src="../../../images/stories/biseau/lignedecommande.png" alt="Méthode SHELL en PHP" /></a></td>
+<td><a href="../../../actualites/php/19328-methode_shell_en_php.php">M&eacute;thode SHELL en PHP</a><br />
+</td>
+</tr>
+
+<tr>
+<td><a href="../../../actualites/php/19318-symfony_2.0_utilisera_php_5.3.php"><img height="55" border="0" width="55" src="../../../images/stories/biseau/symfony.png" alt="Symfony 2.0 utilisera PHP 5.3" /></a></td>
+<td><a href="../../../actualites/php/19318-symfony_2.0_utilisera_php_5.3.php">Symfony 2.0 utilisera PHP 5.3</a><br />
+</td>
+</tr>
+
+<tr>
+<td><a href="../../../actualites/php/19355-framework_php_2010.php"><img height="55" border="0" width="55" src="../../../images/stories/biseau/framework.png" alt="Framework PHP 2010" /></a></td>
+<td><a href="../../../actualites/php/19355-framework_php_2010.php">Framework PHP 2010</a><br />
+</td>
+</tr>
+</table>
+</div>";s:14:"date_timestamp";i:1262071912;}i:10;a:7:{s:5:"title";s:44:"Actualité de développement PEAR, edition 264";s:4:"link";s:44:"http://www.nexen.net/content/view/19416/165/";s:11:"description";s:1442:"<div class="content_header_img">
+					<img alt="Image pour le titre du contenu" src="http://www.nexen.net/images/stories/biseau/pear.png">
+				    </div><div class="blogcontent">
+4 paquets ont &eacute;t&eacute; mis &agrave; jour cette semaine :<br />
+<ul><li><a href="http://pear.php.net/package/URI_Template/download/0.3.1/">URI_Template 0.3.1</a>
+</li><li><a href="http://pear.php.net/package/Net_Portscan/download/1.0.3/">Net_Portscan 1.0.3</a>
+</li><li><a href="http://pear.php.net/package/Log/download/1.11.6/">Log 1.11.6</a>
+</li><li><a href="http://pear.php.net/package/Log/download/1.12.0RC1/">Log 1.12.0RC1</a></li></ul><br />
+PEAR est la biblioth&egrave;que de composants PHP.<br />
+<p>&nbsp;</p>
+<br />
+<ul><br />
+<li><img height="12" border="0" src="http://www.nexen.net../nx_media/images/drapeaux/en.png" alt="en" />&nbsp;<a href="http://pear.php.net/" title="http://pear.php.net" onclick="window.location.href='http://www.nexen.net/index.php?option=com_nx_weblink&weblink=PEAR&content_id=19403'; return false;">PEAR</a><br />
+</li><br />
+<li><img height="12" border="0" src="http://www.nexen.net../nx_media/images/drapeaux/en.png" alt="en" />&nbsp;<a href="http://pear.php.net/packages.php" title="http://pear.php.net/packages.php" onclick="window.location.href='http://www.nexen.net/index.php?option=com_nx_weblink&weblink=Tous+les+paquets+PEAR&content_id=19403'; return false;">Tous les paquets PEAR</a></li></ul><br />
+</div>";s:7:"pubdate";s:31:"Tue, 29 Dec 2009 07:03:53 +0100";s:4:"guid";s:44:"http://www.nexen.net/content/view/19416/165/";s:7:"summary";s:1442:"<div class="content_header_img">
+					<img alt="Image pour le titre du contenu" src="http://www.nexen.net/images/stories/biseau/pear.png">
+				    </div><div class="blogcontent">
+4 paquets ont &eacute;t&eacute; mis &agrave; jour cette semaine :<br />
+<ul><li><a href="http://pear.php.net/package/URI_Template/download/0.3.1/">URI_Template 0.3.1</a>
+</li><li><a href="http://pear.php.net/package/Net_Portscan/download/1.0.3/">Net_Portscan 1.0.3</a>
+</li><li><a href="http://pear.php.net/package/Log/download/1.11.6/">Log 1.11.6</a>
+</li><li><a href="http://pear.php.net/package/Log/download/1.12.0RC1/">Log 1.12.0RC1</a></li></ul><br />
+PEAR est la biblioth&egrave;que de composants PHP.<br />
+<p>&nbsp;</p>
+<br />
+<ul><br />
+<li><img height="12" border="0" src="http://www.nexen.net../nx_media/images/drapeaux/en.png" alt="en" />&nbsp;<a href="http://pear.php.net/" title="http://pear.php.net" onclick="window.location.href='http://www.nexen.net/index.php?option=com_nx_weblink&weblink=PEAR&content_id=19403'; return false;">PEAR</a><br />
+</li><br />
+<li><img height="12" border="0" src="http://www.nexen.net../nx_media/images/drapeaux/en.png" alt="en" />&nbsp;<a href="http://pear.php.net/packages.php" title="http://pear.php.net/packages.php" onclick="window.location.href='http://www.nexen.net/index.php?option=com_nx_weblink&weblink=Tous+les+paquets+PEAR&content_id=19403'; return false;">Tous les paquets PEAR</a></li></ul><br />
+</div>";s:14:"date_timestamp";i:1262066633;}i:11;a:7:{s:5:"title";s:26:"Rétrospective : Octobre 09";s:4:"link";s:44:"http://www.nexen.net/content/view/19413/165/";s:11:"description";s:1914:"<div class="content_header_img">
+					<img alt="Image pour le titre du contenu" src="http://www.nexen.net/images/stories/biseau/nexen.x.png">
+				    </div><div class="blogcontent">
+Les meilleures actualit&eacute;s autour de PHP et MySQL du mois de octobre 2009 ont &eacute;t&eacute; :<br />
+<table border="0">
+<tr>
+<td><a href="../../../actualites/php/19290-quelques_scripts_utiles.php"><img height="55" border="0" width="55" src="../../../images/stories/biseau/code.png" alt="Quelques scripts utiles" /></a></td>
+
+<td><a href="../../../actualites/php/19290-quelques_scripts_utiles.php">Quelques scripts utiles</a><br />
+</td>
+</tr>
+
+<tr>
+<td><a href="../../../actualites/php/19308-111_css_pour_votre_design.php"><img height="55" border="0" width="55" src="../../../images/stories/biseau/css.png" alt="111 CSS pour votre Design" /></a></td>
+
+<td><a href="../../../actualites/php/19308-111_css_pour_votre_design.php">111 CSS pour votre Design</a><br />
+</td>
+</tr>
+
+<tr>
+<td><a href="../../../actualites/mysql/19317-mariadb_vs_mysql.php"><img height="55" border="0" width="55" src="../../../images/stories/biseau/mariadb.png" alt="MariaDB vs MySQL" /></a></td>
+
+<td><a href="../../../actualites/mysql/19317-mariadb_vs_mysql.php">MariaDB vs MySQL</a><br />
+</td>
+</tr>
+
+<tr>
+<td><a href="../../../actualites/php/19313-top_7_des_securites_php.php"><img height="55" border="0" width="55" src="../../../images/stories/biseau/bug.png" alt="Top 7 des sécurités PHP" /></a></td>
+
+<td><a href="../../../actualites/php/19313-top_7_des_securites_php.php">Top 7 des s&eacute;curit&eacute;s PHP</a><br />
+</td>
+</tr>
+
+<tr>
+<td><a href="../../../actualites/php/19289-les_taches_cron.php"><img height="55" border="0" width="55" src="../../../images/stories/biseau/crane.png" alt="Les taches CRON" /></a></td>
+
+<td><a href="../../../actualites/php/19289-les_taches_cron.php">Les taches CRON</a><br />
+</td>
+</tr>
+
+</table>
+</div>";s:7:"pubdate";s:31:"Mon, 28 Dec 2009 08:53:08 +0100";s:4:"guid";s:44:"http://www.nexen.net/content/view/19413/165/";s:7:"summary";s:1914:"<div class="content_header_img">
+					<img alt="Image pour le titre du contenu" src="http://www.nexen.net/images/stories/biseau/nexen.x.png">
+				    </div><div class="blogcontent">
+Les meilleures actualit&eacute;s autour de PHP et MySQL du mois de octobre 2009 ont &eacute;t&eacute; :<br />
+<table border="0">
+<tr>
+<td><a href="../../../actualites/php/19290-quelques_scripts_utiles.php"><img height="55" border="0" width="55" src="../../../images/stories/biseau/code.png" alt="Quelques scripts utiles" /></a></td>
+
+<td><a href="../../../actualites/php/19290-quelques_scripts_utiles.php">Quelques scripts utiles</a><br />
+</td>
+</tr>
+
+<tr>
+<td><a href="../../../actualites/php/19308-111_css_pour_votre_design.php"><img height="55" border="0" width="55" src="../../../images/stories/biseau/css.png" alt="111 CSS pour votre Design" /></a></td>
+
+<td><a href="../../../actualites/php/19308-111_css_pour_votre_design.php">111 CSS pour votre Design</a><br />
+</td>
+</tr>
+
+<tr>
+<td><a href="../../../actualites/mysql/19317-mariadb_vs_mysql.php"><img height="55" border="0" width="55" src="../../../images/stories/biseau/mariadb.png" alt="MariaDB vs MySQL" /></a></td>
+
+<td><a href="../../../actualites/mysql/19317-mariadb_vs_mysql.php">MariaDB vs MySQL</a><br />
+</td>
+</tr>
+
+<tr>
+<td><a href="../../../actualites/php/19313-top_7_des_securites_php.php"><img height="55" border="0" width="55" src="../../../images/stories/biseau/bug.png" alt="Top 7 des sécurités PHP" /></a></td>
+
+<td><a href="../../../actualites/php/19313-top_7_des_securites_php.php">Top 7 des s&eacute;curit&eacute;s PHP</a><br />
+</td>
+</tr>
+
+<tr>
+<td><a href="../../../actualites/php/19289-les_taches_cron.php"><img height="55" border="0" width="55" src="../../../images/stories/biseau/crane.png" alt="Les taches CRON" /></a></td>
+
+<td><a href="../../../actualites/php/19289-les_taches_cron.php">Les taches CRON</a><br />
+</td>
+</tr>
+
+</table>
+</div>";s:14:"date_timestamp";i:1261986788;}i:12;a:7:{s:5:"title";s:28:"Rétrospective : Septembre 09";s:4:"link";s:44:"http://www.nexen.net/content/view/19412/165/";s:11:"description";s:2040:"<div class="content_header_img">
+					<img alt="Image pour le titre du contenu" src="http://www.nexen.net/images/stories/biseau/nexen.x.png">
+				    </div><div class="blogcontent">
+Les meilleures actualit&eacute;s autour de PHP et MySQL du mois de Septembre  2009 ont &eacute;t&eacute; :<br />
+<table border="0">
+<tr>
+<td><a href="../../../actualites/php/19223-top_40_des_logiciels_open_source.php"><img border="0" width="55" height="55" src="../../../images/stories/biseau/top.png" alt="Top 40 des logiciels Open Source" /></a></td>
+
+<td><a href="../../../actualites/php/19223-top_40_des_logiciels_open_source.php">Top 40 des logiciels Open Source</a><br />
+</td>
+</tr>
+
+<tr>
+<td><a href="../../../actualites/php/19217-wampserver_et_xdebug_et_eclipse_pdt.php"><img border="0" width="55" height="55" src="../../../images/stories/biseau/wamp5.png" alt="Wampserver et Xdebug et Eclipse PDT" /></a></td>
+
+<td><a href="../../../actualites/php/19217-wampserver_et_xdebug_et_eclipse_pdt.php">Wampserver et Xdebug et Eclipse PDT</a><br />
+</td>
+</tr>
+
+<tr>
+<td><a href="../../../actualites/mysql/19239-3_facons_utilisees_les_index_dans_mysql.php"><img border="0" width="55" height="55" src="../../../images/stories/biseau/jetee.png" alt="3 façons d'utiliser les index dans MySQL" /></a></td>
+
+<td><a href="../../../actualites/mysql/19239-3_facons_utilisees_les_index_dans_mysql.php">3 fa&ccedil;ons d'utiliser les index dans MySQL</a><br />
+</td>
+</tr>
+
+<tr>
+<td><a href="../../../actualites/php/19231-code_barre.php"><img border="0" width="55" height="55" src="../../../images/stories/biseau/briques.png" alt="Code barre" /></a></td>
+
+<td><a href="../../../actualites/php/19231-code_barre.php">Code barre</a><br />
+</td>
+</tr>
+
+<tr>
+<td><a href="../../../actualites/php/19240-prestashop_1.2.3.php"><img border="0" width="55" height="55" src="../../../images/stories/biseau/prestashop.png" alt="PrestaShop 1.2.3" /></a></td>
+
+<td><a href="../../../actualites/php/19240-prestashop_1.2.3.php">PrestaShop 1.2.3</a><br />
+</td>
+</tr>
+
+</table>
+</div>";s:7:"pubdate";s:31:"Sun, 27 Dec 2009 08:21:37 +0100";s:4:"guid";s:44:"http://www.nexen.net/content/view/19412/165/";s:7:"summary";s:2040:"<div class="content_header_img">
+					<img alt="Image pour le titre du contenu" src="http://www.nexen.net/images/stories/biseau/nexen.x.png">
+				    </div><div class="blogcontent">
+Les meilleures actualit&eacute;s autour de PHP et MySQL du mois de Septembre  2009 ont &eacute;t&eacute; :<br />
+<table border="0">
+<tr>
+<td><a href="../../../actualites/php/19223-top_40_des_logiciels_open_source.php"><img border="0" width="55" height="55" src="../../../images/stories/biseau/top.png" alt="Top 40 des logiciels Open Source" /></a></td>
+
+<td><a href="../../../actualites/php/19223-top_40_des_logiciels_open_source.php">Top 40 des logiciels Open Source</a><br />
+</td>
+</tr>
+
+<tr>
+<td><a href="../../../actualites/php/19217-wampserver_et_xdebug_et_eclipse_pdt.php"><img border="0" width="55" height="55" src="../../../images/stories/biseau/wamp5.png" alt="Wampserver et Xdebug et Eclipse PDT" /></a></td>
+
+<td><a href="../../../actualites/php/19217-wampserver_et_xdebug_et_eclipse_pdt.php">Wampserver et Xdebug et Eclipse PDT</a><br />
+</td>
+</tr>
+
+<tr>
+<td><a href="../../../actualites/mysql/19239-3_facons_utilisees_les_index_dans_mysql.php"><img border="0" width="55" height="55" src="../../../images/stories/biseau/jetee.png" alt="3 façons d'utiliser les index dans MySQL" /></a></td>
+
+<td><a href="../../../actualites/mysql/19239-3_facons_utilisees_les_index_dans_mysql.php">3 fa&ccedil;ons d'utiliser les index dans MySQL</a><br />
+</td>
+</tr>
+
+<tr>
+<td><a href="../../../actualites/php/19231-code_barre.php"><img border="0" width="55" height="55" src="../../../images/stories/biseau/briques.png" alt="Code barre" /></a></td>
+
+<td><a href="../../../actualites/php/19231-code_barre.php">Code barre</a><br />
+</td>
+</tr>
+
+<tr>
+<td><a href="../../../actualites/php/19240-prestashop_1.2.3.php"><img border="0" width="55" height="55" src="../../../images/stories/biseau/prestashop.png" alt="PrestaShop 1.2.3" /></a></td>
+
+<td><a href="../../../actualites/php/19240-prestashop_1.2.3.php">PrestaShop 1.2.3</a><br />
+</td>
+</tr>
+
+</table>
+</div>";s:14:"date_timestamp";i:1261898497;}i:13;a:7:{s:5:"title";s:50:"Calendrier de l'avent PHP 2009 : 23 et 24 décembre";s:4:"link";s:44:"http://www.nexen.net/content/view/19411/165/";s:11:"description";s:948:"<div class="content_header_img">
+					<img alt="Image pour le titre du contenu" src="http://www.nexen.net/images/stories/biseau/calendier.avent.png">
+				    </div><div class="blogcontent">
+Chris Shiflett publie le calendrier de l'Avent PHP, avec des astuces d'experts PHP pour tout le monde.<br />
+<ul><li>Brandon Savage: Exceptional PHP</li><li>Terry Chay: 1,500 Lines of Code</li></ul><br />
+<ul><li><a href="http://phpadvent.org/2009/exceptional-php-by-brandon-savage" target="_self">Exceptional PHP</a></li><li><a href="http://phpadvent.org/2009/1500-lines-of-code-by-terry-chay" target="_self">1,500 Lines of Code</a></li></ul><br />
+&lt;!--
+		@page { margin: 2cm }
+		P { margin-bottom: 0.21cm }
+		H1 { margin-bottom: 0.21cm }
+		H1.western { font-family: &quot;Times New Roman&quot;, serif }
+		H1.cjk { font-family: &quot;DejaVu Sans&quot; }
+		H1.ctl { font-family: &quot;DejaVu Sans&quot; }
+	--&gt;
+	
+
+<h1><em><br />
+</em></h1>
+<br />
+</div>";s:7:"pubdate";s:31:"Sun, 27 Dec 2009 08:14:16 +0100";s:4:"guid";s:44:"http://www.nexen.net/content/view/19411/165/";s:7:"summary";s:948:"<div class="content_header_img">
+					<img alt="Image pour le titre du contenu" src="http://www.nexen.net/images/stories/biseau/calendier.avent.png">
+				    </div><div class="blogcontent">
+Chris Shiflett publie le calendrier de l'Avent PHP, avec des astuces d'experts PHP pour tout le monde.<br />
+<ul><li>Brandon Savage: Exceptional PHP</li><li>Terry Chay: 1,500 Lines of Code</li></ul><br />
+<ul><li><a href="http://phpadvent.org/2009/exceptional-php-by-brandon-savage" target="_self">Exceptional PHP</a></li><li><a href="http://phpadvent.org/2009/1500-lines-of-code-by-terry-chay" target="_self">1,500 Lines of Code</a></li></ul><br />
+&lt;!--
+		@page { margin: 2cm }
+		P { margin-bottom: 0.21cm }
+		H1 { margin-bottom: 0.21cm }
+		H1.western { font-family: &quot;Times New Roman&quot;, serif }
+		H1.cjk { font-family: &quot;DejaVu Sans&quot; }
+		H1.ctl { font-family: &quot;DejaVu Sans&quot; }
+	--&gt;
+	
+
+<h1><em><br />
+</em></h1>
+<br />
+</div>";s:14:"date_timestamp";i:1261898056;}i:14;a:7:{s:5:"title";s:23:"Rétrospective : Aout 09";s:4:"link";s:44:"http://www.nexen.net/content/view/19409/165/";s:11:"description";s:2039:"<div class="content_header_img">
+					<img alt="Image pour le titre du contenu" src="http://www.nexen.net/images/stories/biseau/nexen.x.png">
+				    </div><div class="blogcontent">
+Les meilleures actualit&eacute;s autour de PHP et MySQL du mois de Aout 2009 ont &eacute;t&eacute; :<br />
+<table border="0">
+<tr>
+<td><a href="../../../actualites/php/19188-encodage_de_caracteres.php"><img width="55" height="55" border="0" src="../../../images/stories/biseau/code.php.png" alt="Encodage de caractères" /></a></td>
+
+<td><a href="../../../actualites/php/19188-encodage_de_caracteres.php">Encodage de caract&egrave;res</a><br />
+</td>
+</tr>
+
+<tr>
+<td><a href="../../../actualites/php/19213-kit_pour_developpeurs.php"><img width="55" height="55" border="0" src="../../../images/stories/biseau/outils.png" alt="Kit pour développeurs" /></a></td>
+
+<td><a href="../../../actualites/php/19213-kit_pour_developpeurs.php">Kit pour d&eacute;veloppeurs</a><br />
+</td>
+</tr>
+
+<tr>
+<td><a href="../../../actualites/php/19203-detecter_les_visages_dans_une_photo.php"><img width="55" height="55" border="0" src="../../../images/stories/biseau/coffre.ouvert.png" alt="Détecter les visages dans une photo" /></a></td>
+
+<td><a href="../../../actualites/php/19203-detecter_les_visages_dans_une_photo.php">D&eacute;tecter les visages dans une photo</a><br />
+</td>
+</tr>
+
+<tr>
+<td><a href="../../../actualites/php/19209-symfony_explique_a_ma_maman.php"><img width="55" height="55" border="0" src="../../../images/stories/biseau/symfony.png" alt="Symfony expliqué à ma maman" /></a></td>
+
+<td><a href="../../../actualites/php/19209-symfony_explique_a_ma_maman.php">Symfony expliqu&eacute; &agrave; ma maman</a><br />
+</td>
+</tr>
+
+<tr>
+<td><a href="../../../actualites/php/19205-le_retour_de_easyphp.php"><img width="55" height="55" border="0" src="../../../images/stories/biseau/easyphp.png" alt="Le retour de EasyPHP" /></a></td>
+
+<td><a href="../../../actualites/php/19205-le_retour_de_easyphp.php">Le retour de EasyPHP</a><br />
+</td>
+</tr>
+
+</table>
+</div>";s:7:"pubdate";s:31:"Sat, 26 Dec 2009 10:27:49 +0100";s:4:"guid";s:44:"http://www.nexen.net/content/view/19409/165/";s:7:"summary";s:2039:"<div class="content_header_img">
+					<img alt="Image pour le titre du contenu" src="http://www.nexen.net/images/stories/biseau/nexen.x.png">
+				    </div><div class="blogcontent">
+Les meilleures actualit&eacute;s autour de PHP et MySQL du mois de Aout 2009 ont &eacute;t&eacute; :<br />
+<table border="0">
+<tr>
+<td><a href="../../../actualites/php/19188-encodage_de_caracteres.php"><img width="55" height="55" border="0" src="../../../images/stories/biseau/code.php.png" alt="Encodage de caractères" /></a></td>
+
+<td><a href="../../../actualites/php/19188-encodage_de_caracteres.php">Encodage de caract&egrave;res</a><br />
+</td>
+</tr>
+
+<tr>
+<td><a href="../../../actualites/php/19213-kit_pour_developpeurs.php"><img width="55" height="55" border="0" src="../../../images/stories/biseau/outils.png" alt="Kit pour développeurs" /></a></td>
+
+<td><a href="../../../actualites/php/19213-kit_pour_developpeurs.php">Kit pour d&eacute;veloppeurs</a><br />
+</td>
+</tr>
+
+<tr>
+<td><a href="../../../actualites/php/19203-detecter_les_visages_dans_une_photo.php"><img width="55" height="55" border="0" src="../../../images/stories/biseau/coffre.ouvert.png" alt="Détecter les visages dans une photo" /></a></td>
+
+<td><a href="../../../actualites/php/19203-detecter_les_visages_dans_une_photo.php">D&eacute;tecter les visages dans une photo</a><br />
+</td>
+</tr>
+
+<tr>
+<td><a href="../../../actualites/php/19209-symfony_explique_a_ma_maman.php"><img width="55" height="55" border="0" src="../../../images/stories/biseau/symfony.png" alt="Symfony expliqué à ma maman" /></a></td>
+
+<td><a href="../../../actualites/php/19209-symfony_explique_a_ma_maman.php">Symfony expliqu&eacute; &agrave; ma maman</a><br />
+</td>
+</tr>
+
+<tr>
+<td><a href="../../../actualites/php/19205-le_retour_de_easyphp.php"><img width="55" height="55" border="0" src="../../../images/stories/biseau/easyphp.png" alt="Le retour de EasyPHP" /></a></td>
+
+<td><a href="../../../actualites/php/19205-le_retour_de_easyphp.php">Le retour de EasyPHP</a><br />
+</td>
+</tr>
+
+</table>
+</div>";s:14:"date_timestamp";i:1261819669;}i:15;a:7:{s:5:"title";s:26:"Rétrospective : Juillet 09";s:4:"link";s:44:"http://www.nexen.net/content/view/19408/165/";s:11:"description";s:1945:"<div class="content_header_img">
+					<img alt="Image pour le titre du contenu" src="http://www.nexen.net/images/stories/biseau/nexen.x.png">
+				    </div><div class="blogcontent">
+Les meilleures actualit&eacute;s autour de PHP et MySQL du mois de Juillet  2009 ont &eacute;t&eacute; :<br />
+<table border="0">
+<tr>
+<td><a href="../../../actualites/php/19156-netbeans_6.7.php"><img width="55" height="55" border="0" src="../../../images/stories/biseau/netbeans.png" alt="NetBeans 6.7" /></a></td>
+<td><a href="../../../actualites/php/19156-netbeans_6.7.php">NetBeans 6.7</a><br />
+</td>
+</tr>
+
+<tr>
+<td><a href="../../../actualites/php/19178-fonctions_utiles_en_php.php"><img width="55" height="55" border="0" src="../../../images/stories/biseau/fonction.png" alt="Fonctions utiles en PHP" /></a></td>
+<td><a href="../../../actualites/php/19178-fonctions_utiles_en_php.php">Fonctions utiles en PHP</a><br />
+</td>
+</tr>
+
+<tr>
+<td><a href="../../../actualites/php/19177-utiliser_xml_avec_mysql_5.1.php"><img width="55" height="55" border="0" src="../../../images/stories/biseau/xml.png" alt="Utiliser XML avec MySQL 5.1" /></a></td>
+<td><a href="../../../actualites/php/19177-utiliser_xml_avec_mysql_5.1.php">Utiliser XML avec MySQL 5.1</a><br />
+</td>
+</tr>
+
+<tr>
+<td><a href="../../../actualites/php/19173-10_options_pour_choisir_un_cms.php"><img width="55" height="55" border="0" src="../../../images/stories/biseau/comparaison.png" alt="10 options pour choisir un CMS" /></a></td>
+<td><a href="../../../actualites/php/19173-10_options_pour_choisir_un_cms.php">10 options pour choisir un CMS</a><br />
+</td>
+</tr>
+
+<tr>
+<td><a href="../../../actualites/php/19182-phpmyadmin_avance.php"><img width="55" height="55" border="0" src="../../../images/stories/biseau/phpmyadmin.png" alt="PHPMyAdmin Avancé" /></a></td>
+<td><a href="../../../actualites/php/19182-phpmyadmin_avance.php">PHPMyAdmin Avanc&eacute;</a><br />
+</td>
+</tr>
+
+</table>
+</div>";s:7:"pubdate";s:31:"Fri, 25 Dec 2009 09:26:01 +0100";s:4:"guid";s:44:"http://www.nexen.net/content/view/19408/165/";s:7:"summary";s:1945:"<div class="content_header_img">
+					<img alt="Image pour le titre du contenu" src="http://www.nexen.net/images/stories/biseau/nexen.x.png">
+				    </div><div class="blogcontent">
+Les meilleures actualit&eacute;s autour de PHP et MySQL du mois de Juillet  2009 ont &eacute;t&eacute; :<br />
+<table border="0">
+<tr>
+<td><a href="../../../actualites/php/19156-netbeans_6.7.php"><img width="55" height="55" border="0" src="../../../images/stories/biseau/netbeans.png" alt="NetBeans 6.7" /></a></td>
+<td><a href="../../../actualites/php/19156-netbeans_6.7.php">NetBeans 6.7</a><br />
+</td>
+</tr>
+
+<tr>
+<td><a href="../../../actualites/php/19178-fonctions_utiles_en_php.php"><img width="55" height="55" border="0" src="../../../images/stories/biseau/fonction.png" alt="Fonctions utiles en PHP" /></a></td>
+<td><a href="../../../actualites/php/19178-fonctions_utiles_en_php.php">Fonctions utiles en PHP</a><br />
+</td>
+</tr>
+
+<tr>
+<td><a href="../../../actualites/php/19177-utiliser_xml_avec_mysql_5.1.php"><img width="55" height="55" border="0" src="../../../images/stories/biseau/xml.png" alt="Utiliser XML avec MySQL 5.1" /></a></td>
+<td><a href="../../../actualites/php/19177-utiliser_xml_avec_mysql_5.1.php">Utiliser XML avec MySQL 5.1</a><br />
+</td>
+</tr>
+
+<tr>
+<td><a href="../../../actualites/php/19173-10_options_pour_choisir_un_cms.php"><img width="55" height="55" border="0" src="../../../images/stories/biseau/comparaison.png" alt="10 options pour choisir un CMS" /></a></td>
+<td><a href="../../../actualites/php/19173-10_options_pour_choisir_un_cms.php">10 options pour choisir un CMS</a><br />
+</td>
+</tr>
+
+<tr>
+<td><a href="../../../actualites/php/19182-phpmyadmin_avance.php"><img width="55" height="55" border="0" src="../../../images/stories/biseau/phpmyadmin.png" alt="PHPMyAdmin Avancé" /></a></td>
+<td><a href="../../../actualites/php/19182-phpmyadmin_avance.php">PHPMyAdmin Avanc&eacute;</a><br />
+</td>
+</tr>
+
+</table>
+</div>";s:14:"date_timestamp";i:1261729561;}i:16;a:7:{s:5:"title";s:44:"Calendrier de l'avent PHP 2009 : 22 décembre";s:4:"link";s:44:"http://www.nexen.net/content/view/19410/165/";s:11:"description";s:341:"<div class="content_header_img">
+					<img alt="Image pour le titre du contenu" src="http://www.nexen.net/images/stories/biseau/calendrier.avent.png">
+				    </div><div class="blogcontent">
+Chris Shiflett publie le calendrier de l'Avent PHP, avec des astuces d'experts PHP pour tout le monde.<br />
+* Derick Rethans: PHP in Odd Places</div>";s:7:"pubdate";s:31:"Thu, 24 Dec 2009 11:33:19 +0100";s:4:"guid";s:44:"http://www.nexen.net/content/view/19410/165/";s:7:"summary";s:341:"<div class="content_header_img">
+					<img alt="Image pour le titre du contenu" src="http://www.nexen.net/images/stories/biseau/calendrier.avent.png">
+				    </div><div class="blogcontent">
+Chris Shiflett publie le calendrier de l'Avent PHP, avec des astuces d'experts PHP pour tout le monde.<br />
+* Derick Rethans: PHP in Odd Places</div>";s:14:"date_timestamp";i:1261650799;}i:17;a:7:{s:5:"title";s:23:"Rétrospective : Juin 09";s:4:"link";s:44:"http://www.nexen.net/content/view/19407/165/";s:11:"description";s:2105:"<div class="content_header_img">
+					<img alt="Image pour le titre du contenu" src="http://www.nexen.net/images/stories/biseau/nexen.x.png">
+				    </div><div class="blogcontent">
+Les meilleures actualit&eacute;s autour de PHP et MySQL du mois de Juin 2009 ont &eacute;t&eacute; :<br />
+<table border="0">
+<tr>
+<td><a href="../../../actualites/php/19155-php_5.3_disponible.php"><img border="0" width="55" height="55" src="../../../images/stories/biseau/php.png" alt="PHP 5.3 disponible" /></a></td>
+
+<td><a href="../../../actualites/php/19155-php_5.3_disponible.php">PHP 5.3 disponible</a><br />
+</td>
+</tr>
+
+<tr>
+<td><a href="../../../actualites/trucs/19098-or_die_doit_mourir.php"><img border="0" width="55" height="55" src="../../../images/stories/biseau/php.png" alt="" /></a></td>
+
+<td><a href="../../../actualites/trucs/19098-or_die_doit_mourir.php">&quot;or die()&quot; doit mourir</a><br />
+</td>
+</tr>
+
+<tr>
+<td><a href="../../../actualites/php/19150-du_nouveau_autour_de_eclipse_galileo,_pdt....php"><img border="0" width="55" height="55" src="../../../images/stories/biseau/eclipse.png" alt="Du nouveau autour de Eclipse (Galileo, PDT...)" /></a></td>
+
+<td><a href="../../../actualites/php/19150-du_nouveau_autour_de_eclipse_galileo,_pdt....php">Du nouveau autour de Eclipse (Galileo, PDT...)</a><br />
+</td>
+</tr>
+
+<tr>
+<td><a href="../../../actualites/pecl/19105-executer_du_javascript_depuis_php.php"><img border="0" width="55" height="55" src="../../../images/stories/biseau/javascript.png" alt="Exécuter du Javascript depuis PHP" /></a></td>
+
+<td><a href="../../../actualites/pecl/19105-executer_du_javascript_depuis_php.php">Ex&eacute;cuter du Javascript depuis PHP</a><br />
+</td>
+</tr>
+
+<tr>
+<td><a href="../../../actualites/php/19117-symfony_live_:_evenement_juin_2009.php"><img border="0" width="55" height="55" src="../../../images/stories/biseau/symfonylive.png" alt="Symfony Live : Evènement juin 2009" /></a></td>
+
+<td><a href="../../../actualites/php/19117-symfony_live_:_evenement_juin_2009.php">Symfony Live : Ev&egrave;nement juin 2009</a><br />
+</td>
+</tr>
+
+</table>
+</div>";s:7:"pubdate";s:31:"Thu, 24 Dec 2009 10:15:24 +0100";s:4:"guid";s:44:"http://www.nexen.net/content/view/19407/165/";s:7:"summary";s:2105:"<div class="content_header_img">
+					<img alt="Image pour le titre du contenu" src="http://www.nexen.net/images/stories/biseau/nexen.x.png">
+				    </div><div class="blogcontent">
+Les meilleures actualit&eacute;s autour de PHP et MySQL du mois de Juin 2009 ont &eacute;t&eacute; :<br />
+<table border="0">
+<tr>
+<td><a href="../../../actualites/php/19155-php_5.3_disponible.php"><img border="0" width="55" height="55" src="../../../images/stories/biseau/php.png" alt="PHP 5.3 disponible" /></a></td>
+
+<td><a href="../../../actualites/php/19155-php_5.3_disponible.php">PHP 5.3 disponible</a><br />
+</td>
+</tr>
+
+<tr>
+<td><a href="../../../actualites/trucs/19098-or_die_doit_mourir.php"><img border="0" width="55" height="55" src="../../../images/stories/biseau/php.png" alt="" /></a></td>
+
+<td><a href="../../../actualites/trucs/19098-or_die_doit_mourir.php">&quot;or die()&quot; doit mourir</a><br />
+</td>
+</tr>
+
+<tr>
+<td><a href="../../../actualites/php/19150-du_nouveau_autour_de_eclipse_galileo,_pdt....php"><img border="0" width="55" height="55" src="../../../images/stories/biseau/eclipse.png" alt="Du nouveau autour de Eclipse (Galileo, PDT...)" /></a></td>
+
+<td><a href="../../../actualites/php/19150-du_nouveau_autour_de_eclipse_galileo,_pdt....php">Du nouveau autour de Eclipse (Galileo, PDT...)</a><br />
+</td>
+</tr>
+
+<tr>
+<td><a href="../../../actualites/pecl/19105-executer_du_javascript_depuis_php.php"><img border="0" width="55" height="55" src="../../../images/stories/biseau/javascript.png" alt="Exécuter du Javascript depuis PHP" /></a></td>
+
+<td><a href="../../../actualites/pecl/19105-executer_du_javascript_depuis_php.php">Ex&eacute;cuter du Javascript depuis PHP</a><br />
+</td>
+</tr>
+
+<tr>
+<td><a href="../../../actualites/php/19117-symfony_live_:_evenement_juin_2009.php"><img border="0" width="55" height="55" src="../../../images/stories/biseau/symfonylive.png" alt="Symfony Live : Evènement juin 2009" /></a></td>
+
+<td><a href="../../../actualites/php/19117-symfony_live_:_evenement_juin_2009.php">Symfony Live : Ev&egrave;nement juin 2009</a><br />
+</td>
+</tr>
+
+</table>
+</div>";s:14:"date_timestamp";i:1261646124;}i:18;a:7:{s:5:"title";s:39:"Naissance d?un plugin Solr pour Symfony";s:4:"link";s:70:"http://www.miximum.fr/actus/413-naissance-dun-plugin-solr-pour-symfony";s:11:"description";s:3193:"<div class="tweetmeme_button" style="float: right; margin-left: 10px;"><a href="http://api.tweetmeme.com/share?url=http%3A%2F%2Fwww.miximum.fr%2Factus%2F413-naissance-dun-plugin-solr-pour-symfony"><img src="http://api.tweetmeme.com/imagebutton.gif?url=http%3A%2F%2Fwww.miximum.fr%2Factus%2F413-naissance-dun-plugin-solr-pour-symfony" height="61" width="51" /></a></div><div class="postimg alignleft"><a href="http://www.flickr.com/photos/68634595@N00/116220689/" title="Our Direction" target="_blank"><img src="http://farm1.static.flickr.com/36/116220689_438039ddb3_m.jpg" alt="Our Direction" border="0" /></a><br /><small><a href="http://creativecommons.org/licenses/by-nc/2.0/" title="Attribution-NonCommercial License" target="_blank"><img src="http://www.miximum.fr/wp-content/plugins/photo-dropper/images/cc.png" alt="Creative Commons License" border="0" width="16" height="16" align="absmiddle" /></a> <a href="http://www.photodropper.com/photos/" target="_blank">photo</a> credit&nbsp;: <a href="http://www.flickr.com/photos/68634595@N00/116220689/" title="B Tal" target="_blank">B Tal</a></small></div>
+<p>Salut la compagnie. Ce billet (vraissemblablement le dernier de l&#8217;ann&eacute;e) est destin&eacute; &agrave; faire passer une annonce (et aussi &agrave; ramener un peu de traffic, j&#8217;avoue).</p>
+<p>Si vous n&#8217;&ecirc;tes pas <a href="http://twitter.com/thibaultj">abonn&eacute; &agrave; mon twitter</a>, vous ne savez peut-&ecirc;tre pas encore que je viens de l&acirc;cher dans la nature un <a href="http://www.symfony-project.org/plugins/tjSolrDoctrineBehaviorPlugin">nouveau plugin pour Symfony, qui porte le doux nom de <strong>tjSolrDoctrineBehaviorPlugin</strong></a>.</p>
+<p>Ce plugin, comme son nom l&#8217;indique, permet de coupler tr&eacute;s simplement le <a href="http://www.symfony-project.org">framework Symfony</a> et le <a href="http://www.symfony-project.org/plugins/tjSolrDoctrineBehaviorPlugin">moteur de recherche Solr</a>. Ainsi, vous pouvez b&eacute;n&eacute;ficier dans vos projets Symfony d&#8217;un moteur de recherche au top, m&ecirc;me si vous n&#8217;&ecirc;tes pas familier avec Solr.</p>
+<p>Il s&#8217;agit d&#8217;une version beta, ce qui signifie que je suis preneur de toutes remarques ou commentaires sur le sujet. Je n&#8217;en dit pas plus, la <a href="http://www.symfony-project.org/plugins/tjSolrDoctrineBehaviorPlugin/0_9_0?tab=plugin_readme">documentation du plugin</a> est suffisamment d&eacute;taill&eacute;e comme &ccedil;a.</p>
+<p>C&#8217;est tout. Je m&#8217;en vais maintenant prendre un repos bien m&eacute;rit&eacute;, et d&eacute;guster de d&eacute;licieux chaussons aux pommes maison (tout le monde s&#8217;en fout, mais j&#8217;aime bien qu&#8217;on sache que j&#8217;appr&eacute;cie mes vacances).</p>
+<p>Bonnes f&ecirc;tes &agrave; tous.</p>
+<div class="tweetmeme_button" style="float: right; margin-left: 10px;"><a href="http://api.tweetmeme.com/share?url=http%3A%2F%2Fwww.miximum.fr%2Factus%2F413-naissance-dun-plugin-solr-pour-symfony"><img src="http://api.tweetmeme.com/imagebutton.gif?url=http%3A%2F%2Fwww.miximum.fr%2Factus%2F413-naissance-dun-plugin-solr-pour-symfony" height="61" width="51" /></a></div>";s:7:"pubdate";s:31:"Wed, 30 Dec 2009 17:05:13 +0100";s:4:"guid";s:70:"http://www.miximum.fr/actus/413-naissance-dun-plugin-solr-pour-symfony";s:7:"summary";s:3193:"<div class="tweetmeme_button" style="float: right; margin-left: 10px;"><a href="http://api.tweetmeme.com/share?url=http%3A%2F%2Fwww.miximum.fr%2Factus%2F413-naissance-dun-plugin-solr-pour-symfony"><img src="http://api.tweetmeme.com/imagebutton.gif?url=http%3A%2F%2Fwww.miximum.fr%2Factus%2F413-naissance-dun-plugin-solr-pour-symfony" height="61" width="51" /></a></div><div class="postimg alignleft"><a href="http://www.flickr.com/photos/68634595@N00/116220689/" title="Our Direction" target="_blank"><img src="http://farm1.static.flickr.com/36/116220689_438039ddb3_m.jpg" alt="Our Direction" border="0" /></a><br /><small><a href="http://creativecommons.org/licenses/by-nc/2.0/" title="Attribution-NonCommercial License" target="_blank"><img src="http://www.miximum.fr/wp-content/plugins/photo-dropper/images/cc.png" alt="Creative Commons License" border="0" width="16" height="16" align="absmiddle" /></a> <a href="http://www.photodropper.com/photos/" target="_blank">photo</a> credit&nbsp;: <a href="http://www.flickr.com/photos/68634595@N00/116220689/" title="B Tal" target="_blank">B Tal</a></small></div>
+<p>Salut la compagnie. Ce billet (vraissemblablement le dernier de l&#8217;ann&eacute;e) est destin&eacute; &agrave; faire passer une annonce (et aussi &agrave; ramener un peu de traffic, j&#8217;avoue).</p>
+<p>Si vous n&#8217;&ecirc;tes pas <a href="http://twitter.com/thibaultj">abonn&eacute; &agrave; mon twitter</a>, vous ne savez peut-&ecirc;tre pas encore que je viens de l&acirc;cher dans la nature un <a href="http://www.symfony-project.org/plugins/tjSolrDoctrineBehaviorPlugin">nouveau plugin pour Symfony, qui porte le doux nom de <strong>tjSolrDoctrineBehaviorPlugin</strong></a>.</p>
+<p>Ce plugin, comme son nom l&#8217;indique, permet de coupler tr&eacute;s simplement le <a href="http://www.symfony-project.org">framework Symfony</a> et le <a href="http://www.symfony-project.org/plugins/tjSolrDoctrineBehaviorPlugin">moteur de recherche Solr</a>. Ainsi, vous pouvez b&eacute;n&eacute;ficier dans vos projets Symfony d&#8217;un moteur de recherche au top, m&ecirc;me si vous n&#8217;&ecirc;tes pas familier avec Solr.</p>
+<p>Il s&#8217;agit d&#8217;une version beta, ce qui signifie que je suis preneur de toutes remarques ou commentaires sur le sujet. Je n&#8217;en dit pas plus, la <a href="http://www.symfony-project.org/plugins/tjSolrDoctrineBehaviorPlugin/0_9_0?tab=plugin_readme">documentation du plugin</a> est suffisamment d&eacute;taill&eacute;e comme &ccedil;a.</p>
+<p>C&#8217;est tout. Je m&#8217;en vais maintenant prendre un repos bien m&eacute;rit&eacute;, et d&eacute;guster de d&eacute;licieux chaussons aux pommes maison (tout le monde s&#8217;en fout, mais j&#8217;aime bien qu&#8217;on sache que j&#8217;appr&eacute;cie mes vacances).</p>
+<p>Bonnes f&ecirc;tes &agrave; tous.</p>
+<div class="tweetmeme_button" style="float: right; margin-left: 10px;"><a href="http://api.tweetmeme.com/share?url=http%3A%2F%2Fwww.miximum.fr%2Factus%2F413-naissance-dun-plugin-solr-pour-symfony"><img src="http://api.tweetmeme.com/imagebutton.gif?url=http%3A%2F%2Fwww.miximum.fr%2Factus%2F413-naissance-dun-plugin-solr-pour-symfony" height="61" width="51" /></a></div>";s:14:"date_timestamp";i:1262189113;}i:19;a:5:{s:5:"title";s:55:"Créer une extension PHP - Part 1: Installation du matos";s:11:"description";s:12604:"<p>Intro:</p>
+<blockquote><p>Qui n'a jamais rêvé de ces mondes souterrains, de ces mers lointaines peuplées de légendes ou d'une richesse soudaine
+qui se conquérerait au <a href="http://www.generiquestele.com/Les_myst%C3%A9rieuses_cit%C3%A9s_d%27or">détour</a> d'un chemin de la Cordillière des Andes ?
+</p></blockquote>
+
+<p><a href="http://www.urbandictionary.com/define.php?term=okee%20dokee">Okee</a>. En fait je voulais juste dire qu'aujourd'hui on va débuter une série d'articles (probablement entrecoupés de <a href="/category/vrac">conneries</a> à 2 balles) dont la futile existence consiste à vous apporter les bases nécessaires pour que -un jour peut être- vous soyez en mesure d'écrire votre propre extension php en C ou C++. </p>
+
+<p>Inutile de tergiverser, nous allons nous focaliser sur un environnement UNIX. Bien que de gros <a href="http://wiki.php.net/internals/windows">efforts</a> ont été faits, développer sous Windows pour PHP est encore <i>légèrement</i> chiant, notamment lorsque l'on fait intervenir des librairies tierces. Néanmoins, je ne dis pas que -par chance- il se peut que un jour -par hasard- je complète la série avec un article focalisé sur Windows.</p>
+
+<h3>Si tout s'est bien passé, le titre parle d'installation du matos</h3>
+
+<p>Il nous faut:</p>
+<ul>
+<li>Les <a href="http://www.php.net/downloads.php">sources</a> de php</li>
+<li><a href="http://www.gnu.org/software/autoconf">autoconf</a>, <a href="http://www.gnu.org/software/automake">automake</a>, <a href="http://www.gnu.org/software/libtool">libtool</a>, <a href="http://www.gnu.org/software/bison">bison</a></li>
+<li><a href="http://gcc.gnu.org">GCC</a></li>
+</ul>
+
+<p>En fait je pense que c'est à peu près tout. De toute façon, si ce n'est pas suffisant, on le saura: ça va merder. Plus tard, on pourra ajouter <a href="http://re2c.org">re2c</a> lorsqu'on abordera (qui sait?) la customisation de la grammaire de php, par exemple autoriser la syntaxe courte pour les array <code>[1,2]</code>.</p>
+
+<p>Votre distrib linux contient probablement déjà tout le nécessaire. Si ce n'est pas le cas, vous pouvez surement installer ces tools via le système de packages ou directement via les sources. Ca fonctionne généralement très bien. Sous OSX, il faudra que vous installiez les <a href="http://developer.apple.com/tools/">developer tools</a> c.a.d. Xcode et sa suite, mais rassurez vous, nous n'aurons pas besoins de le lancer.</p>
+
+<p>Voici ce que nous allons faire: On va compiler et installer une version de php qui sera dédiée pour nos expérimentations. Notre extension php sera compilée avec les sources de cette version fraichement installée. Dans un premier temps, nous utiliserons exclusivement la version <a href="http://php.net/manual/en/features.commandline.php">CLI</a> de php: plus simple à mettre en oeuvre, notamment pour les tests.</p>
+
+<h3>Organisation des fichiers</h3>
+
+<p>On va bosser chez nous. Nul besoins de polluer /usr, NUL BESOINS D'ETRE ROOT.</p>
+<pre>
+$HOME/                &lt;-- /home/machin ou /Users/machin etc
+     vrac/            &lt;-- tout sera ici
+         php-5.3.1/   &lt;-- les sources de php
+         php/         &lt;-- là où sera installé php
+         phpext/      &lt;-- le répertoire de nos extensions
+               part1/ &lt;-- la première extension
+</pre>
+
+<h3>Choper et compiler les sources de php</h3>
+
+<p>Ca se passe <a href="http://www.php.net/downloads.php">ici</a>. Je prends <em>PHP 5.3.1 Complete Source Code</em> en tar.gz.</p>
+
+<pre>
+$ cd ~/vrac
+$ wget http://fr.php.net/get/php-5.3.1.tar.gz/from/this/mirror
+</pre>
+
+<p>Une fois les sources téléchargées, une petite vérif qui va bien:</p>
+
+<pre>$ md5sum php-5.3.1.tar.gz
+41fbb368d86acb13fc3519657d277681  php-5.3.1.tar.gz
+</pre>
+
+<p>Sous OSX, si vous n'avez pas installé <a href="http://www.gnu.org/software/coreutils">GNU Coreutils</a>, ceci devrait fonctionner:</p>
+
+<pre>
+$ md5 php-5.3.1.tar.gz 
+MD5 (php-5.3.1.tar.gz) = 41fbb368d86acb13fc3519657d277681
+</pre>
+
+<p>OK. C'est bon. On extrait le tarball compressé:</p>
+
+<pre>$ tar zxf php-5.3.1.tar.gz
+$ cd php-5.3.1</pre>
+
+<p>Avant de compiler php, passons rapidos en revue ce que contiennent les sources:</p>
+
+<pre>configure &lt;-- configure et génère les Makefile
+ext/      &lt;-- les extensions (core et optionnelles)
+main/     &lt;-- les sources "basiques" de php (IO, networks...)
+sapi/     &lt;-- Server Application Programming Interface (cli, cgi, apache..)
+tests/    &lt;-- les fichiers de tests (make test)
+TSRM/     &lt;-- Thread Safe Resource Manager
+win32/    &lt;-- trucs spécifiques à Windows
+Zend/     &lt;-- le Zend Engine (gestion mémoire, opcodes etc)
+</pre>
+
+<p>On va compiler et installer une version ultra light de php cli. Pour voir la liste des options de compilations:</p>
+
+<pre>$ ./configure --help</pre>
+
+<p>Ce qui nous intéresse est ceci:</p>
+
+<pre>$ ./configure --prefix=$HOME/vrac/php \
+  --with-config-file-path=$HOME/vrac/php \
+  --disable-all --enable-cli
+</pre>
+
+<p>Ensuite, si tout s'est bien passé, les dernières lignes doivent ressembler à ça:</p>
+
+<pre>Generating files
+updating cache ./config.cache
+creating ./config.status
+creating php5.spec
+creating main/build-defs.h
+creating scripts/phpize
+creating scripts/man1/phpize.1
+creating scripts/php-config
+creating scripts/man1/php-config.1
+creating sapi/cli/php.1
+creating main/php_config.h
+creating main/internal_functions.c
+creating main/internal_functions_cli.c
++--------------------------------------------------------------------+
+| License:                                                           |
+| This software is subject to the PHP License, available in this     |
+| distribution in the file LICENSE.  By continuing this installation |
+| process, you are bound by the terms of this license agreement.     |
+| If you do not agree with the terms of this license, you must abort |
+| the installation process at this point.                            |
++--------------------------------------------------------------------+
+
+Thank you for using PHP.
+</pre>
+
+<p>On enchaine avec un grand classique:</p>
+
+<pre>$ make</pre>
+
+<p>La compilation est rapide puisque notre configuration est très light. Encore une fois, si tout est OK, on doit voir un truc du genre:</p>
+
+<pre>Build complete.
+Don't forget to run 'make test'.</pre>
+
+<p>Avant d'installer les fichiers, on obtempère en lançant les tests. Ca ne coute rien. A si, ça coute pas mal de temps. C'est bien plus long que la compilation...</p>
+
+<pre>$ make test</pre>
+
+<p>Là sur ma machine, j'obtiens ceci:</p>
+
+<pre>=====================================================================
+TEST RESULT SUMMARY
+---------------------------------------------------------------------
+Exts skipped    :   71
+Exts tested     :    7
+---------------------------------------------------------------------
+
+Number of tests : 10899              5974
+Tests skipped   : 4925 ( 45.2%) --------
+Tests warned    :    0 (  0.0%) (  0.0%)
+Tests failed    :   28 (  0.3%) (  0.5%)
+Expected fail   :    6 (  0.1%) (  0.1%)
+Tests passed    : 5940 ( 54.5%) ( 99.4%)
+---------------------------------------------------------------------
+Time taken      :  306 seconds
+=====================================================================
+</pre>
+
+<p>La plupart des tests non skippés sont passés (99.4%). C'est bon. S'il y avait eu un sérieux problème, comme ça m'est déjà arrivé, c'est l'ensemble des tests qui auraient échoué.</p>
+
+<p>On continue en installant les fichiers. Rappellez-vous, il seront installés dans <code>$HOME/vrac/php</code>. Encore une fois, pas la peine d'être root puisque nous restons dans notre home.</p>
+
+<pre>$ make install</pre>
+
+<p>OK, les fichiers ont normalement été installés dans <code>$HOME/vrac/php</code>. Sous OSX, php cli est nommé <code>php.dSYM</code>. On va le renommer en <code>php</code>. Sans changer de répertoire (toujours sous <code>php-5.3.1</code>), on fait:</p> 
+
+<pre>$ mv ../php/bin/php.dSYM ../php/bin/php</pre>
+
+<p>Pour être sur que toute cette daube fonctionne, quoi de mieux que de tester notre php fraichement installé?</p>
+
+<pre>$ $HOME/vrac/php/bin/php --version
+PHP 5.3.1 (cli) (built: Dec 26 2009 22:32:35) 
+Copyright (c) 1997-2009 The PHP Group
+Zend Engine v2.3.0, Copyright (c) 1998-2009 Zend Technologies</pre>
+
+<p>Si vous n'obtenez pas quelque chose de fortement similaire, alors il y a un prob! Je conseillerai dans ces cas là de prendre un café et une clope, puis de reprendre à zéro. Pour rappel, quand on est dans <code>php-5.3.1</code> ceci permet de cleaner le chantier:</p>
+
+<pre>$ make clean</pre>
+
+<p>Ne pas hésiter à checker par 3 fois les paramètres passés à <code>configure</code>.</p>
+
+<h3>RAS pour php. (N)ext</h3>
+
+<p>Ce premier billet ne s'occupe que de l'installation des trucs nécessaires. Nous allons tout de même compiler une extension absolument bidon et la tester via le système de tests fourni par php. Ca nous sera utile pour la suite. Les <a href="http://github.com/metagoto/phpext">sources</a> sont sur github. A vous de vous démerder pour que <code>part1</code> soit placé dans <code>$HOME/vrac/phpext</code>. Ceci fonctionne:</p>
+
+<pre>$ cd ~/vrac
+$ git clone git://github.com/metagoto/phpext.git
+</pre>
+
+<p>Comme vous pouvez le voir, les sources de cette extension nommée <code>part1</code> sont en dehors du source tree de php. On va donc utiliser le tool <code>phpize</code> que nous venons juste de compiler: ce dernier se charge de créer un fichier <code>configure</code> pour notre extension.</p>
+
+<pre>$ cd ~/vrac/phpext/part1
+$ $HOME/vrac/php/bin/phpize 
+$ ./configure --with-php-config=$HOME/vrac/php/bin/php-config
+</pre>
+
+<p>Ensuite, on build, mais on n'installe pas car ça ne sert à rien pour ce qu'on veut faire. </p>
+
+<pre>$ make
+...
+Build complete.
+Don't forget to run 'make test'.
+</pre>
+
+<p>Et on ne lance pas les tests! Tout du moins, on ne va pas faire ce qui nous est proposé. Pour tester notre extension, la commande utilisée est plus subtile.</p>
+
+<h3>Tester une extension</h3>
+
+<p>Le lecteur consciencieux aura remarqué la présence d'un répertoire <code>part1/tests</code>. Dedans y figure un misérable fichier nommé <code>001.phpt</code>. Ce dernier est au format compatible avec le lanceur de tests de php qui par chance a été créé lors de notre précédent appel à <code>./configure</code>. Ce fichier est nommé <code>run-tests.php</code>.</p>
+
+<p>Aussi, si tout s'est bien déroulé, notre extension compilée a été placée dans le répertoire <code>part1/modules</code> sous le nom <code>part1.so</code>. Il va donc falloir que php charge cette extension puis lance l'unique test <code>001.phpt</code>. Nous sommes toujours dans le répertoire <code>part1</code>. La commande est la suivante:</p>
+
+<pre>$ TEST_PHP_EXECUTABLE=$HOME/vrac/php/bin/php \
+  $HOME/vrac/php/bin/php run-tests.php \
+  -d "extension=$HOME/vrac/phpext/part1/modules/part1.so"</pre>
+
+<p>Là le test est immédiat. Si ça passe, et ça DOIT:</p>
+
+<pre>=====================================================================
+PASS part1 test [tests/001.phpt] 
+=====================================================================
+</pre>
+
+<p>Maintenant, que fait la commande bizarre que nous venons d'exécuter ? En gros, on exécute le fichier <code>run-tests.php</code> avec notre php. Habituellement, ce fichier est lancé via un <code>make test</code>. Sauf que là nous ne sommes pas dans un source tree de php, nous sommes dans le source tree de notre extension. <code>run-tests.php</code> a besoins de savoir explicitement quel est l'exécutable utilisé pour les tests, c'est pourquoi on définit la variable <code>TEST_PHP_EXECUTABLE</code>. Aussi, nous voulons que php charge notre extension. C'est chose faite en passant l'argument <code>-d</code> qui permet de définir un couple clé/valeur au format ini.</p>
+
+<p>Mais qu'y a-t-il dans <code>part1/tests/001.phpt</code>? Ceci:</p>
+
+<pre><code class="jsh:php">--TEST--
+part1 test
+--SKIPIF--
+&lt;?php if (!extension_loaded('part1')) die('part1 not loaded'); ?&gt;
+--FILE--
+&lt;?php 
+part1_test();
+?&gt;
+--EXPECT--
+test from part1</code></pre>
+
+<p>Ca me parait assez explicite. Le test est skippé si l'extension <i>part1</i> est absente. Oui c'est notre extension! Le test à proprement parler consiste à exécuter la fonction <code>part1_test()</code>. Il s'agit de la seule fonction exportée de notre extension. Cette fonction se contente juste de faire l'équivalent d'un <code>print 'test from part1'</code>. </p>
+
+<p><a href="http://fr.wiktionary.org/wiki/dacodac">Dacodac</a>. Nous avons maintenant  en main les bases pour compiler, charger et tester des extensions php.</p>
+
+<p>Pour moi c'est RAS.</p>";s:7:"pubdate";s:31:"Sun, 27 Dec 2009 01:01:31 +0100";s:7:"summary";s:12604:"<p>Intro:</p>
+<blockquote><p>Qui n'a jamais rêvé de ces mondes souterrains, de ces mers lointaines peuplées de légendes ou d'une richesse soudaine
+qui se conquérerait au <a href="http://www.generiquestele.com/Les_myst%C3%A9rieuses_cit%C3%A9s_d%27or">détour</a> d'un chemin de la Cordillière des Andes ?
+</p></blockquote>
+
+<p><a href="http://www.urbandictionary.com/define.php?term=okee%20dokee">Okee</a>. En fait je voulais juste dire qu'aujourd'hui on va débuter une série d'articles (probablement entrecoupés de <a href="/category/vrac">conneries</a> à 2 balles) dont la futile existence consiste à vous apporter les bases nécessaires pour que -un jour peut être- vous soyez en mesure d'écrire votre propre extension php en C ou C++. </p>
+
+<p>Inutile de tergiverser, nous allons nous focaliser sur un environnement UNIX. Bien que de gros <a href="http://wiki.php.net/internals/windows">efforts</a> ont été faits, développer sous Windows pour PHP est encore <i>légèrement</i> chiant, notamment lorsque l'on fait intervenir des librairies tierces. Néanmoins, je ne dis pas que -par chance- il se peut que un jour -par hasard- je complète la série avec un article focalisé sur Windows.</p>
+
+<h3>Si tout s'est bien passé, le titre parle d'installation du matos</h3>
+
+<p>Il nous faut:</p>
+<ul>
+<li>Les <a href="http://www.php.net/downloads.php">sources</a> de php</li>
+<li><a href="http://www.gnu.org/software/autoconf">autoconf</a>, <a href="http://www.gnu.org/software/automake">automake</a>, <a href="http://www.gnu.org/software/libtool">libtool</a>, <a href="http://www.gnu.org/software/bison">bison</a></li>
+<li><a href="http://gcc.gnu.org">GCC</a></li>
+</ul>
+
+<p>En fait je pense que c'est à peu près tout. De toute façon, si ce n'est pas suffisant, on le saura: ça va merder. Plus tard, on pourra ajouter <a href="http://re2c.org">re2c</a> lorsqu'on abordera (qui sait?) la customisation de la grammaire de php, par exemple autoriser la syntaxe courte pour les array <code>[1,2]</code>.</p>
+
+<p>Votre distrib linux contient probablement déjà tout le nécessaire. Si ce n'est pas le cas, vous pouvez surement installer ces tools via le système de packages ou directement via les sources. Ca fonctionne généralement très bien. Sous OSX, il faudra que vous installiez les <a href="http://developer.apple.com/tools/">developer tools</a> c.a.d. Xcode et sa suite, mais rassurez vous, nous n'aurons pas besoins de le lancer.</p>
+
+<p>Voici ce que nous allons faire: On va compiler et installer une version de php qui sera dédiée pour nos expérimentations. Notre extension php sera compilée avec les sources de cette version fraichement installée. Dans un premier temps, nous utiliserons exclusivement la version <a href="http://php.net/manual/en/features.commandline.php">CLI</a> de php: plus simple à mettre en oeuvre, notamment pour les tests.</p>
+
+<h3>Organisation des fichiers</h3>
+
+<p>On va bosser chez nous. Nul besoins de polluer /usr, NUL BESOINS D'ETRE ROOT.</p>
+<pre>
+$HOME/                &lt;-- /home/machin ou /Users/machin etc
+     vrac/            &lt;-- tout sera ici
+         php-5.3.1/   &lt;-- les sources de php
+         php/         &lt;-- là où sera installé php
+         phpext/      &lt;-- le répertoire de nos extensions
+               part1/ &lt;-- la première extension
+</pre>
+
+<h3>Choper et compiler les sources de php</h3>
+
+<p>Ca se passe <a href="http://www.php.net/downloads.php">ici</a>. Je prends <em>PHP 5.3.1 Complete Source Code</em> en tar.gz.</p>
+
+<pre>
+$ cd ~/vrac
+$ wget http://fr.php.net/get/php-5.3.1.tar.gz/from/this/mirror
+</pre>
+
+<p>Une fois les sources téléchargées, une petite vérif qui va bien:</p>
+
+<pre>$ md5sum php-5.3.1.tar.gz
+41fbb368d86acb13fc3519657d277681  php-5.3.1.tar.gz
+</pre>
+
+<p>Sous OSX, si vous n'avez pas installé <a href="http://www.gnu.org/software/coreutils">GNU Coreutils</a>, ceci devrait fonctionner:</p>
+
+<pre>
+$ md5 php-5.3.1.tar.gz 
+MD5 (php-5.3.1.tar.gz) = 41fbb368d86acb13fc3519657d277681
+</pre>
+
+<p>OK. C'est bon. On extrait le tarball compressé:</p>
+
+<pre>$ tar zxf php-5.3.1.tar.gz
+$ cd php-5.3.1</pre>
+
+<p>Avant de compiler php, passons rapidos en revue ce que contiennent les sources:</p>
+
+<pre>configure &lt;-- configure et génère les Makefile
+ext/      &lt;-- les extensions (core et optionnelles)
+main/     &lt;-- les sources "basiques" de php (IO, networks...)
+sapi/     &lt;-- Server Application Programming Interface (cli, cgi, apache..)
+tests/    &lt;-- les fichiers de tests (make test)
+TSRM/     &lt;-- Thread Safe Resource Manager
+win32/    &lt;-- trucs spécifiques à Windows
+Zend/     &lt;-- le Zend Engine (gestion mémoire, opcodes etc)
+</pre>
+
+<p>On va compiler et installer une version ultra light de php cli. Pour voir la liste des options de compilations:</p>
+
+<pre>$ ./configure --help</pre>
+
+<p>Ce qui nous intéresse est ceci:</p>
+
+<pre>$ ./configure --prefix=$HOME/vrac/php \
+  --with-config-file-path=$HOME/vrac/php \
+  --disable-all --enable-cli
+</pre>
+
+<p>Ensuite, si tout s'est bien passé, les dernières lignes doivent ressembler à ça:</p>
+
+<pre>Generating files
+updating cache ./config.cache
+creating ./config.status
+creating php5.spec
+creating main/build-defs.h
+creating scripts/phpize
+creating scripts/man1/phpize.1
+creating scripts/php-config
+creating scripts/man1/php-config.1
+creating sapi/cli/php.1
+creating main/php_config.h
+creating main/internal_functions.c
+creating main/internal_functions_cli.c
++--------------------------------------------------------------------+
+| License:                                                           |
+| This software is subject to the PHP License, available in this     |
+| distribution in the file LICENSE.  By continuing this installation |
+| process, you are bound by the terms of this license agreement.     |
+| If you do not agree with the terms of this license, you must abort |
+| the installation process at this point.                            |
++--------------------------------------------------------------------+
+
+Thank you for using PHP.
+</pre>
+
+<p>On enchaine avec un grand classique:</p>
+
+<pre>$ make</pre>
+
+<p>La compilation est rapide puisque notre configuration est très light. Encore une fois, si tout est OK, on doit voir un truc du genre:</p>
+
+<pre>Build complete.
+Don't forget to run 'make test'.</pre>
+
+<p>Avant d'installer les fichiers, on obtempère en lançant les tests. Ca ne coute rien. A si, ça coute pas mal de temps. C'est bien plus long que la compilation...</p>
+
+<pre>$ make test</pre>
+
+<p>Là sur ma machine, j'obtiens ceci:</p>
+
+<pre>=====================================================================
+TEST RESULT SUMMARY
+---------------------------------------------------------------------
+Exts skipped    :   71
+Exts tested     :    7
+---------------------------------------------------------------------
+
+Number of tests : 10899              5974
+Tests skipped   : 4925 ( 45.2%) --------
+Tests warned    :    0 (  0.0%) (  0.0%)
+Tests failed    :   28 (  0.3%) (  0.5%)
+Expected fail   :    6 (  0.1%) (  0.1%)
+Tests passed    : 5940 ( 54.5%) ( 99.4%)
+---------------------------------------------------------------------
+Time taken      :  306 seconds
+=====================================================================
+</pre>
+
+<p>La plupart des tests non skippés sont passés (99.4%). C'est bon. S'il y avait eu un sérieux problème, comme ça m'est déjà arrivé, c'est l'ensemble des tests qui auraient échoué.</p>
+
+<p>On continue en installant les fichiers. Rappellez-vous, il seront installés dans <code>$HOME/vrac/php</code>. Encore une fois, pas la peine d'être root puisque nous restons dans notre home.</p>
+
+<pre>$ make install</pre>
+
+<p>OK, les fichiers ont normalement été installés dans <code>$HOME/vrac/php</code>. Sous OSX, php cli est nommé <code>php.dSYM</code>. On va le renommer en <code>php</code>. Sans changer de répertoire (toujours sous <code>php-5.3.1</code>), on fait:</p> 
+
+<pre>$ mv ../php/bin/php.dSYM ../php/bin/php</pre>
+
+<p>Pour être sur que toute cette daube fonctionne, quoi de mieux que de tester notre php fraichement installé?</p>
+
+<pre>$ $HOME/vrac/php/bin/php --version
+PHP 5.3.1 (cli) (built: Dec 26 2009 22:32:35) 
+Copyright (c) 1997-2009 The PHP Group
+Zend Engine v2.3.0, Copyright (c) 1998-2009 Zend Technologies</pre>
+
+<p>Si vous n'obtenez pas quelque chose de fortement similaire, alors il y a un prob! Je conseillerai dans ces cas là de prendre un café et une clope, puis de reprendre à zéro. Pour rappel, quand on est dans <code>php-5.3.1</code> ceci permet de cleaner le chantier:</p>
+
+<pre>$ make clean</pre>
+
+<p>Ne pas hésiter à checker par 3 fois les paramètres passés à <code>configure</code>.</p>
+
+<h3>RAS pour php. (N)ext</h3>
+
+<p>Ce premier billet ne s'occupe que de l'installation des trucs nécessaires. Nous allons tout de même compiler une extension absolument bidon et la tester via le système de tests fourni par php. Ca nous sera utile pour la suite. Les <a href="http://github.com/metagoto/phpext">sources</a> sont sur github. A vous de vous démerder pour que <code>part1</code> soit placé dans <code>$HOME/vrac/phpext</code>. Ceci fonctionne:</p>
+
+<pre>$ cd ~/vrac
+$ git clone git://github.com/metagoto/phpext.git
+</pre>
+
+<p>Comme vous pouvez le voir, les sources de cette extension nommée <code>part1</code> sont en dehors du source tree de php. On va donc utiliser le tool <code>phpize</code> que nous venons juste de compiler: ce dernier se charge de créer un fichier <code>configure</code> pour notre extension.</p>
+
+<pre>$ cd ~/vrac/phpext/part1
+$ $HOME/vrac/php/bin/phpize 
+$ ./configure --with-php-config=$HOME/vrac/php/bin/php-config
+</pre>
+
+<p>Ensuite, on build, mais on n'installe pas car ça ne sert à rien pour ce qu'on veut faire. </p>
+
+<pre>$ make
+...
+Build complete.
+Don't forget to run 'make test'.
+</pre>
+
+<p>Et on ne lance pas les tests! Tout du moins, on ne va pas faire ce qui nous est proposé. Pour tester notre extension, la commande utilisée est plus subtile.</p>
+
+<h3>Tester une extension</h3>
+
+<p>Le lecteur consciencieux aura remarqué la présence d'un répertoire <code>part1/tests</code>. Dedans y figure un misérable fichier nommé <code>001.phpt</code>. Ce dernier est au format compatible avec le lanceur de tests de php qui par chance a été créé lors de notre précédent appel à <code>./configure</code>. Ce fichier est nommé <code>run-tests.php</code>.</p>
+
+<p>Aussi, si tout s'est bien déroulé, notre extension compilée a été placée dans le répertoire <code>part1/modules</code> sous le nom <code>part1.so</code>. Il va donc falloir que php charge cette extension puis lance l'unique test <code>001.phpt</code>. Nous sommes toujours dans le répertoire <code>part1</code>. La commande est la suivante:</p>
+
+<pre>$ TEST_PHP_EXECUTABLE=$HOME/vrac/php/bin/php \
+  $HOME/vrac/php/bin/php run-tests.php \
+  -d "extension=$HOME/vrac/phpext/part1/modules/part1.so"</pre>
+
+<p>Là le test est immédiat. Si ça passe, et ça DOIT:</p>
+
+<pre>=====================================================================
+PASS part1 test [tests/001.phpt] 
+=====================================================================
+</pre>
+
+<p>Maintenant, que fait la commande bizarre que nous venons d'exécuter ? En gros, on exécute le fichier <code>run-tests.php</code> avec notre php. Habituellement, ce fichier est lancé via un <code>make test</code>. Sauf que là nous ne sommes pas dans un source tree de php, nous sommes dans le source tree de notre extension. <code>run-tests.php</code> a besoins de savoir explicitement quel est l'exécutable utilisé pour les tests, c'est pourquoi on définit la variable <code>TEST_PHP_EXECUTABLE</code>. Aussi, nous voulons que php charge notre extension. C'est chose faite en passant l'argument <code>-d</code> qui permet de définir un couple clé/valeur au format ini.</p>
+
+<p>Mais qu'y a-t-il dans <code>part1/tests/001.phpt</code>? Ceci:</p>
+
+<pre><code class="jsh:php">--TEST--
+part1 test
+--SKIPIF--
+&lt;?php if (!extension_loaded('part1')) die('part1 not loaded'); ?&gt;
+--FILE--
+&lt;?php 
+part1_test();
+?&gt;
+--EXPECT--
+test from part1</code></pre>
+
+<p>Ca me parait assez explicite. Le test est skippé si l'extension <i>part1</i> est absente. Oui c'est notre extension! Le test à proprement parler consiste à exécuter la fonction <code>part1_test()</code>. Il s'agit de la seule fonction exportée de notre extension. Cette fonction se contente juste de faire l'équivalent d'un <code>print 'test from part1'</code>. </p>
+
+<p><a href="http://fr.wiktionary.org/wiki/dacodac">Dacodac</a>. Nous avons maintenant  en main les bases pour compiler, charger et tester des extensions php.</p>
+
+<p>Pour moi c'est RAS.</p>";s:14:"date_timestamp";i:1261872091;}}s:7:"channel";a:9:{s:5:"title";s:14:"planete php fr";s:11:"description";s:14:"planete php fr";s:4:"link";s:29:"http://planete-php.fr/rss.php";s:8:"language";s:5:"fr-fr";s:7:"pubdate";s:31:"Sun, 03 Jan 2010 07:51:16 +0100";s:13:"lastbuilddate";s:29:"Tue, 10 Jun 2003 09:41:01 GMT";s:9:"generator";s:16:"AFUP - à la mano";s:14:"managingeditor";s:44:"planetephpfr@afup.org (Perrick Penet / AFUP)";s:7:"tagline";s:14:"planete php fr";}s:9:"textinput";a:0:{}s:5:"image";a:0:{}s:9:"feed_type";s:3:"RSS";s:12:"feed_version";s:3:"2.0";s:8:"encoding";s:10:"ISO-8859-1";s:16:"_source_encoding";s:0:"";s:5:"ERROR";s:0:"";s:7:"WARNING";s:0:"";s:19:"_CONTENT_CONSTRUCTS";a:6:{i:0;s:7:"content";i:1;s:7:"summary";i:2;s:4:"info";i:3;s:5:"title";i:4;s:7:"tagline";i:5;s:9:"copyright";}s:16:"_KNOWN_ENCODINGS";a:3:{i:0;s:5:"UTF-8";i:1;s:8:"US-ASCII";i:2;s:10:"ISO-8859-1";}s:5:"stack";a:0:{}s:9:"inchannel";b:0;s:6:"initem";b:0;s:9:"incontent";b:0;s:11:"intextinput";b:0;s:7:"inimage";b:0;s:17:"current_namespace";b:0;}

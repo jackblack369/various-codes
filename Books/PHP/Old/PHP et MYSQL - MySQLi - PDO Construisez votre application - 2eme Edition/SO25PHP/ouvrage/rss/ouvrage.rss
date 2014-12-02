@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<rss version="2.0">
+<channel>
+    <title>Exemple Flux RSS</title>
+    <link>http://www.hello-design.fr</link>
+    <description>Le Flux RSS su site Hello pour exemple</description>
+    <language>fr-fr</language>
+    <pubDate>Sat, 02 Jan 2010 17:37:48 CET</pubDate>
+    <lastBuildDate>Sat, 02 Jan 2010 17:37:48 CET</lastBuildDate>
+		<item>		<title>Editions ENI</title>
+		<link>http://www.editions-eni.com/</link>
+		<description>Le site des Editions ENI</description>
+		</item>		<item>		<title>Hello-Design</title>
+		<link>http://www.hello-design.fr</link>
+		<description>Auteur du livre que vous avez dans les mains</description>
+		</item>		<item>		<title>Actualite PHP et MySQL francaise</title>
+		<link>http://www.nexen.net</link>
+		<description>Soyez informer des actualites francaises venant du PHP</description>
+		</item>		<item>		<title>Portail de la communaute francophone</title>
+		<link>http://www.phpteam.net/</link>
+		<description>Site permettant de progresser en PHP sous la forme de Tutoriaux</description>
+		</item>		<item>		<title>Le site incontournable</title>
+		<link>http://www.elroubio.net/</link>
+		<description>Venez decouvrir le site du pere de elephant</description>
+		</item>		</channel>		</rss>

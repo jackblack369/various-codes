@@ -1,0 +1,6 @@
+127.0.0.1-2009-12-27 17:13:57-/eni/application/poo-mysqli/compte.php-Mozilla/5.0 (Windows; U; Windows NT 5.1; fr; rv:1.9.1.6) Gecko/20091201 Firefox/3.5.6 FirePHP/0.3-http://localhost/eni/application/poo-mysqli/identification.php
+127.0.0.1-2009-12-27 17:14:45-/eni/application/poo-mysqli/compte.php-Mozilla/5.0 (Windows; U; Windows NT 5.1; fr; rv:1.9.1.6) Gecko/20091201 Firefox/3.5.6 FirePHP/0.3-http://localhost/eni/application/poo-mysqli/identification.php
+127.0.0.1-2009-12-27 17:20:35-/eni/application/poo-mysqli/compte.php-Mozilla/5.0 (Windows; U; Windows NT 5.1; fr; rv:1.9.1.6) Gecko/20091201 Firefox/3.5.6 FirePHP/0.3-http://localhost/eni/application/poo-mysqli/identification.php
+127.0.0.1-2009-12-27 21:35:30-/eni/application/poo-mysqli/compte.php-Mozilla/5.0 (Windows; U; Windows NT 5.1; fr; rv:1.9.1.6) Gecko/20091201 Firefox/3.5.6 FirePHP/0.3-http://localhost/eni/application/poo-mysqli/identification.php
+127.0.0.1-2009-12-27 21:35:30-/eni/application/poo-mysqli/compte.php-Mozilla/5.0 (Windows; U; Windows NT 5.1; fr; rv:1.9.1.6) Gecko/20091201 Firefox/3.5.6 FirePHP/0.3-http://localhost/eni/application/poo-mysqli/identification.php
+127.0.0.1-2009-12-27 21:35:36-/eni/application/poo-mysqli/compte.php-Mozilla/5.0 (Windows; U; Windows NT 5.1; fr; rv:1.9.1.6) Gecko/20091201 Firefox/3.5.6 FirePHP/0.3-http://localhost/eni/application/poo-mysqli/compte.php

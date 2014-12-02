@@ -1,0 +1,583 @@
+O:9:"MagpieRSS":21:{s:6:"parser";i:0;s:12:"current_item";a:0:{}s:5:"items";a:20:{i:0;a:7:{s:5:"title";s:20:"Evènement soirée GIT";s:4:"link";s:65:"/pages/site/?route=rendez-vous-de-l-afup/402/evenement-soiree-git";s:11:"description";s:598:"<p>Cette soirée de clôture est organisé par Sensio Labs et GitHub sur le thème GIT avec la présence de Scott Chacon de GitHub à Paris.</p>
+
+<p><img src="http://afup.org/images/git.png" /></p>
+<p><img src="http://afup.org/images/git-hub.png" /></p>
+
+<p>Elle est destinée à l'ensemble des développeurs PHP, mais aussi aux autres langages comme Python, Perl, Ruby.</p>
+
+<p>Pour connaître le lieu et toutes les informations, il faut consulter le communiqué du site symfony-live : <a href="http://www.symfony-live.com/github-meetup#git">http://www.symfony-live.com/github-meetup#git</a></p>
+
+
+";s:7:"pubdate";s:31:"Tue, 09 Feb 2010 00:00:00 +0100";s:4:"guid";s:65:"/pages/site/?route=rendez-vous-de-l-afup/402/evenement-soiree-git";s:7:"summary";s:598:"<p>Cette soirée de clôture est organisé par Sensio Labs et GitHub sur le thème GIT avec la présence de Scott Chacon de GitHub à Paris.</p>
+
+<p><img src="http://afup.org/images/git.png" /></p>
+<p><img src="http://afup.org/images/git-hub.png" /></p>
+
+<p>Elle est destinée à l'ensemble des développeurs PHP, mais aussi aux autres langages comme Python, Perl, Ruby.</p>
+
+<p>Pour connaître le lieu et toutes les informations, il faut consulter le communiqué du site symfony-live : <a href="http://www.symfony-live.com/github-meetup#git">http://www.symfony-live.com/github-meetup#git</a></p>
+
+
+";s:14:"date_timestamp";i:1265670000;}i:1;a:7:{s:5:"title";s:37:"Comment pirater PHP sans se fatiguer ";s:4:"link";s:81:"/pages/site/?route=rendez-vous-de-l-afup/401/comment-pirater-php-sans-se-fatiguer";s:11:"description";s:497:"<p>TechDays est un évènement organisé par Microsoft et Damien Seguy présentera sous la forme d'un atelier les différentes failles depuis l'extérieur mais aussi de l'intérieur.</p>
+
+<p><img src="http://www.afup.org/images/techdays-microsoft.png" /></p>
+
+<p>Le but est de permettre de corriger les erreurs de sécurité : <a href="http://www.microsoft.com/france/mstechdays/programmes/parcours.aspx?Key=&AUDIENCE=&PRODUIT=&LEVEL=&SpkID=2d0b0ad2-6cd4-4e1f-9215-ac33886ad506">Plus de Détails</a></p>";s:7:"pubdate";s:31:"Fri, 05 Feb 2010 00:00:00 +0100";s:4:"guid";s:81:"/pages/site/?route=rendez-vous-de-l-afup/401/comment-pirater-php-sans-se-fatiguer";s:7:"summary";s:497:"<p>TechDays est un évènement organisé par Microsoft et Damien Seguy présentera sous la forme d'un atelier les différentes failles depuis l'extérieur mais aussi de l'intérieur.</p>
+
+<p><img src="http://www.afup.org/images/techdays-microsoft.png" /></p>
+
+<p>Le but est de permettre de corriger les erreurs de sécurité : <a href="http://www.microsoft.com/france/mstechdays/programmes/parcours.aspx?Key=&AUDIENCE=&PRODUIT=&LEVEL=&SpkID=2d0b0ad2-6cd4-4e1f-9215-ac33886ad506">Plus de Détails</a></p>";s:14:"date_timestamp";i:1265324400;}i:2;a:7:{s:5:"title";s:57:"Symfony Live : Deuxième édition le 16 et 17 février 2010 ";s:4:"link";s:94:"/pages/site/?route=certification-php/400/symfony-live-deuxi-me-dition-le-16-et-17-f-vrier-2010";s:11:"description";s:1110:"Parmi les guests qu'il ne faudra pas manquer...
+
+
+Stefan Koopmanschap, Community manager Symfony. Stefan animera la conférence « The symfony Community: how you can help », mardi 16 février février de 17h10 à 18h00.
+
+
+Matthew Weier O'Phinney, Lead developer du Zend Framework, qui présentera « Using the Zend Framework with symfony », mercredi 17 Février de 11h00 à 11h50
+
+
+Dustin Whittle, Developer Evangelist for Yahoo's Open Strategy, animera la conférence « Building a platform from open source at Yahoo! », mercredi 17 février de 17h30 à 18h20
+
+
+Fabien Potencier, Lead Developer de Symfony, dévoilera « Symfony 2 », mercredi 17 février de 18h20 à 19h10.
+
+
+Pour la 1ère fois en France, Scott Chacon, Git evangelist et développeur sur GitHub.com. Git est un DVCS (logiciel de gestion de versions décentralisé) créé par Linus Torvalds, qui connaît un fort engouement. Scott Chacon animera une session « Introduction to Git », mercredi 17 février de 11h00 à 11h50.
+
+Pour consulter le programme et s'inscrire, c'est par là : <a href="http://www.symfony-live.com">http://www.symfony-live.com</a>";s:7:"pubdate";s:31:"Sun, 31 Jan 2010 23:42:49 +0100";s:4:"guid";s:94:"/pages/site/?route=certification-php/400/symfony-live-deuxi-me-dition-le-16-et-17-f-vrier-2010";s:7:"summary";s:1110:"Parmi les guests qu'il ne faudra pas manquer...
+
+
+Stefan Koopmanschap, Community manager Symfony. Stefan animera la conférence « The symfony Community: how you can help », mardi 16 février février de 17h10 à 18h00.
+
+
+Matthew Weier O'Phinney, Lead developer du Zend Framework, qui présentera « Using the Zend Framework with symfony », mercredi 17 Février de 11h00 à 11h50
+
+
+Dustin Whittle, Developer Evangelist for Yahoo's Open Strategy, animera la conférence « Building a platform from open source at Yahoo! », mercredi 17 février de 17h30 à 18h20
+
+
+Fabien Potencier, Lead Developer de Symfony, dévoilera « Symfony 2 », mercredi 17 février de 18h20 à 19h10.
+
+
+Pour la 1ère fois en France, Scott Chacon, Git evangelist et développeur sur GitHub.com. Git est un DVCS (logiciel de gestion de versions décentralisé) créé par Linus Torvalds, qui connaît un fort engouement. Scott Chacon animera une session « Introduction to Git », mercredi 17 février de 11h00 à 11h50.
+
+Pour consulter le programme et s'inscrire, c'est par là : <a href="http://www.symfony-live.com">http://www.symfony-live.com</a>";s:14:"date_timestamp";i:1264977769;}i:3;a:7:{s:5:"title";s:21:"PHP solutions 01/2010";s:4:"link";s:62:"/pages/site/?route=certification-php/399/php-solutions-01-2010";s:11:"description";s:873:"En plus dans le numéro vous trouverez, entre autres, des articles sur :</p>
+
+<p>Nouvelles fonctionnalités de Symfony.</p>
+<p>Édition de documents OpenOffice ODF avec PHP.</p>
+<p>Manipuler les répertoires avec PHP.</p>
+<p>Comment réussir son référencement web ?</p>
+<p>E-commerce, comment créer et fonctionner une boutique en ligne ?</p>
+<p>Puissance des démarches descriptives.}}}</p>
+<p>Envoi de mails en PHP.</p>
+<p>Découvrez BeEF Exploitation.</p>
+
+<p>Et de nombreaux autres articles à ne pas manquer !</p>
+
+<p>En exclusivité, sur le CD joint au magazine, nous vous présentons le cours vidéo sur PHP et PDO réalisé par Christophe Villeneuve du groupe Alter Way Solutions.</p>
+
+<p>Pour en savoir plus, visitez notre site :</p>
+<p><a href="http://phpsolmag.org/fr/magazine/990-integrez-net-a-php">http://phpsolmag.org/fr/magazine/990-integrez-net-a-php</a>";s:7:"pubdate";s:31:"Wed, 20 Jan 2010 00:00:00 +0100";s:4:"guid";s:62:"/pages/site/?route=certification-php/399/php-solutions-01-2010";s:7:"summary";s:873:"En plus dans le numéro vous trouverez, entre autres, des articles sur :</p>
+
+<p>Nouvelles fonctionnalités de Symfony.</p>
+<p>Édition de documents OpenOffice ODF avec PHP.</p>
+<p>Manipuler les répertoires avec PHP.</p>
+<p>Comment réussir son référencement web ?</p>
+<p>E-commerce, comment créer et fonctionner une boutique en ligne ?</p>
+<p>Puissance des démarches descriptives.}}}</p>
+<p>Envoi de mails en PHP.</p>
+<p>Découvrez BeEF Exploitation.</p>
+
+<p>Et de nombreaux autres articles à ne pas manquer !</p>
+
+<p>En exclusivité, sur le CD joint au magazine, nous vous présentons le cours vidéo sur PHP et PDO réalisé par Christophe Villeneuve du groupe Alter Way Solutions.</p>
+
+<p>Pour en savoir plus, visitez notre site :</p>
+<p><a href="http://phpsolmag.org/fr/magazine/990-integrez-net-a-php">http://phpsolmag.org/fr/magazine/990-integrez-net-a-php</a>";s:14:"date_timestamp";i:1263942000;}i:4;a:7:{s:5:"title";s:33:"Gartner rédige un rapport sur PHP";s:4:"link";s:67:"/pages/site/?route=actualites/398/gartner-r-dige-un-rapport-sur-php";s:11:"description";s:971:"Ce rapport estime que :
+
+<ul>
+<li>Le nombre de développeurs PHP dans le monde va passer de 4 millions cette année à 5 millions à l'horizon 2013 ;
+</li>
+<li>A court terme, PHP va rester une technologie web largement utilisée ;
+</li>
+<li>Sur le long terme, PHP rencontrera une concurrence de plus en plus forte d'autres technologies comme ASP.NET, Java, Python ou encore Ruby.
+</li>
+</ul>
+
+Voici les recommandations de Gartner :
+
+<ul>
+<li>Envisagez d'utiliser PHP pour les projets qui requièrent une combinaison de technologies Open Source et propriétaires pour construire des applications web simples.
+</li>
+<li>Envisagez PHP comme un outil spécialisé pour la création d'interface de consultation pour des architectures SOA.
+</li>
+<li>Envisagez d'adopter et de personnaliser des solutions PHP éprouvées comme Drupal ou MediaWiki  avant de partir de zéro.
+</li>
+</ul>
+
+Source : <a href="http://www.industrialisation-php.com/">Industrialisation PHP</a>";s:7:"pubdate";s:31:"Tue, 05 Jan 2010 00:00:00 +0100";s:4:"guid";s:67:"/pages/site/?route=actualites/398/gartner-r-dige-un-rapport-sur-php";s:7:"summary";s:971:"Ce rapport estime que :
+
+<ul>
+<li>Le nombre de développeurs PHP dans le monde va passer de 4 millions cette année à 5 millions à l'horizon 2013 ;
+</li>
+<li>A court terme, PHP va rester une technologie web largement utilisée ;
+</li>
+<li>Sur le long terme, PHP rencontrera une concurrence de plus en plus forte d'autres technologies comme ASP.NET, Java, Python ou encore Ruby.
+</li>
+</ul>
+
+Voici les recommandations de Gartner :
+
+<ul>
+<li>Envisagez d'utiliser PHP pour les projets qui requièrent une combinaison de technologies Open Source et propriétaires pour construire des applications web simples.
+</li>
+<li>Envisagez PHP comme un outil spécialisé pour la création d'interface de consultation pour des architectures SOA.
+</li>
+<li>Envisagez d'adopter et de personnaliser des solutions PHP éprouvées comme Drupal ou MediaWiki  avant de partir de zéro.
+</li>
+</ul>
+
+Source : <a href="http://www.industrialisation-php.com/">Industrialisation PHP</a>";s:14:"date_timestamp";i:1262646000;}i:5;a:7:{s:5:"title";s:60:"Appel à l'aide d'un fondateur de MySQL pour sauver le projet";s:4:"link";s:88:"/pages/site/?route=divers/397/appel-l-aide-d-un-fondateur-de-mysql-pour-sauver-le-projet";s:11:"description";s:739:"Le lobbying d'Oracle continue autour du rachat de SUN qui engendre de gros risques concernant la survie/l'évolution de MySQL en tant que base de données potentiellement concurrente d'Oracle (sur certains segments de marché).
+
+Monty, l'un des fondateurs de MySQL et le team leader du projet MariaDB (une version optimisée de MySQL) appel à l'aide pour contrecarrer le lobbying d'Oracle auprès de la commission Européenne.
+
+L'association lemug.fr relaye <a href="http://monty-says.blogspot.com/2009/12/help-saving-mysql.html">l'appel à l'aide de Monty</a>, nous vous invitons à lire le message de Monty et à agir, ou pas, en fonction de vos convictions.
+
+<h3><a href="http://www.helpmysql.org/fr/petition">Signez la pétition !</a></h3>";s:7:"pubdate";s:31:"Mon, 14 Dec 2009 00:00:00 +0100";s:4:"guid";s:88:"/pages/site/?route=divers/397/appel-l-aide-d-un-fondateur-de-mysql-pour-sauver-le-projet";s:7:"summary";s:739:"Le lobbying d'Oracle continue autour du rachat de SUN qui engendre de gros risques concernant la survie/l'évolution de MySQL en tant que base de données potentiellement concurrente d'Oracle (sur certains segments de marché).
+
+Monty, l'un des fondateurs de MySQL et le team leader du projet MariaDB (une version optimisée de MySQL) appel à l'aide pour contrecarrer le lobbying d'Oracle auprès de la commission Européenne.
+
+L'association lemug.fr relaye <a href="http://monty-says.blogspot.com/2009/12/help-saving-mysql.html">l'appel à l'aide de Monty</a>, nous vous invitons à lire le message de Monty et à agir, ou pas, en fonction de vos convictions.
+
+<h3><a href="http://www.helpmysql.org/fr/petition">Signez la pétition !</a></h3>";s:14:"date_timestamp";i:1260745200;}i:6;a:7:{s:5:"title";s:13:"Meetup XQuery";s:4:"link";s:58:"/pages/site/?route=rendez-vous-de-l-afup/396/meetup-xquery";s:11:"description";s:403:"La définition de XQuery venant de W3C, signifie que XQuery est un langage de requête XML.
+
+Le langage PHP permet d'utiliser XQuery de différentes manières comme API Zobra, Xform...
+
+
+La Cantine est le premier espace de travail collaboratif en réseau (« co-working space ») à Paris et Ile de France.
+
+
+Pour plus d'informations : <a href="http://xquery.pbworks.com/">http://xquery.pbworks.com/</a>";s:7:"pubdate";s:31:"Thu, 26 Nov 2009 13:32:35 +0100";s:4:"guid";s:58:"/pages/site/?route=rendez-vous-de-l-afup/396/meetup-xquery";s:7:"summary";s:403:"La définition de XQuery venant de W3C, signifie que XQuery est un langage de requête XML.
+
+Le langage PHP permet d'utiliser XQuery de différentes manières comme API Zobra, Xform...
+
+
+La Cantine est le premier espace de travail collaboratif en réseau (« co-working space ») à Paris et Ile de France.
+
+
+Pour plus d'informations : <a href="http://xquery.pbworks.com/">http://xquery.pbworks.com/</a>";s:14:"date_timestamp";i:1259238755;}i:7;a:7:{s:5:"title";s:73:"Un eeePC 1005 HA à gagner à l'occasion de la journée MySQL du forum PHP !";s:4:"link";s:105:"/pages/site/?route=forum-php-2009/395/un-eeepc-1005-ha-gagner-l-occasion-de-la-journ-e-mysql-du-forum-php";s:11:"description";s:513:"L'eeePC sera offert par tirage au sort à l'occasion de l'une des conférences sur MySQL.
+
+<ul>
+<li><a href="http://afup.org/pages/forumphp2009/">Le site du forum</a></li>
+<li><a href="http://afup.org/pages/forumphp2009/agenda.php">Le programme</a></li>
+<li><a href="http://afup.org/pages/forumphp2009/inscription.php">Inscription</a></li>
+<li><a href="http://afup.org/pages/forumphp2009/acces.php">Le lieu</a></li>
+</ul>
+
+<a href="http://afup.org/pages/forumphp2009/">Inscrivez vous vite au forum PHP!!!</a>";s:7:"pubdate";s:31:"Tue, 20 Oct 2009 13:59:01 +0200";s:4:"guid";s:105:"/pages/site/?route=forum-php-2009/395/un-eeepc-1005-ha-gagner-l-occasion-de-la-journ-e-mysql-du-forum-php";s:7:"summary";s:513:"L'eeePC sera offert par tirage au sort à l'occasion de l'une des conférences sur MySQL.
+
+<ul>
+<li><a href="http://afup.org/pages/forumphp2009/">Le site du forum</a></li>
+<li><a href="http://afup.org/pages/forumphp2009/agenda.php">Le programme</a></li>
+<li><a href="http://afup.org/pages/forumphp2009/inscription.php">Inscription</a></li>
+<li><a href="http://afup.org/pages/forumphp2009/acces.php">Le lieu</a></li>
+</ul>
+
+<a href="http://afup.org/pages/forumphp2009/">Inscrivez vous vite au forum PHP!!!</a>";s:14:"date_timestamp";i:1256039941;}i:8;a:7:{s:5:"title";s:11:"Barcamp PHP";s:4:"link";s:45:"/pages/site/?route=actualites/394/barcamp-php";s:11:"description";s:344:"Le thème du premier Barcamp sur le thème de PHP autour d'un Cheese and Wine.
+
+Une bonne occasion de voir ce que le Sud-Ouest est capable de faire avec PHP. Une excellente soirée en perspective !
+
+Il ne vous reste plus qu'à vous inscrire 
+<a href="http://www.linagora.com/spip.php?article560">http://www.linagora.com/spip.php?article560</a>";s:7:"pubdate";s:31:"Mon, 12 Oct 2009 22:28:42 +0200";s:4:"guid";s:45:"/pages/site/?route=actualites/394/barcamp-php";s:7:"summary";s:344:"Le thème du premier Barcamp sur le thème de PHP autour d'un Cheese and Wine.
+
+Une bonne occasion de voir ce que le Sud-Ouest est capable de faire avec PHP. Une excellente soirée en perspective !
+
+Il ne vous reste plus qu'à vous inscrire 
+<a href="http://www.linagora.com/spip.php?article560">http://www.linagora.com/spip.php?article560</a>";s:14:"date_timestamp";i:1255379322;}i:9;a:7:{s:5:"title";s:42:"Livre blanc &quot;Industrialisez PHP&quot;";s:4:"link";s:71:"/pages/site/?route=livres-blancs-php/393/livre-blanc-industrialisez-php";s:11:"description";s:449:"Ce Livre Blanc dresse un état de l'art des outils et méthodes qui permettent aujourd'hui d'industrialiser ses développements PHP.
+
+URL : <a href="http://www.alterway.fr/publications/livre-blanc-industrialisation-php">http://www.alterway.fr/publications/livre-blanc-industrialisation-php</a>
+
+<ul>
+<li>Auteurs : Damien Seguy, Jean-Marc Fontaine</li>
+<li>Editeur : Alter Way</li>
+<li>Langue : Français</li>
+<li>Publication : 2009</li>
+</ul>
+
+";s:7:"pubdate";s:31:"Mon, 05 Oct 2009 10:26:32 +0200";s:4:"guid";s:71:"/pages/site/?route=livres-blancs-php/393/livre-blanc-industrialisez-php";s:7:"summary";s:449:"Ce Livre Blanc dresse un état de l'art des outils et méthodes qui permettent aujourd'hui d'industrialiser ses développements PHP.
+
+URL : <a href="http://www.alterway.fr/publications/livre-blanc-industrialisation-php">http://www.alterway.fr/publications/livre-blanc-industrialisation-php</a>
+
+<ul>
+<li>Auteurs : Damien Seguy, Jean-Marc Fontaine</li>
+<li>Editeur : Alter Way</li>
+<li>Langue : Français</li>
+<li>Publication : 2009</li>
+</ul>
+
+";s:14:"date_timestamp";i:1254731192;}i:10;a:7:{s:5:"title";s:24:"PHP à l'Open World forum";s:4:"link";s:56:"/pages/site/?route=actualites/392/php-l-open-world-forum";s:11:"description";s:726:"Bien sûr, PHP, y tient une place importante. Avec Octo et  
+Zend, Alter Way présente une session sur l'industrialisation de PHP, en présentant les méthodes et outils qui font la différence aujourd'hui lors des projets critiques. La session fera le point sur les outils actuels, et sur ceux qui restent à assimiler.
+
+Soyez nombreux à venir nous rejoindre, à l'euro site Georges V, Paris 
+8 (derrière les champs Elysées), le jeudi 1er octobre, de 14 à 16h00. La session sera en français (contrairement à la présentation du site).
+
+L'entrée à la conférence et à la session sont gratuites.
+
+
+<a href="http://openworldforum.org/programme/php-industrialization">http://openworldforum.org/programme/php-industrialization</a>";s:7:"pubdate";s:31:"Thu, 24 Sep 2009 09:33:02 +0200";s:4:"guid";s:56:"/pages/site/?route=actualites/392/php-l-open-world-forum";s:7:"summary";s:726:"Bien sûr, PHP, y tient une place importante. Avec Octo et  
+Zend, Alter Way présente une session sur l'industrialisation de PHP, en présentant les méthodes et outils qui font la différence aujourd'hui lors des projets critiques. La session fera le point sur les outils actuels, et sur ceux qui restent à assimiler.
+
+Soyez nombreux à venir nous rejoindre, à l'euro site Georges V, Paris 
+8 (derrière les champs Elysées), le jeudi 1er octobre, de 14 à 16h00. La session sera en français (contrairement à la présentation du site).
+
+L'entrée à la conférence et à la session sont gratuites.
+
+
+<a href="http://openworldforum.org/programme/php-industrialization">http://openworldforum.org/programme/php-industrialization</a>";s:14:"date_timestamp";i:1253777582;}i:11;a:7:{s:5:"title";s:53:"La 9ème édition du Forum PHP dans les starting-blocks";s:4:"link";s:90:"/pages/site/?route=forum-php-2009/390/la-9-me-dition-du-forum-php-dans-les-starting-blocks";s:11:"description";s:3232:"Paris, le 16 septembre 2009 -- L'événement estampillé AFUP (Association Française des Utilisateurs de PHP) réunira durant 2 jours quelques grands experts internationaux du monde PHP, qui viendront échanger autour des problématiques phares du langage open source. L'occasion de faire le point sur les évolutions fonctionnelle et technique, communautaire et entreprise de PHP.
+
+
+Cette 9ème édition sera axée sur le couple PHP/MySQL, avec 8 conférences dédiées. LEMUG.fr, l'association francophone des utilisateurs de MySQL et partenaire de l'événement animera 3 conférences.
+
+
+Le Forum PHP accueillera en exclusivité et pour la première fois en France, Michael "Monty" Widenius, le créateur de MySQL. Suite au rachat de MySQL AB dont il était le co-fondateur, Monty a créé l'Open Database Alliance, un consortium et un lieu d'échanges pour tous les acteurs de l'écosystème de la base de données. Par ailleurs il fonde Monty Program ab, et poursuit le développement de MariaDB. A ce titre Monty présentera une conférence intitulée : « MariaDB the future of MySQL ». 
+
+
+Le PHP se décline au féminin avec la participation de :
+Zoe Slattery, PHP Women. Zoe a ?uvré pour le compte d'IBM pendant 20 ans. En 2007, elle s'implique dans la promotion de PHP et développe des phases de tests.
+Anna Filina, PHP Québec, animera une conférence dédiée aux décideurs sur l'analyse des comportements des développeurs.
+
+
+Reconnu mondialement comme une alternative de choix aux langages de programmation .Net ou J2EE, PHP est aujourd'hui une technologie mature qui entre dans une phase d'industrialisation. Largement adopté dans le monde de l'entreprise, PHP est un élément clé des infrastructures Web. 
+
+
+L'édition 2009 sera l'opportunité d'aborder l'industrialisation, la professionnalisation et la maturation du langage PHP avec une formule qui fait son succès chaque année :
+des conférences animées par les meilleurs experts internationaux
+des retours d'expérience issus des grands comptes 
+des ateliers pratiques
+
+
+
+
+<h3><strong>...:: FOCUS PROGRAMME - À NE PAS MANQUER ::...</strong></h3>
+
+
+
+<strong>Conférences</strong>
+
+« MariaDB the future of MySQL » -  Michael "Monty" Widenius, le père de MySQL
+« Oui, PHP est industriel ! » - Damien Seguy, Alter Way Consulting
+Conférences LEMUG.FR : Stéphane Varoqui ; Serge Frezefond, Directeur technique MySQL France, Sun Microsystems ; Olivier Dassini, Orange.
+« Jouons avec PHP 5.3 » - Fabien Potencier, créateur du framework PHP Symfony et Co-fondateur de Sensio Labs.
+« PHP and MySQL : a good match » - Johannes Schlüter, Sun Microsystems. Johannes est responsable de la publication de la version 5.3 de PHP.
+
+
+
+<strong>Témoignages utilisateurs</strong>
+
+Réplication MySQL, WAT TV
+Migration de J2EE vers PHP, M6 Web
+Ultimedia et Jukebo 2.0, Digiteka
+Retour d'expérience, Orange
+
+
+
+
+<strong>A propos de l'AFUP</strong>
+L'Association Française des Utilisateurs de PHP (AFUP), est une association dont le principal but est de promouvoir le PHP auprès des professionnels et de participer à son développement.
+
+
+Contact : bureau@afup.org
+
+En savoir plus : <a href="http://afup.org/pages/forumphp2009/">http://afup.org/pages/forumphp2009/</a>
+
+
+
+
+";s:7:"pubdate";s:31:"Fri, 18 Sep 2009 14:36:03 +0200";s:4:"guid";s:90:"/pages/site/?route=forum-php-2009/390/la-9-me-dition-du-forum-php-dans-les-starting-blocks";s:7:"summary";s:3232:"Paris, le 16 septembre 2009 -- L'événement estampillé AFUP (Association Française des Utilisateurs de PHP) réunira durant 2 jours quelques grands experts internationaux du monde PHP, qui viendront échanger autour des problématiques phares du langage open source. L'occasion de faire le point sur les évolutions fonctionnelle et technique, communautaire et entreprise de PHP.
+
+
+Cette 9ème édition sera axée sur le couple PHP/MySQL, avec 8 conférences dédiées. LEMUG.fr, l'association francophone des utilisateurs de MySQL et partenaire de l'événement animera 3 conférences.
+
+
+Le Forum PHP accueillera en exclusivité et pour la première fois en France, Michael "Monty" Widenius, le créateur de MySQL. Suite au rachat de MySQL AB dont il était le co-fondateur, Monty a créé l'Open Database Alliance, un consortium et un lieu d'échanges pour tous les acteurs de l'écosystème de la base de données. Par ailleurs il fonde Monty Program ab, et poursuit le développement de MariaDB. A ce titre Monty présentera une conférence intitulée : « MariaDB the future of MySQL ». 
+
+
+Le PHP se décline au féminin avec la participation de :
+Zoe Slattery, PHP Women. Zoe a ?uvré pour le compte d'IBM pendant 20 ans. En 2007, elle s'implique dans la promotion de PHP et développe des phases de tests.
+Anna Filina, PHP Québec, animera une conférence dédiée aux décideurs sur l'analyse des comportements des développeurs.
+
+
+Reconnu mondialement comme une alternative de choix aux langages de programmation .Net ou J2EE, PHP est aujourd'hui une technologie mature qui entre dans une phase d'industrialisation. Largement adopté dans le monde de l'entreprise, PHP est un élément clé des infrastructures Web. 
+
+
+L'édition 2009 sera l'opportunité d'aborder l'industrialisation, la professionnalisation et la maturation du langage PHP avec une formule qui fait son succès chaque année :
+des conférences animées par les meilleurs experts internationaux
+des retours d'expérience issus des grands comptes 
+des ateliers pratiques
+
+
+
+
+<h3><strong>...:: FOCUS PROGRAMME - À NE PAS MANQUER ::...</strong></h3>
+
+
+
+<strong>Conférences</strong>
+
+« MariaDB the future of MySQL » -  Michael "Monty" Widenius, le père de MySQL
+« Oui, PHP est industriel ! » - Damien Seguy, Alter Way Consulting
+Conférences LEMUG.FR : Stéphane Varoqui ; Serge Frezefond, Directeur technique MySQL France, Sun Microsystems ; Olivier Dassini, Orange.
+« Jouons avec PHP 5.3 » - Fabien Potencier, créateur du framework PHP Symfony et Co-fondateur de Sensio Labs.
+« PHP and MySQL : a good match » - Johannes Schlüter, Sun Microsystems. Johannes est responsable de la publication de la version 5.3 de PHP.
+
+
+
+<strong>Témoignages utilisateurs</strong>
+
+Réplication MySQL, WAT TV
+Migration de J2EE vers PHP, M6 Web
+Ultimedia et Jukebo 2.0, Digiteka
+Retour d'expérience, Orange
+
+
+
+
+<strong>A propos de l'AFUP</strong>
+L'Association Française des Utilisateurs de PHP (AFUP), est une association dont le principal but est de promouvoir le PHP auprès des professionnels et de participer à son développement.
+
+
+Contact : bureau@afup.org
+
+En savoir plus : <a href="http://afup.org/pages/forumphp2009/">http://afup.org/pages/forumphp2009/</a>
+
+
+
+
+";s:14:"date_timestamp";i:1253277363;}i:12;a:7:{s:5:"title";s:14:"Forum PHP 2009";s:4:"link";s:48:"/pages/site/?route=actualites/389/forum-php-2009";s:11:"description";s:633:"    Le Forum PHP 2009 accueillera comme partenaire aux cotés de l'AFUP (Association Française des Utilisateurs PHP) l'association <a href="http://www.lemug.fr">LeMug.fr</a> (MySQL User Group).
+
+    Plusieurs conférences sont prévues sur la base de données MySQL avec des intervenants de renom.
+
+    A cette occasion, l'AFUP a décidé de prolonger les pré-inscriptions à tarif préférentiel, et de repousser aussi la date limite pour « l'appel à conférenciers ».
+
+    Pour avoir plus d'informations, rendez-vous sur le site du forum PHP : <a href="http://afup.org/pages/forumphp2009/">http://afup.org/pages/forumphp2009/</a>
+
+
+";s:7:"pubdate";s:31:"Fri, 29 May 2009 13:02:09 +0200";s:4:"guid";s:48:"/pages/site/?route=actualites/389/forum-php-2009";s:7:"summary";s:633:"    Le Forum PHP 2009 accueillera comme partenaire aux cotés de l'AFUP (Association Française des Utilisateurs PHP) l'association <a href="http://www.lemug.fr">LeMug.fr</a> (MySQL User Group).
+
+    Plusieurs conférences sont prévues sur la base de données MySQL avec des intervenants de renom.
+
+    A cette occasion, l'AFUP a décidé de prolonger les pré-inscriptions à tarif préférentiel, et de repousser aussi la date limite pour « l'appel à conférenciers ».
+
+    Pour avoir plus d'informations, rendez-vous sur le site du forum PHP : <a href="http://afup.org/pages/forumphp2009/">http://afup.org/pages/forumphp2009/</a>
+
+
+";s:14:"date_timestamp";i:1243594929;}i:13;a:7:{s:5:"title";s:10:"Bargento 2";s:4:"link";s:44:"/pages/site/?route=actualites/388/bargento-2";s:11:"description";s:457:"<p>Le mardi 2 juin 2009, le <a href="http://www.bargento.fr/">Bargento 2</a> se déroulera à la Cartonnerie, 159 rue Saint Maur, 75011 Paris. </p>
+
+<p>Cet événement a pour but de rassembler les acteurs du monde Magento pour un moment de partage de la connaissance, de prise de contacts et de dialogue communautaire !
+Cette seconde édition se fera en présence de Roy Rubin, CEO de Varien.</p>
+
+<p><a href="http://www.bargento.fr/">www.bargento.fr</a></p>";s:7:"pubdate";s:31:"Thu, 28 May 2009 00:00:00 +0200";s:4:"guid";s:44:"/pages/site/?route=actualites/388/bargento-2";s:7:"summary";s:457:"<p>Le mardi 2 juin 2009, le <a href="http://www.bargento.fr/">Bargento 2</a> se déroulera à la Cartonnerie, 159 rue Saint Maur, 75011 Paris. </p>
+
+<p>Cet événement a pour but de rassembler les acteurs du monde Magento pour un moment de partage de la connaissance, de prise de contacts et de dialogue communautaire !
+Cette seconde édition se fera en présence de Roy Rubin, CEO de Varien.</p>
+
+<p><a href="http://www.bargento.fr/">www.bargento.fr</a></p>";s:14:"date_timestamp";i:1243461600;}i:14;a:7:{s:5:"title";s:83:"Symfony Live : Conférence francophone sur Symfony à Paris les 11 &amp; 12 juin 2009";s:4:"link";s:107:"/pages/site/?route=actualites/387/symfony-live-conf-rence-francophone-sur-symfony-paris-les-11-12-juin-2009";s:11:"description";s:1137:"<p>Le programme vient d'être en grande partie dévoilé  :</p>
+
+<p>Parmi les thèmes abordés, les réseaux sociaux , la gestion de contenu ou les stratégies de migration. </p>
+<p>Les bonnes pratiques et les tests ne seront bien évidemment pas négligés. </p>
+
+<p>Pour ce qui concerne les nouveautés, Jonathan Wage et Fabien Potencier présenteront respectivement Doctrine et la version 2 de Symfony.</p>
+<p>Autres thèmes très attendus : les retours d'expériences présentés par des acteurs-phares de la scène médiatique, tels que le groupe Arianespace, L'Express, ou Yahoo!.</p>
+
+<p>Parmi les points d'orgue : une session consacrée à la migration de Dailymotion sous Symfony, qui vous permettra de découvrir l'envers du décor, et une première, un "Master Class" Symfony, au cours duquel Fabien Potencier réalisera dans les conditions du réel le refactoring d'une ou plusieurs applications qui lui auront été préalablement soumises.</p>
+
+<p>Pour vous y inscrire et obtenir plus d'informations, rendez-vous sur le site Web qui lui est consacré : </p>
+
+<p><a href="http://www.symfony-live.com">http://www.symfony-live.com</a>.</p>
+<p>";s:7:"pubdate";s:31:"Fri, 15 May 2009 00:00:00 +0200";s:4:"guid";s:107:"/pages/site/?route=actualites/387/symfony-live-conf-rence-francophone-sur-symfony-paris-les-11-12-juin-2009";s:7:"summary";s:1137:"<p>Le programme vient d'être en grande partie dévoilé  :</p>
+
+<p>Parmi les thèmes abordés, les réseaux sociaux , la gestion de contenu ou les stratégies de migration. </p>
+<p>Les bonnes pratiques et les tests ne seront bien évidemment pas négligés. </p>
+
+<p>Pour ce qui concerne les nouveautés, Jonathan Wage et Fabien Potencier présenteront respectivement Doctrine et la version 2 de Symfony.</p>
+<p>Autres thèmes très attendus : les retours d'expériences présentés par des acteurs-phares de la scène médiatique, tels que le groupe Arianespace, L'Express, ou Yahoo!.</p>
+
+<p>Parmi les points d'orgue : une session consacrée à la migration de Dailymotion sous Symfony, qui vous permettra de découvrir l'envers du décor, et une première, un "Master Class" Symfony, au cours duquel Fabien Potencier réalisera dans les conditions du réel le refactoring d'une ou plusieurs applications qui lui auront été préalablement soumises.</p>
+
+<p>Pour vous y inscrire et obtenir plus d'informations, rendez-vous sur le site Web qui lui est consacré : </p>
+
+<p><a href="http://www.symfony-live.com">http://www.symfony-live.com</a>.</p>
+<p>";s:14:"date_timestamp";i:1242338400;}i:15;a:7:{s:5:"title";s:38:"Forum PHP 2009 : Appel à conférenciers";s:4:"link";s:72:"/pages/site/?route=forum-php-2009/386/forum-php-2009-appel-conf-renciers";s:11:"description";s:579:"Pour cet évènement unique en France nous recherchons les experts francophones qui souhaitent partager leurs expériences et leur savoir-faire.
+
+Pour postuler, rendez-vous sur cette page: <a href="http://afup.org/pages/forumphp2009/appel-a-conferenciers.php">Plus de Détails</a>
+
+De plus, nous avons aussi ouvert les inscriptions en prévente avec un tarif préférentiel (remise de 20?) 
+<a href="http://afup.org/pages/forumphp2009/inscription.php">Inscriptions</a>
+
+Le site officiel du forum PHP 2009 <a href="http://afup.org/pages/forumphp2009/index.php">Cliquer ici</a>
+
+";s:7:"pubdate";s:31:"Wed, 22 Apr 2009 00:00:00 +0200";s:4:"guid";s:72:"/pages/site/?route=forum-php-2009/386/forum-php-2009-appel-conf-renciers";s:7:"summary";s:579:"Pour cet évènement unique en France nous recherchons les experts francophones qui souhaitent partager leurs expériences et leur savoir-faire.
+
+Pour postuler, rendez-vous sur cette page: <a href="http://afup.org/pages/forumphp2009/appel-a-conferenciers.php">Plus de Détails</a>
+
+De plus, nous avons aussi ouvert les inscriptions en prévente avec un tarif préférentiel (remise de 20?) 
+<a href="http://afup.org/pages/forumphp2009/inscription.php">Inscriptions</a>
+
+Le site officiel du forum PHP 2009 <a href="http://afup.org/pages/forumphp2009/index.php">Cliquer ici</a>
+
+";s:14:"date_timestamp";i:1240351200;}i:16;a:7:{s:5:"title";s:57:"[09/05/2009]  PhpCamp &amp; TestFest à La Cantine - Paris";s:4:"link";s:89:"/pages/site/?route=rendez-vous-de-l-afup/385/09-05-2009-phpcamp-testfest-la-cantine-paris";s:11:"description";s:1213:"Un BarCamp est avant tout une rencontre fruit du désir des uns et des autres de partager et d'apprendre : un évènement intense avec des démos, des présentations et de l'interaction entre participants. La subtilité du PhpCamp tient juste au fait que PHP sera la techno de référence.
+
+TestFest en cours au niveau mondial, on y parlera forcément des tests si nécessaires pour le bon fonctionnement du PHP Core. Pour le reste c'est tout ouvert : outils, techniques, astuces, Open Source, communautés... Tous les tags sont permis.
+
+Infos pratiques :
+
+<ul>
+<li>Date : 09/05/2008</li>
+<li>Horaire : 10h00 - 20h00</li>
+<li>Capacité : 80 places</li>
+<li>Tarif : gratuit</li>
+<li>Lieu : La Cantine</li>
+<li>Adresse : 151 rue Montmartre / Passage des Panoramas / 12 Galerie Montmartre / 75002 Paris</li>
+<li>Métro : "Grands Boulevards" et "Bourse"</li>
+<li><a href="http://maps.google.com/maps?f=q&hl=fr&geocode=&q=151+rue+Montmartre,+Paris&sll=37.0625,-95.677068&sspn=38.281301,57.65625&ie=UTF8&z=16&iwloc=addr">Plan d'accès</a></li>
+<li><a href="http://barcamp.org/PhpCampParis2">Lien sur barcamp.org</a></li>
+</ul>
+
+<h3><a href="http://www.afup.org/pages/rendezvous/?id=6">S'inscrire au PhpCamp</a></h3>
+";s:7:"pubdate";s:31:"Wed, 08 Apr 2009 13:36:10 +0200";s:4:"guid";s:89:"/pages/site/?route=rendez-vous-de-l-afup/385/09-05-2009-phpcamp-testfest-la-cantine-paris";s:7:"summary";s:1213:"Un BarCamp est avant tout une rencontre fruit du désir des uns et des autres de partager et d'apprendre : un évènement intense avec des démos, des présentations et de l'interaction entre participants. La subtilité du PhpCamp tient juste au fait que PHP sera la techno de référence.
+
+TestFest en cours au niveau mondial, on y parlera forcément des tests si nécessaires pour le bon fonctionnement du PHP Core. Pour le reste c'est tout ouvert : outils, techniques, astuces, Open Source, communautés... Tous les tags sont permis.
+
+Infos pratiques :
+
+<ul>
+<li>Date : 09/05/2008</li>
+<li>Horaire : 10h00 - 20h00</li>
+<li>Capacité : 80 places</li>
+<li>Tarif : gratuit</li>
+<li>Lieu : La Cantine</li>
+<li>Adresse : 151 rue Montmartre / Passage des Panoramas / 12 Galerie Montmartre / 75002 Paris</li>
+<li>Métro : "Grands Boulevards" et "Bourse"</li>
+<li><a href="http://maps.google.com/maps?f=q&hl=fr&geocode=&q=151+rue+Montmartre,+Paris&sll=37.0625,-95.677068&sspn=38.281301,57.65625&ie=UTF8&z=16&iwloc=addr">Plan d'accès</a></li>
+<li><a href="http://barcamp.org/PhpCampParis2">Lien sur barcamp.org</a></li>
+</ul>
+
+<h3><a href="http://www.afup.org/pages/rendezvous/?id=6">S'inscrire au PhpCamp</a></h3>
+";s:14:"date_timestamp";i:1239190570;}i:17;a:7:{s:5:"title";s:39:"Concours de programmation sur PHPFrance";s:4:"link";s:73:"/pages/site/?route=actualites/382/concours-de-programmation-sur-phpfrance";s:11:"description";s:1482:"Du 1er au 15 avril, participez au <strong>concours de développement PHP des forums de <a href="http://www.phpfrance.com/forums">PHPFrance.com</a></strong>, des lots sont à gagner !
+
+<strong>Cette <a href="http://www.phpfrance.com/forums/voir_forum-33.php">première édition du concours</a> s'adresse aussi bien aux développeurs débutants que confirmés.</strong> Elle propose en effet plusieurs étapes aux difficultés croissantes, permettant à tous de participer et de s'arrêter selon votre niveau, ou de tenter de relever le défi et d'aller jusqu'au bout ! 
+
+Basé sur les technologies PHP et MySQL, le thème du concours invitera les participants à se lancer dans la réalisation d'un programme de gestion en PHP. 
+
+<strong>Les Prix :</strong>
+
+Le gagnant du concours (1ère et 2ème partie) remportera une <strong><a href="http://www.anaska.com/formation-php.php">Formation PHP Expert Certifié</a> offerte par <a href="http://www.anaska.com">Anaska</a></strong>. 
+Le second remportera quant à lui <strong>un <a href="http://www.celeonet.fr/index.php?onglet=offres_mutualisees">Hébergement d'1 an "CeleoTurbo"</a> + 1 nom de domaine offert par <a href="http://www.celeonet.fr/">Celeonet</a></strong> 
+
+Le gagnant du concours "débutants" (1ère partie) remportera <strong>un <a href="http://www.anaska.com/livre-php-5-avance.php">livre PHP 5 avancé</a></strong> (éditions Eyrolles). 
+Le second remportera <strong>des autocollants forum PHP</strong> pour redécorrer son bureau !";s:7:"pubdate";s:31:"Fri, 27 Mar 2009 15:24:48 +0100";s:4:"guid";s:73:"/pages/site/?route=actualites/382/concours-de-programmation-sur-phpfrance";s:7:"summary";s:1482:"Du 1er au 15 avril, participez au <strong>concours de développement PHP des forums de <a href="http://www.phpfrance.com/forums">PHPFrance.com</a></strong>, des lots sont à gagner !
+
+<strong>Cette <a href="http://www.phpfrance.com/forums/voir_forum-33.php">première édition du concours</a> s'adresse aussi bien aux développeurs débutants que confirmés.</strong> Elle propose en effet plusieurs étapes aux difficultés croissantes, permettant à tous de participer et de s'arrêter selon votre niveau, ou de tenter de relever le défi et d'aller jusqu'au bout ! 
+
+Basé sur les technologies PHP et MySQL, le thème du concours invitera les participants à se lancer dans la réalisation d'un programme de gestion en PHP. 
+
+<strong>Les Prix :</strong>
+
+Le gagnant du concours (1ère et 2ème partie) remportera une <strong><a href="http://www.anaska.com/formation-php.php">Formation PHP Expert Certifié</a> offerte par <a href="http://www.anaska.com">Anaska</a></strong>. 
+Le second remportera quant à lui <strong>un <a href="http://www.celeonet.fr/index.php?onglet=offres_mutualisees">Hébergement d'1 an "CeleoTurbo"</a> + 1 nom de domaine offert par <a href="http://www.celeonet.fr/">Celeonet</a></strong> 
+
+Le gagnant du concours "débutants" (1ère partie) remportera <strong>un <a href="http://www.anaska.com/livre-php-5-avance.php">livre PHP 5 avancé</a></strong> (éditions Eyrolles). 
+Le second remportera <strong>des autocollants forum PHP</strong> pour redécorrer son bureau !";s:14:"date_timestamp";i:1238163888;}i:18;a:7:{s:5:"title";s:20:"PHP Solutions 2/2009";s:4:"link";s:54:"/pages/site/?route=actualites/383/php-solutions-2-2009";s:11:"description";s:653:"Les sujets traités sont  :
+
+ 
+
+<ul>
+<li>Mise en production de PDO...
+</li>
+<li>JEU EN PHP...
+</li>
+<li>Plates-formes web pour l'e-commerce : comment choisir ?...
+</li>
+<li>Référencement naturel d'un site e-commerce...
+</li>
+<li>Le référencement internet, la visibilité contre la crise...
+</li>
+<li>Développement d'application pour Facebook...
+</li>
+<li>Détection des mots en PHP. De l'analyse à l'action...
+</li>
+<li>Programmation orientée aspect...
+</li>
+<li>PHP & Mashup...
+</li>
+<li>Sécurité et PHP...
+</li>
+</ul>
+
+
+Pour plus de détails, <a href="http://www.phpsolmag.org/prt/view/actualies/issue/992.html">cliquez ici</a>";s:7:"pubdate";s:31:"Fri, 20 Mar 2009 00:00:00 +0100";s:4:"guid";s:54:"/pages/site/?route=actualites/383/php-solutions-2-2009";s:7:"summary";s:653:"Les sujets traités sont  :
+
+ 
+
+<ul>
+<li>Mise en production de PDO...
+</li>
+<li>JEU EN PHP...
+</li>
+<li>Plates-formes web pour l'e-commerce : comment choisir ?...
+</li>
+<li>Référencement naturel d'un site e-commerce...
+</li>
+<li>Le référencement internet, la visibilité contre la crise...
+</li>
+<li>Développement d'application pour Facebook...
+</li>
+<li>Détection des mots en PHP. De l'analyse à l'action...
+</li>
+<li>Programmation orientée aspect...
+</li>
+<li>PHP & Mashup...
+</li>
+<li>Sécurité et PHP...
+</li>
+</ul>
+
+
+Pour plus de détails, <a href="http://www.phpsolmag.org/prt/view/actualies/issue/992.html">cliquez ici</a>";s:14:"date_timestamp";i:1237503600;}i:19;a:7:{s:5:"title";s:39:"27 Mars : Mozilla labs café @ lacantine";s:4:"link";s:68:"/pages/site/?route=actualites/381/27-mars-mozilla-labs-caf-lacantine";s:11:"description";s:1007:"<p>Le Mozilla Labs Café est un rassemblement court et informel pour Mozilliens, curieux, développeurs, geeks, blogueurs, qui veulent en savoir plus sur Mozilla Labs et sur tous les autres projets en cours chez l'équipe de Labs.</p>
+
+<p>Après une introduction par Tristan nitot nous aurons au programme :</p>
+
+<ul>
+<li>Chris Beard, Directeur de Mozilla Labs, nous fera une présentation générale des Projets Labs les plus récents;
+</li>
+<li>Rey Bango, Mozilla Add-ons Community Lead, donnera un discours sur les goals actuels et futurs du centre névralgique des modules complémentaires de Mozilla AMO;
+</li>
+<li>Pascal Finette, Mozilla Open Innovation Catalyst, parlera des Labs Concept Series.
+</li>
+</ul>
+
+
+<p>On vous parlera entre autres de Bespin, de Weave, d'Ubiquity, bref, plein de projets excitants :)</p>
+
+<p><a href="http://events.mozilla-europe.org/event/?id=5">Inscription</a>
+<br />
+<a href="http://https://wiki.mozilla.org/Events/LabsCafe/fr">Plus d'informations ici.</a>
+</p>";s:7:"pubdate";s:31:"Thu, 19 Mar 2009 00:00:00 +0100";s:4:"guid";s:68:"/pages/site/?route=actualites/381/27-mars-mozilla-labs-caf-lacantine";s:7:"summary";s:1007:"<p>Le Mozilla Labs Café est un rassemblement court et informel pour Mozilliens, curieux, développeurs, geeks, blogueurs, qui veulent en savoir plus sur Mozilla Labs et sur tous les autres projets en cours chez l'équipe de Labs.</p>
+
+<p>Après une introduction par Tristan nitot nous aurons au programme :</p>
+
+<ul>
+<li>Chris Beard, Directeur de Mozilla Labs, nous fera une présentation générale des Projets Labs les plus récents;
+</li>
+<li>Rey Bango, Mozilla Add-ons Community Lead, donnera un discours sur les goals actuels et futurs du centre névralgique des modules complémentaires de Mozilla AMO;
+</li>
+<li>Pascal Finette, Mozilla Open Innovation Catalyst, parlera des Labs Concept Series.
+</li>
+</ul>
+
+
+<p>On vous parlera entre autres de Bespin, de Weave, d'Ubiquity, bref, plein de projets excitants :)</p>
+
+<p><a href="http://events.mozilla-europe.org/event/?id=5">Inscription</a>
+<br />
+<a href="http://https://wiki.mozilla.org/Events/LabsCafe/fr">Plus d'informations ici.</a>
+</p>";s:14:"date_timestamp";i:1237417200;}}s:7:"channel";a:9:{s:5:"title";s:21:"Le flux RSS de l'AFUP";s:11:"description";s:21:"Le flux RSS de l'AFUP";s:4:"link";s:23:"http://afup.org/rss.php";s:8:"language";s:5:"FR_fr";s:7:"pubdate";s:31:"Mon, 15 Feb 2010 00:18:28 +0100";s:13:"lastbuilddate";s:31:"Tue, 09 Feb 2010 00:00:00 +0100";s:9:"generator";s:55:"AFUP internal framework professionnal edition 'alamano'";s:14:"managingeditor";s:42:"bureau@afup.org (Nicolas Silberman / AFUP)";s:7:"tagline";s:21:"Le flux RSS de l'AFUP";}s:9:"textinput";a:0:{}s:5:"image";a:3:{s:3:"url";s:51:"http://afup.org/templates/site/images/logo_afup.png";s:5:"title";s:21:"Le flux RSS de l'AFUP";s:4:"link";s:23:"http://afup.org/rss.php";}s:9:"feed_type";s:3:"RSS";s:12:"feed_version";s:3:"2.0";s:8:"encoding";s:10:"ISO-8859-1";s:16:"_source_encoding";s:0:"";s:5:"ERROR";s:0:"";s:7:"WARNING";s:0:"";s:19:"_CONTENT_CONSTRUCTS";a:6:{i:0;s:7:"content";i:1;s:7:"summary";i:2;s:4:"info";i:3;s:5:"title";i:4;s:7:"tagline";i:5;s:9:"copyright";}s:16:"_KNOWN_ENCODINGS";a:3:{i:0;s:5:"UTF-8";i:1;s:8:"US-ASCII";i:2;s:10:"ISO-8859-1";}s:5:"stack";a:0:{}s:9:"inchannel";b:0;s:6:"initem";b:0;s:9:"incontent";b:0;s:11:"intextinput";b:0;s:7:"inimage";b:0;s:17:"current_namespace";b:0;}

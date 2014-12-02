@@ -1,0 +1,16 @@
+Exemple 7.15 : JAASTest.policy
+
+grant codebase "file:login.jar"
+{    
+   permission java.awt.AWTPermission "showWindowWithoutWarningBanner";
+   permission javax.security.auth.AuthPermission 
+      "createLoginContext.Login1";
+   permission javax.security.auth.AuthPermission "doAsPrivileged";
+   permission javax.security.auth.AuthPermission "modifyPrincipals";
+   permission java.io.FilePermission "password.txt", "read";
+};
+ 
+grant principal SimplePrincipal "role=admin"
+{
+   permission java.util.PropertyPermission "*", "read";
+};

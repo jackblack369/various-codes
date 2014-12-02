@@ -1,0 +1,57 @@
+*********************************************
+*                                                                *
+*          INSTALLATION DE                    *
+*        DEVELOPPEZ VOTRE APB     *
+* (Application PHP Base de donnée)  *
+*                                                                *
+*            Version 2.0                                *
+*********************************************
+*                                                                *
+*   (c) - Christophe Villeneuve               *
+*      Editeur : Editions ENI                    *
+*                                                               *
+*********************************************
+
+Cette mini documentation est tirée de l'ouvrage du même nom.
+
+Installation
+------------
+Quelque soit votre système d’exploitation, il est nécessaire d’installé un environnement Apache / PHP / PHPmyAdmin par exemple :
+- Wampserver
+- Mamp
+- Xampp
+
+Après l’installation d’un des trois environnements, vous devez lancer votre navigateur et saisir l’adresse suivante : 
+http://localhost/phpmyadmin/
+Vous devez créer une base de donnée sous le nom de « ENI » et importer le fichier se trouvant dans le dossier SQL
+La base de donnée vient d’être installée.
+Vous pouvez maintenant saisir dans votre barre de navigation, une des adresses suivantes : 
+http://localhost/votreDossier/application/app-php-mysql 
+http://localhost/votreDossier/application/app-php-mysqli 
+http://localhost/votreDossier/application/app-php-pdo 
+http://localhost/votreDossier/application/app-poo-mysqli 
+
+Si l’application affiche des messages d’erreurs, vous devez vous reporter à l’ouvrage pour effectuer les modifications nécessaires.
+Concernant les accés à la partie privée, nous vous rappelons que les codes d’accès :
+Pour la partie Administrateur sont : 
+Login : admin
+Password : Admin
+
+Pour un compte utilisateur
+Login : test
+Password : test
+
+Ces codes d’accès peuvent être modifier comme vous le souhaitez.
+
+
+Christophe Villeneuve
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+Pour bénéficier complètement de l'application
+Il est important d'activé la librairie cURL dans php.ini
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+

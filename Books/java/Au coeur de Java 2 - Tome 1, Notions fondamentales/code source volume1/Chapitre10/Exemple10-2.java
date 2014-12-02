@@ -1,0 +1,10 @@
+Exemple 10.2 : Calculator.html 
+
+<html>
+   <head><title>A Calculator</title></head>
+   <body>
+      <p>Here is a calculator, just in case you can't find yours.</p>
+      <applet code="CalculatorApplet.class" width="180" height="180">
+      </applet>
+   </body>
+</html>

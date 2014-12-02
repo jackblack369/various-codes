@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<personne>
+		<ligne>		<nom>Langage</nom>
+		<prenom>PHP</prenom>
+</ligne>
+		<ligne>		<nom>ENI</nom>
+		<prenom>notre prenom</prenom>
+</ligne>
+		<ligne>		<nom>notre nom</nom>
+		<prenom>notre prenom</prenom>
+</ligne>
+		<ligne>		<nom>notre nom</nom>
+		<prenom>notre prenom</prenom>
+</ligne>
+		<ligne>		<nom>1</nom>
+		<prenom>2</prenom>
+</ligne>
+		<ligne>		<nom>Z</nom>
+		<prenom>s</prenom>
+</ligne>
+		<ligne>		<nom>Villeneuve</nom>
+		<prenom>Christophe</prenom>
+</ligne>
+		<ligne>		<nom>Villeneuve</nom>
+		<prenom>Christophe</prenom>
+</ligne>
+</personne>

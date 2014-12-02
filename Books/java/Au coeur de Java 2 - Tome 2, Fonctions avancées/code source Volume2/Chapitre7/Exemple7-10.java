@@ -1,0 +1,13 @@
+Exemple 7.10 : AuthTest.policy
+
+grant codebase "file:login.jar"
+{    
+   permission javax.security.auth.AuthPermission 
+      "createLoginContext.Login1";
+   permission javax.security.auth.AuthPermission "doAsPrivileged";
+};
+
+grant principal com.sun.security.auth.UnixPrincipal "harry"
+{
+   permission java.util.PropertyPermission "user.*", "read";
+};

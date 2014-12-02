@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<racine>
+<page title="exemple TITRE">
+<menu>Menu test</menu>
+</page>
+
+<ligne>
+<soustitre>Editions</soustitre>
+<soustitre>ENI</soustitre>
+</ligne>
+</racine>

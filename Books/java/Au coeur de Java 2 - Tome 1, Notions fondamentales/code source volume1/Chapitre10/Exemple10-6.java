@@ -1,0 +1,15 @@
+Exemple 10.6 : Bookmark.html
+
+<html>
+   <head>
+      <title>Bookmark Applet</title>
+   </head>
+   <frameset cols="320,*">
+       <frame name="left" src="Left.html"
+          marginheight="2" marginwidth="2"
+          scrolling="no" noresize="noresize"/>
+      <frame name="right" src="Right.html"
+         marginheight="2" marginwidth="2"
+         scrolling="yes" noresize="noresize"/>
+   </frameset>
+</html>

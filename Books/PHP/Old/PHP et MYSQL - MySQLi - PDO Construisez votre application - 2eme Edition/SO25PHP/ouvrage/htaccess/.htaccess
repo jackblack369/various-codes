@@ -1,0 +1,12 @@
+#Options +FollowSymlinks
+RewriteEngine on
+
+
+
+
+# les erreurs
+ErrorDocument 401 /error.php?err=401
+ErrorDocument 403 /error.php?err=403
+ErrorDocument 404 /error.php?err=404
+ErrorDocument 500 /error.php?err=500
+
