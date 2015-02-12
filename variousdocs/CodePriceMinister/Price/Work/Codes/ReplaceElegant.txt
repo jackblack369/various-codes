@@ -1,5 +1,0 @@
-#if($tr.extract($line.get(8),"ldlc.?com",true))
-$!line.get(8).replaceAll("ldlc.?com","ldlc.com")
-#else
-$!line.get(8)
-#end
