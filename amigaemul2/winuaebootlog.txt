@@ -1,0 +1,333 @@
+﻿WinUAE 2.1.0 (2010.04.28) (6.2 [1]) 64-bit 6.3A09 8
+(c) 1995-2001 Bernd Schmidt   - Core UAE concept and implementation.
+(c) 1998-2010 Toni Wilen      - Win32 port, core code updates.
+(c) 1996-2001 Brian King      - Win32 port, Picasso96 RTG, and GUI.
+(c) 1996-1999 Mathias Ortmann - Win32 port and bsdsocket support.
+(c) 2000-2001 Bernd Meyer     - JIT engine.
+(c) 2000-2005 Bernd Roesch    - MIDI input, many fixes.
+Press F12 to show the Settings Dialog (GUI), Alt-F4 to quit.
+End+F1 changes floppy 0, End+F2 changes floppy 1, etc.
+'C:\Users\Christophe\Google Drive\Games\Games\amigaemul2\winuae.exe'
+EXE: 'C:\Users\Christophe\Google Drive\Games\Games\amigaemul2\', DATA: 'C:\Users\Christophe\Google Drive\Games\Games\amigaemul2\'
+CLOCKFREQ: QPF 2.14MHz (2.14MHz, DIV=1)
+Max hardware surface size: 8192x8192
+DriverCaps: 85d277c1 a06ab230 0002e310 22ad54e0 00000000 00000000
+DDCAPS_BLT,DDCAPS_BLTQUEUE,DDCAPS_BLTFOURCC,DDCAPS_BLTCOLORFILL,DDCAPS_BLTSTRETCH,DDCAPS_CANBLTSYSMEM,DDCAPS_COLORKEY,DDCAPS_COLORKEYHWASSIST,DDCAPS_GDI,DDCAPS_3D,DDCAPS_READSCANLINE,DDCAPS2_CANRENDERWINDOWED,DDCAPS2_FLIPNOVSYNC,DDCAPS2_FLIPINTERVAL,DDCAPS2_NONLOCALVIDMEM,DDCAPS2_WIDESURFACES,DDCKEYCAPS_SRCBLT
+HELCaps   : f4c08241 00000001 00000200 0003fce3 00000000 00000347
+DDCAPS_BLT,DDCAPS_BLTCOLORFILL,DDCAPS_BLTSTRETCH,DDCAPS_CANBLTSYSMEM,DDCAPS_CANCLIP,DDCAPS_CANCLIPSTRETCHED,DDCAPS_COLORKEY,DDCAPS_3D,DDCAPS_PALETTE,DDCAPS2_CERTIFIED,DDCKEYCAPS_SRCBLT
+Enumerating display devices.. 
+'Pilote d’affichage principal' 'display' NULL
+'Intel(R) HD Graphics 4000' '\\.\DISPLAY1' 67685559-3106-11D0-B97100AA00342F9F
+Sorting devices and modes..
+Desktop: W=1920 H=1080 B=32. MaxW=1920 MaxH=1080 CXVS=1920 CYVS=1080
+0: 320x200, 32-bit (40,60)
+1: 320x240, 32-bit (40,60)
+2: 400x300, 32-bit (40,60)
+3: 512x384, 32-bit (40,60)
+4: 640x400, 32-bit (40,60)
+5: 640x480, 32-bit (40,60)
+6: 800x600, 32-bit (40,60)
+7: 1024x768, 32-bit (40,60)
+8: 1152x864, 32-bit (40,60)
+9: 1280x600, 32-bit (40,60)
+10: 1280x720, 32-bit (40,60)
+11: 1280x768, 32-bit (40,60)
+12: 1280x800, 32-bit (40,60)
+13: 1280x960, 32-bit (40,60)
+14: 1280x1024, 32-bit (40,60)
+15: 1360x768, 32-bit (40,60)
+16: 1366x768, 32-bit (40,60)
+17: 1400x1050, 32-bit (40,60)
+18: 1440x900, 32-bit (40,60)
+19: 1600x900, 32-bit (40,60)
+20: 1680x1050, 32-bit (40,60)
+21: 1920x1080, 32-bit (40,60)
+'Pilote d’affichage principal (1920*1080)', 22 display modes (enabled)
+Desktop: W=1920 H=1080 B=32. MaxW=1920 MaxH=1080 CXVS=1920 CYVS=1080
+0: 320x200, 32-bit (40,60)
+1: 320x240, 32-bit (40,60)
+2: 400x300, 32-bit (40,60)
+3: 512x384, 32-bit (40,60)
+4: 640x400, 32-bit (40,60)
+5: 640x480, 32-bit (40,60)
+6: 800x600, 32-bit (40,60)
+7: 1024x768, 32-bit (40,60)
+8: 1152x864, 32-bit (40,60)
+9: 1280x600, 32-bit (40,60)
+10: 1280x720, 32-bit (40,60)
+11: 1280x768, 32-bit (40,60)
+12: 1280x800, 32-bit (40,60)
+13: 1280x960, 32-bit (40,60)
+14: 1280x1024, 32-bit (40,60)
+15: 1360x768, 32-bit (40,60)
+16: 1366x768, 32-bit (40,60)
+17: 1400x1050, 32-bit (40,60)
+18: 1440x900, 32-bit (40,60)
+19: 1600x900, 32-bit (40,60)
+20: 1680x1050, 32-bit (40,60)
+21: 1920x1080, 32-bit (40,60)
+'Intel(R) HD Graphics 4000 (1920*1080)', 22 display modes (enabled)
+Display buffer mode = 1
+Enumerating DirectSound devices..
+Enumerating WASAPI devices...
+Enumeration end
+0:WA: Default Audio Device
+1:WA: Haut-parleurs (Realtek High Definition Audio)
+2:DS: Périphérique audio principal
+3:DS: Haut-parleurs (Realtek High Definition Audio)
+Enumerating recording devices:
+0:DS: Pilote de capture audio principal
+1:DS: Microphone (Realtek High Definition Audio)
+done
+Filesystem charset (ACP=1252,FSCP=28605):
+ 00: 0000        01: 0001        02: 0002        03: 0003       
+ 04: 0004        05: 0005        06: 0006        07: 0007       
+ 08: 0008        09: 0009        0A: 000A        0B: 000B       
+ 0C: 000C        0D: 000D        0E: 000E        0F: 000F       
+ 10: 0010        11: 0011        12: 0012        13: 0013       
+ 14: 0014        15: 0015        16: 0016        17: 0017       
+ 18: 0018        19: 0019        1A: 001A        1B: 001B       
+ 1C: 001C        1D: 001D        1E: 001E        1F: 001F       
+ 20: 0020        21: 0021        22: 0022        23: 0023       
+ 24: 0024        25: 0025        26: 0026        27: 0027       
+ 28: 0028        29: 0029        2A: 002A        2B: 002B       
+ 2C: 002C        2D: 002D        2E: 002E        2F: 002F       
+ 30: 0030        31: 0031        32: 0032        33: 0033       
+ 34: 0034        35: 0035        36: 0036        37: 0037       
+ 38: 0038        39: 0039        3A: 003A        3B: 003B       
+ 3C: 003C        3D: 003D        3E: 003E        3F: 003F       
+ 40: 0040        41: 0041        42: 0042        43: 0043       
+ 44: 0044        45: 0045        46: 0046        47: 0047       
+ 48: 0048        49: 0049        4A: 004A        4B: 004B       
+ 4C: 004C        4D: 004D        4E: 004E        4F: 004F       
+ 50: 0050        51: 0051        52: 0052        53: 0053       
+ 54: 0054        55: 0055        56: 0056        57: 0057       
+ 58: 0058        59: 0059        5A: 005A        5B: 005B       
+ 5C: 005C        5D: 005D        5E: 005E        5F: 005F       
+ 60: 0060        61: 0061        62: 0062        63: 0063       
+ 64: 0064        65: 0065        66: 0066        67: 0067       
+ 68: 0068        69: 0069        6A: 006A        6B: 006B       
+ 6C: 006C        6D: 006D        6E: 006E        6F: 006F       
+ 70: 0070        71: 0071        72: 0072        73: 0073       
+ 74: 0074        75: 0075        76: 0076        77: 0077       
+ 78: 0078        79: 0079        7A: 007A        7B: 007B       
+ 7C: 007C        7D: 007D        7E: 007E        7F: 007F       
+ 80: 20AC (0080) 81: 0081        82: 201A (0082) 83: 0192 (0083)
+ 84: 201E (0084) 85: 2026 (0085) 86: 2020 (0086) 87: 2021 (0087)
+ 88: 02C6 (0088) 89: 2030 (0089) 8A: 0160 (008A) 8B: 2039 (008B)
+ 8C: 0152 (008C) 8D: 008D        8E: 017D (008E) 8F: 008F       
+ 90: 0090        91: 2018 (0091) 92: 2019 (0092) 93: 201C (0093)
+ 94: 201D (0094) 95: 2022 (0095) 96: 2013 (0096) 97: 2014 (0097)
+ 98: 02DC (0098) 99: 2122 (0099) 9A: 0161 (009A) 9B: 203A (009B)
+ 9C: 0153 (009C) 9D: 009D        9E: 017E (009E) 9F: 0178 (009F)
+ A0: 00A0        A1: 00A1        A2: 00A2        A3: 00A3       
+ A4: 00A4 (20AC) A5: 00A5        A6: 00A6 (0160) A7: 00A7       
+ A8: 00A8 (0161) A9: 00A9        AA: 00AA        AB: 00AB       
+ AC: 00AC        AD: 00AD        AE: 00AE        AF: 00AF       
+ B0: 00B0        B1: 00B1        B2: 00B2        B3: 00B3       
+ B4: 00B4 (017D) B5: 00B5        B6: 00B6        B7: 00B7       
+ B8: 00B8 (017E) B9: 00B9        BA: 00BA        BB: 00BB       
+ BC: 00BC (0152) BD: 00BD (0153) BE: 00BE (0178) BF: 00BF       
+ C0: 00C0        C1: 00C1        C2: 00C2        C3: 00C3       
+ C4: 00C4        C5: 00C5        C6: 00C6        C7: 00C7       
+ C8: 00C8        C9: 00C9        CA: 00CA        CB: 00CB       
+ CC: 00CC        CD: 00CD        CE: 00CE        CF: 00CF       
+ D0: 00D0        D1: 00D1        D2: 00D2        D3: 00D3       
+ D4: 00D4        D5: 00D5        D6: 00D6        D7: 00D7       
+ D8: 00D8        D9: 00D9        DA: 00DA        DB: 00DB       
+ DC: 00DC        DD: 00DD        DE: 00DE        DF: 00DF       
+ E0: 00E0        E1: 00E1        E2: 00E2        E3: 00E3       
+ E4: 00E4        E5: 00E5        E6: 00E6        E7: 00E7       
+ E8: 00E8        E9: 00E9        EA: 00EA        EB: 00EB       
+ EC: 00EC        ED: 00ED        EE: 00EE        EF: 00EF       
+ F0: 00F0        F1: 00F1        F2: 00F2        F3: 00F3       
+ F4: 00F4        F5: 00F5        F6: 00F6        F7: 00F7       
+ F8: 00F8        F9: 00F9        FA: 00FA        FB: 00FB       
+ FC: 00FC        FD: 00FD        FE: 00FE        FF: 00FF       
+End
+CW: No Catweasel detected
+PARAPORT: no ParaPort.dll, direct parallel port emulation disabled
+IPC: Named Pipe '\\.\pipe\WinUAE' open
+IPC: Named Pipe '\\.\pipe\WinUAE_COM' open
+Serial port enumeration..
+Serial port enumeration end
+DirectInput enumeration.. Keyboards..
+I=6F1D2B61-D5A0-11CF-BFC7444553540000 P=6F1D2B61-D5A0-11CF-BFC7444553540000
+'Clavier' 'Clavier' 00000413 [Keyboard]
+DirectInput enumeration.. Pointing devices..
+I=6F1D2B60-D5A0-11CF-BFC7444553540000 P=6F1D2B60-D5A0-11CF-BFC7444553540000
+'Souris' 'Souris' 00000112 [Mouse]
+DirectInput enumeration.. Game controllers..
+RawInput enumeration..
+RAWINPUT: found 16 devices
+0002008F keyboard: '\\?\HID#VID_046D&PID_C52B&MI_00#8&1dc8980d&0&0000#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}'
+type=81 sub=0 mode=1 fkeys=12 indicators=3 tkeys=173
+000200A7 keyboard: '\\?\HID#10250759&Col02#5&2d278260&0&0001#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}'
+type=81 sub=0 mode=1 fkeys=12 indicators=3 tkeys=264
+000C00A3 keyboard: '\\?\HID#10250759&Col01#5&2d278260&0&0000#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}'
+type=81 sub=0 mode=1 fkeys=12 indicators=3 tkeys=3
+00050093 mouse: '\\?\ACPI#ETD0506#4&1b6b5f90&0#{378de44c-56ef-11d1-bc8c-00a0c91405dd}'
+id=2 buttons=2 hw=0 rate=100
+000C0095 mouse: '\\?\HID#VID_046D&PID_C52B&MI_01&Col01#8&358c2452&0&0000#{378de44c-56ef-11d1-bc8c-00a0c91405dd}'
+id=256 buttons=16 hw=0 rate=0
+'ELAN PS/2 Port Smart-Pad' ('\\?\ACPI#ETD0506#4&1b6b5f90&0#{378de44c-56ef-11d1-bc8c-00a0c91405dd}')
+'Souris HID' ('\\?\HID#VID_046D&PID_C52B&MI_01&Col01#8&358c2452&0&0000#{378de44c-56ef-11d1-bc8c-00a0c91405dd}')
+'Périphérique clavier PIH' ('\\?\HID#10250759&Col01#5&2d278260&0&0000#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}')
+'Périphérique clavier PIH' ('\\?\HID#10250759&Col02#5&2d278260&0&0001#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}')
+'Périphérique clavier PIH' ('\\?\HID#VID_046D&PID_C52B&MI_00#8&1dc8980d&0&0000#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}')
+Windowsmouse initialization..
+Catweasel joymouse initialization..
+wintab tablet initialization..
+Tablet: no wintab32.dll
+end
+Souris * (PGUID=6F1D2B60-D5A0-11CF-BFC7444553540000):
+00 000 'Axe X' (-99,0)
+04 004 'Axe Y' (-98,0)
+08 008 'Volant' (-97,0)
+Souris * (PGUID=6F1D2B60-D5A0-11CF-BFC7444553540000):
+0C 012 'Bouton 0' (12,-1)
+0D 013 'Bouton 1' (13,-1)
+0E 014 'Bouton 2' (14,-1)
+0F 015 'Bouton 3' (15,-1)
+10 016 'Bouton 4' (16,-1)
+11 017 'Bouton 5' (17,-1)
+12 018 'Bouton 6' (18,-1)
+13 019 'Bouton 7' (19,-1)
+08 008 'Volant [-]' (1016,-1)
+08 008 'Volant [+]' (1017,-1)
+Clavier * (PGUID=6F1D2B61-D5A0-11CF-BFC7444553540000):
+01 001 'ECHAP' (0,-1)
+02 002 '1' (0,-1)
+03 003 '2' (0,-1)
+04 004 '3' (0,-1)
+05 005 '4' (0,-1)
+06 006 '5' (0,-1)
+07 007 '6' (0,-1)
+08 008 '7' (0,-1)
+09 009 '8' (0,-1)
+0A 010 '9' (0,-1)
+0B 011 '0' (0,-1)
+0C 012 ')' (0,-1)
+0D 013 '=' (0,-1)
+0E 014 'RET.ARR' (0,-1)
+0F 015 'TAB' (0,-1)
+10 016 'A' (0,-1)
+11 017 'Z' (0,-1)
+12 018 'E' (0,-1)
+13 019 'R' (0,-1)
+14 020 'T' (0,-1)
+15 021 'Y' (0,-1)
+16 022 'U' (0,-1)
+17 023 'I' (0,-1)
+18 024 'O' (0,-1)
+19 025 'P' (0,-1)
+1A 026 'ACCENT CIRCONFLEXE' (0,-1)
+1B 027 '$' (0,-1)
+1C 028 'ENTREE' (0,-1)
+1D 029 'CTRL' (0,-1)
+1E 030 'Q' (0,-1)
+1F 031 'S' (0,-1)
+20 032 'D' (0,-1)
+21 033 'F' (0,-1)
+22 034 'G' (0,-1)
+23 035 'H' (0,-1)
+24 036 'J' (0,-1)
+25 037 'K' (0,-1)
+26 038 'L' (0,-1)
+27 039 'M' (0,-1)
+28 040 'ù' (0,-1)
+29 041 '²' (0,-1)
+2A 042 'MAJ' (0,-1)
+2B 043 '*' (0,-1)
+2C 044 'W' (0,-1)
+2D 045 'X' (0,-1)
+2E 046 'C' (0,-1)
+2F 047 'V' (0,-1)
+30 048 'B' (0,-1)
+31 049 'N' (0,-1)
+32 050 ',' (0,-1)
+33 051 ';' (0,-1)
+34 052 ':' (0,-1)
+35 053 '!' (0,-1)
+36 054 'MAJ DROITE' (0,-1)
+37 055 '*' (0,-1)
+38 056 'ALT' (0,-1)
+39 057 'ESPACE' (0,-1)
+3A 058 'VERR.MAJ' (0,-1)
+3B 059 'F1' (0,-1)
+3C 060 'F2' (0,-1)
+3D 061 'F3' (0,-1)
+3E 062 'F4' (0,-1)
+3F 063 'F5' (0,-1)
+40 064 'F6' (0,-1)
+41 065 'F7' (0,-1)
+42 066 'F8' (0,-1)
+43 067 'F9' (0,-1)
+44 068 'F10' (0,-1)
+45 069 'Ver.Num' (0,-1)
+46 070 'DEFIL' (0,-1)
+47 071 '7 (PAVE NUM.)' (0,-1)
+48 072 '8 (PAVE NUM.)' (0,-1)
+49 073 '9 (PAVE NUM.)' (0,-1)
+4A 074 '-' (0,-1)
+4B 075 '4 (PAVE NUM.)' (0,-1)
+4C 076 '5 (PAVE NUM.)' (0,-1)
+4D 077 '6 (PAVE NUM.)' (0,-1)
+4E 078 '+' (0,-1)
+4F 079 '1 (PAVE NUM.)' (0,-1)
+50 080 '2 (PAVE NUM.)' (0,-1)
+51 081 '3 (PAVE NUM.)' (0,-1)
+52 082 '0 (PAVE NUM.)' (0,-1)
+53 083 '. (PAVE NUM.)' (0,-1)
+56 086 '<' (0,-1)
+57 087 'F11' (0,-1)
+58 088 'F12' (0,-1)
+90 144 'Piste précédente' (0,-1)
+99 153 'Piste suivante' (0,-1)
+9C 156 'ENTREE (PAVE NUM.)' (0,-1)
+9D 157 'CTRL DROITE' (0,-1)
+A0 160 'Muet' (0,-1)
+A1 161 'Calculatrice' (0,-1)
+A2 162 'Lecture/Pause' (0,-1)
+A4 164 'Média - Arrêt' (0,-1)
+AE 174 'Volume -' (0,-1)
+B0 176 'Volume +' (0,-1)
+B2 178 'Web/Démarrage' (0,-1)
+B5 181 '/ (PAVE NUM.)' (0,-1)
+B7 183 'Impr.Ecran' (0,-1)
+B8 184 'ALT DROITE' (0,-1)
+C5 197 'Pause' (0,-1)
+C7 199 'ORIGINE' (0,-1)
+C8 200 'HAUT' (0,-1)
+C9 201 'PG.PREC' (0,-1)
+CB 203 'GAUCHE' (0,-1)
+CD 205 'DROITE' (0,-1)
+CF 207 'FIN' (0,-1)
+D0 208 'BAS' (0,-1)
+D1 209 'PG.SUIV' (0,-1)
+D2 210 'INS' (0,-1)
+D3 211 'SUPPR' (0,-1)
+DB 219 'WINDOWS GAUCHE' (0,-1)
+DC 220 'WINDOWS DROITE' (0,-1)
+DD 221 'APPLICATION' (0,-1)
+DE 222 'Marche/Arrêt' (0,-1)
+DF 223 'Veille' (0,-1)
+E3 227 'Sortie de veille' (0,-1)
+E5 229 'Rechercher' (0,-1)
+E6 230 'Favoris' (0,-1)
+E7 231 'Actualiser' (0,-1)
+E8 232 'Web - Arrêt' (0,-1)
+E9 233 'Suivant' (0,-1)
+EA 234 'Précédent' (0,-1)
+EB 235 'Poste de travail' (0,-1)
+EC 236 'Courrier' (0,-1)
+ED 237 'Média' (0,-1)
+Max Z3FastRAM 2048M. Total physical RAM 8074M
+GetWriteWatch() test ok
+load config '.\Configurations\default.uae':0
+load failed
+failed to load config '.\Configurations\default.uae'
+LCD: Logitech LCD system not detected
+'.\Configurations\configuration.cache' loaded successfully
+Entering GUI idle loop
+Log (disabled): 'C:\Users\Christophe\Google Drive\Games\Games\amigaemul2\winuaelog.txt'
